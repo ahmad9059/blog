@@ -42,7 +42,13 @@
   </url><url>
     <loc>//localhost:1313/categories/css/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/engineering/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/javascript/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/software-engineering/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/software-engineering/software-engineering-motes/</loc>
   </url><url>
     <loc>//localhost:1313/categories/uncategories/</loc>
   </url>

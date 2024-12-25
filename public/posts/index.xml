@@ -23,5 +23,12 @@
       <guid>//localhost:1313/posts/markdown-cheat-sheet/</guid>
       <description>&lt;p&gt;This Markdown cheat sheet &lt;strong&gt;provides&lt;/strong&gt; a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic &lt;em&gt;syntax&lt;/em&gt; and extended syntax.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Software Engineering Notes</title>
+      <link>//localhost:1313/posts/software-engineering/software-engineering-motes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/software-engineering/software-engineering-motes/</guid>
+      <description>&lt;h2 id=&#34;lecture-no-1-notes&#34;&gt;Lecture No. 1 Notes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-what-is-good-software&#34;&gt;1. What is Good Software?&lt;/h3&gt;&#xA;&lt;p&gt;Good software should deliver the required functionality and performance to the user and should be maintainable, dependable and usable&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

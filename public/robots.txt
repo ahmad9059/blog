@@ -28,6 +28,12 @@ Disallow: /about/
 
 Disallow: /categories/css/
 
+Disallow: /tags/engineering/
+
 Disallow: /categories/javascript/
+
+Disallow: /categories/software-engineering/
+
+Disallow: /posts/software-engineering/software-engineering-motes/
 
 Disallow: /categories/uncategories/
