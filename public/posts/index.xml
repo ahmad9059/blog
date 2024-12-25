@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on Ahmad Hassan</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Post on Ahmad Hassan</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Network Notes</title>
+      <link>//localhost:1313/posts/computer-networks-notes/computer/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/computer-networks-notes/computer/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/posts/computer-networks-notes/assets/basic-network.png&#34; alt=&#34;Computer Network&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;computer-network&#34;&gt;Computer Network&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;computer network&lt;/strong&gt; is a system that connects multiple computers and devices to share resources, data, and applications. Networks allow for communication between devices, and they’re fundamental to both small-scale setups (like local area networks in offices) and large-scale systems (like the internet).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Cheat Sheet</title>
+      <link>//localhost:1313/posts/markdown-cheat-sheet/</link>
+      <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
+      <guid>//localhost:1313/posts/markdown-cheat-sheet/</guid>
+      <description>&lt;p&gt;This Markdown cheat sheet &lt;strong&gt;provides&lt;/strong&gt; a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic &lt;em&gt;syntax&lt;/em&gt; and extended syntax.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
