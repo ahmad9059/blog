@@ -989,9 +989,6 @@ video {
 .font-extrabold {
   font-weight: 800;
 }
-.font-normal {
-  font-weight: 400;
-}
 .font-semibold {
   font-weight: 600;
 }
@@ -1288,10 +1285,9 @@ nav a.active:is(.dark *) {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 #content .taxonomy-list a:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 #content .taxonomy-list a:hover:is(.dark *) {
   --tw-bg-opacity: 1;
