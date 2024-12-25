@@ -1,5 +1,5 @@
 ---
-title: Computer Network Notes
+title: Computer Network Basics
 draft: false
 date: 2024-12-24
 description: This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more
