@@ -4,17 +4,23 @@ Disallow: /
 
 Disallow: /categories/
 
+Disallow: /tags/engineering/
+
+Disallow: /posts/
+
+Disallow: /categories/software-engineering/
+
+Disallow: /posts/software-engineering/software-engineering-motes/
+
+Disallow: /tags/
+
+Disallow: /tags/tech/
+
 Disallow: /tags/computer/
 
 Disallow: /posts/computer-networks-notes/computer/
 
 Disallow: /categories/networking/
-
-Disallow: /posts/
-
-Disallow: /tags/
-
-Disallow: /tags/tech/
 
 Disallow: /tags/hello/
 
@@ -28,12 +34,6 @@ Disallow: /about/
 
 Disallow: /categories/css/
 
-Disallow: /tags/engineering/
-
 Disallow: /categories/javascript/
-
-Disallow: /categories/software-engineering/
-
-Disallow: /posts/software-engineering/software-engineering-motes/
 
 Disallow: /categories/uncategories/

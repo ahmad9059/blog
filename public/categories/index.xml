@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Engineering</title>
+      <link>//localhost:1313/categories/software-engineering/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/software-engineering/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Networking</title>
       <link>//localhost:1313/categories/networking/</link>
@@ -36,13 +43,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/categories/javascript/</guid>
       <description>&lt;p&gt;Description&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Software Engineering</title>
-      <link>//localhost:1313/categories/software-engineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/categories/software-engineering/</guid>
-      <description></description>
     </item>
     <item>
       <title>Uncategories</title>

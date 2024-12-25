@@ -147,7 +147,7 @@
   }
   
   code {
-    @apply bg-gray-100 dark:bg-gray-800 rounded-lg text-sm border dark:border-gray-700 px-2 py-1;
+    @apply bg-gray-100 dark:bg-neutral-900 rounded-lg text-sm border dark:border-neutral-700 px-2 py-1;
   }
   
   pre {
@@ -338,7 +338,7 @@
   }
 
   #content .taxonomy-list a {
-    @apply font-normal no-underline text-base text-gray-800 dark:text-gray-400 bg-gray-100 dark:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 py-2 px-3 rounded-lg;
+    @apply font-normal no-underline text-base text-neutral-800 dark:bg-neutral-800 bg-gray-100 dark:text-neutral-300 hover:bg-gray-200 dark:hover:bg-neutral-600 py-2 px-3 rounded-lg;
   }
 
   #content .tags-list {
