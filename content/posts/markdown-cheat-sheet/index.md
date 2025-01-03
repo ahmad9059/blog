@@ -34,15 +34,6 @@ This Markdown cheat sheet **provides** a quick overview of all the Markdown synt
 
 Emphasis, aka italics, with asterisks or underscores. **Strong emphasis**, aka bold, with asterisks or underscores. Combined emphasis with asterisks and underscores. ~~Strikethrough~~ with two tildes. **_Bold and nested italic_**. **_All bold and italic_**. **_*Bold and italic nested*_**.
 
-# Images
-
----
-
-{{< img
-  src="cat.jpg"
-  alt="Cat"
-  caption="This is the default position of a figcaption, but it can be centered or at the end." >}}
-
 # Lists
 
 ---
@@ -63,14 +54,6 @@ Emphasis, aka italics, with asterisks or underscores. **Strong emphasis**, aka b
     - This is a nested list item
   - This is another list item
 - This is another list item
-
-## Task:
-
-{{< task-list >}}
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
 
 # Links
 
@@ -134,25 +117,6 @@ int main()
 }
 ```
 
-# Alerts
-
----
-
-{{< alert info "Optional title" >}}
-This is an info alert.
-{{< /alert >}}
-
-{{< alert warning "Optional title" >}}
-This is a warning alert.
-{{< /alert >}}
-
-{{< alert error "Optional title" >}}
-This is an error alert.
-{{< /alert >}}
-
-{{< alert success "Optional title" >}}
-This is a success alert.
-{{< /alert >}}
 
 # Math
 

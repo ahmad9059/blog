@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Post on Ahmad Hassan</title>
+    <title>Posts on Ahmad Hassan</title>
     <link>//localhost:1313/posts/</link>
-    <description>Recent content in Post on Ahmad Hassan</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>{year}</copyright>
-    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Posts on Ahmad Hassan</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Software Engineering Notes</title>
-      <link>//localhost:1313/posts/software-engineering/software-engineering-motes/</link>
-      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/software-engineering/software-engineering-motes/</guid>
-      <description>&lt;h2 id=&#34;lecture-no-1-notes&#34;&gt;Lecture No. 1 Notes&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-what-is-good-software&#34;&gt;1. What is Good Software?&lt;/h3&gt;&#xA;&lt;p&gt;Good software should deliver the required functionality and performance to the user and should be maintainable, dependable and usable&lt;/p&gt;</description>
+      <title>Computer Network Basics</title>
+      <link>//localhost:1313/posts/computer-networks-notes/computer-network-basics/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/computer-networks-notes/computer-network-basics/</guid>
+      <description>This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more</description>
     </item>
     <item>
-      <title>Computer Network Notes</title>
-      <link>//localhost:1313/posts/computer-networks-notes/computer/</link>
+      <title>For Her</title>
+      <link>//localhost:1313/posts/forher/forher/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/computer-networks-notes/computer/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/posts/computer-networks-notes/assets/basic-network.png&#34; alt=&#34;Computer Network&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;computer-network&#34;&gt;Computer Network&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;computer network&lt;/strong&gt; is a system that connects multiple computers and devices to share resources, data, and applications. Networks allow for communication between devices, and they’re fundamental to both small-scale setups (like local area networks in offices) and large-scale systems (like the internet).&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/forher/forher/</guid>
+      <description>For her that leave me behind</description>
     </item>
     <item>
       <title>Markdown Cheat Sheet</title>
       <link>//localhost:1313/posts/markdown-cheat-sheet/</link>
-      <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
+      <pubDate>Tue, 27 Aug 2024 09:16:45 +0000</pubDate>
       <guid>//localhost:1313/posts/markdown-cheat-sheet/</guid>
-      <description>&lt;p&gt;This Markdown cheat sheet &lt;strong&gt;provides&lt;/strong&gt; a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic &lt;em&gt;syntax&lt;/em&gt; and extended syntax.&lt;/p&gt;</description>
+      <description>Markdown is a powerful tool for creating rich text using a plain text editor. This cheatsheet is a quick reference for Markdown syntax.</description>
     </item>
   </channel>
 </rss>

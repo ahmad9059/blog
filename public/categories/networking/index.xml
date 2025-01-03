@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Networking on Ahmad Hassan</title>
     <link>//localhost:1313/categories/networking/</link>
     <description>Recent content in Networking on Ahmad Hassan</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>{year}</copyright>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
     <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Computer Network Notes</title>
-      <link>//localhost:1313/posts/computer-networks-notes/computer/</link>
+      <title>Computer Network Basics</title>
+      <link>//localhost:1313/posts/computer-networks-notes/computer-network-basics/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/computer-networks-notes/computer/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/posts/computer-networks-notes/assets/basic-network.png&#34; alt=&#34;Computer Network&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;computer-network&#34;&gt;Computer Network&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;computer network&lt;/strong&gt; is a system that connects multiple computers and devices to share resources, data, and applications. Networks allow for communication between devices, and they’re fundamental to both small-scale setups (like local area networks in offices) and large-scale systems (like the internet).&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/computer-networks-notes/computer-network-basics/</guid>
+      <description>This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more</description>
     </item>
   </channel>
 </rss>
