@@ -1,8 +1,8 @@
 ---
-title: For Her
+title: "For Her"
 draft: false
 date: 2024-12-24
-description: For her that leave me behind
+description: "For her that leave me behind"
 categories:
   - thoughts
 tags:
