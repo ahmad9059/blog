@@ -41,6 +41,8 @@ params:
       url: "mailto:ahmadhassan9059@gmail.com"
     - name: "instagram"
       url: "https://instagram.com/ahmad9059.dev"
+  assets:
+    favicon: "/assets/favicon.ico"
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -63,6 +65,7 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+
 markup:
   highlight:
     anchorLineNos: false
