@@ -4,7 +4,7 @@ draft: false
 date: 2024-08-27T09:16:45.000Z
 description: "Markdown is a powerful tool for creating rich text using a plain text editor. This cheatsheet is a quick reference for Markdown syntax."
 categories:
-  - tech
+  - tech 👨🏻‍💻
 tags:
   - tech
   - markdown
@@ -34,7 +34,6 @@ This Markdown cheat sheet **provides** a quick overview of all the Markdown synt
 
 Emphasis, aka italics, with asterisks or underscores. **Strong emphasis**, aka bold, with asterisks or underscores. Combined emphasis with asterisks and underscores. ~~Strikethrough~~ with two tildes. **_Bold and nested italic_**. **_All bold and italic_**. **_*Bold and italic nested*_**.
 
-
 # Lists
 
 ---
@@ -55,7 +54,6 @@ Emphasis, aka italics, with asterisks or underscores. **Strong emphasis**, aka b
     - This is a nested list item
   - This is another list item
 - This is another list item
-
 
 - [x] Write the press release
 - [ ] Update the website
@@ -122,7 +120,6 @@ int main()
     return 0;
 }
 ```
-
 
 # Math
 

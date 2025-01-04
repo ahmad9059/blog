@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ahmad Hassan</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Ahmad Hassan</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Network Basics</title>
+      <link>http://localhost:1313/posts/computernetwork/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/computernetwork/</guid>
+      <description>This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more</description>
+    </item>
+    <item>
+      <title>For Her</title>
+      <link>http://localhost:1313/posts/forher/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/forher/</guid>
+      <description>For her that leave me behind</description>
+    </item>
+    <item>
+      <title>Markdown Cheat Sheet</title>
+      <link>http://localhost:1313/posts/markdown/</link>
+      <pubDate>Tue, 27 Aug 2024 09:16:45 +0000</pubDate>
+      <guid>http://localhost:1313/posts/markdown/</guid>
+      <description>Markdown is a powerful tool for creating rich text using a plain text editor. This cheatsheet is a quick reference for Markdown syntax.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2023 - 2027&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Bachelor of Science in Computer Science&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;MNS-University of Agriculture, Multan&lt;/em&gt;&lt;br&gt;
+A comprehensive program equipping students with programming proficiency, algorithmic understanding, and system design skills essential for thriving in the tech industry.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2022&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Intermediate in Computer Science (ICS)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Government Milat Graduate College, Multan&lt;/em&gt;&lt;br&gt;
+Provides foundational knowledge in computer science principles, programming fundamentals, and software development, laying the groundwork for advanced studies and careers in technology.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2020&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Matriculation with Major in Computer Science&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Government Milat High School, Multan&lt;/em&gt;&lt;br&gt;
+Introduces fundamental concepts in computer science, including programming basics and computational thinking, paving the way for further exploration in technology-related fields.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
