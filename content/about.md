@@ -1,5 +1,6 @@
 ---
 showtoc: false
+searchHidden: true
 ---
 
 ## Education
