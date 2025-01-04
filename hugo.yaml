@@ -83,6 +83,6 @@ markup:
     lineNumbersInTable: true
     noClasses: true
     noHl: false
-    style: monokai
+    style: dracula
     tabWidth: 4
     wrapperClass: highlight

@@ -316,7 +316,7 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--code-bg);
+    background: var(--theme);
     border: 1px solid var(--border);
 }
 
@@ -326,7 +326,7 @@
     color: var(--secondary);
     font-size: 14px;
     line-height: 34px;
-    background: var(--code-bg);
+    background: var(--theme);
 }
 
 .post-tags a:hover,

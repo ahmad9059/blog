@@ -37,24 +37,24 @@
 }
 .logo a:hover {
     transition: 0.15s;
-    color: grey;
+    color: var(--border);
 }
 svg:hover {
     transition: 0.15s;
 }
 
 .social-icons a:nth-child(1) svg:hover{
-    color: cyan !important;
+    color: deepskyblue !important;
 }
 
 .social-icons a:nth-child(2) svg:hover {
-    color: grey !important;
+    color: green !important;
 }
 .social-icons a:nth-child(3) svg:hover{
     color: yellow !important;
 }
 .social-icons a:nth-child(4) svg:hover{
-    color: blue !important;
+    color: dodgerblue !important;
 }
 .social-icons a:nth-child(5) svg:hover{
     color: red !important;
@@ -70,7 +70,7 @@ svg:hover {
 }
 #menu a:hover {
     transition: 0.15s;
-    color: grey;
+    color: var(--border);
 }
 
 button#theme-toggle {
