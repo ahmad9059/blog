@@ -5,22 +5,14 @@ theme: PaperMod
 
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
     - identifier: search
       name: Search
       url: /search/
-      weight: 30
+      weight: 40
     - identifier: about
       name: About
       url: /about/
-      weight: 40
+      weight: 30
 
 params:
   profileMode:
@@ -32,10 +24,10 @@ params:
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     buttons:
-      - name: about
-        url: "/about/"
       - name: blog
         url: "/posts/"
+      - name: tools
+        url: "/tools/"
       - name: resume
         url: "/ahmad-hassan-cv.pdf"
   socialIcons:
