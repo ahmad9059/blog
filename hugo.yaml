@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://ahmadhassan.news"
 languageCode: en-us
 title: Ahmad Hassan
 theme: PaperMod
@@ -15,11 +15,11 @@ menu:
       weight: 20
     - identifier: search
       name: Search
-      url: /search
+      url: /search/
       weight: 30
     - identifier: about
       name: About
-      url: /about
+      url: /about/
       weight: 40
 
 params:
@@ -27,18 +27,18 @@ params:
     enabled: true
     title: "Ahmad Hassan" # optional default will be site title
     subtitle: "My Home on Internet"
-    imageUrl: "img/profile-picture.jpg" # optional
+    imageUrl: "/img/profile-picture.jpg" # Ensure this file exists
     imageTitle: "profile-picture" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     buttons:
       - name: about
-        url: "/about"
+        url: "/about/"
       - name: blog
-        url: "/posts"
+        url: "/posts/"
       - name: resume
         url: "/ahmad-hassan-cv.pdf"
-  socialIcons: # optional
+  socialIcons:
     - name: "linkedin"
       url: "https://linkedin.com/in/ahmad9059"
     - name: "github"
