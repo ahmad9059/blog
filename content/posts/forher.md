@@ -10,7 +10,7 @@ tags:
   - thoughts
 ---
 
-![cover-image](/posts/forher/forher.png)
+![cover-image](/posts/assets/forher/forher.png)
 
 There comes a time in life when everything around you becomes unbearable. You feel like you're drowning under the weight of expectations and disappointments, and no matter how much you try, it gets harder to take a breath. It's as if the air itself betrays you, tightening around you until your every moment feels suffocating. You don’t want to continue, and yet you find no way to truly escape. The mountains call to you, the open road whispers promises of freedom, but running away isn’t really an option. Instead, you retreat inward.
 
