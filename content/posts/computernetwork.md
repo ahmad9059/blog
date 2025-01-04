@@ -4,13 +4,14 @@ draft: false
 date: 2024-12-24
 description: This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more
 categories:
-  - Networking
+  - tech
 tags:
   - computer
   - tech
 ---
 
 ![Computer Network](posts/computer-networks-notes/assets/basic-network.png)
+
 ## Computer Network
 
 A **computer network** is a system that connects multiple computers and devices to share resources, data, and applications. Networks allow for communication between devices, and they’re fundamental to both small-scale setups (like local area networks in offices) and large-scale systems (like the internet).
