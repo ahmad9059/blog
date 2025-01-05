@@ -193,16 +193,19 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.78em;
+    
+    font-size: 0.75em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
 }
 
+
 .post-content pre code {
     display: grid;
     margin: auto 0;
     padding: 10px;
+    font-family: "JetBrains Mono", serif;
     color: rgb(213, 213, 214);
     background: var(--code-block-bg);
     border-radius: var(--radius);
