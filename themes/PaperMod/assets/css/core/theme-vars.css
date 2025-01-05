@@ -18,15 +18,15 @@
 }
 
 .dark {
-    --theme: rgb(17, 17, 27); /* Crust */
-    --entry: rgb(24, 24, 37); /* Surface 0 */
-    --primary: rgb(205, 214, 244); /* Text */
-    --secondary: rgb(166, 173, 200); /* Subtext 0 */
-    --tertiary: rgb(30, 30, 46); /* Overlay 1 */
-    --content: rgb(186, 194, 222); /* Subtext 1 */
-    --code-block-bg: rgb(24, 24, 37); /* Surface 0 */
+    --theme: #000000; /* Crust */
+    --entry: #000000; /* Surface 0 */
+    --primary: #F5F5F7; /* Text */
+    --secondary: #F5F5F7; /* Subtext 0 */
+    --tertiary: #1D1D1F; /* Overlay 1 */
+    --content: #F5F5F7; /* Subtext 1 */
+    --code-block-bg: #000000; /* Surface 0 */
     --code-bg: rgb(69, 71, 90); /* Surface 1 */
-    --border: rgb(88, 91, 112); /* Surface 2 */
+    --border: lightgrey; /* Surface 2 */
 }
 
 

@@ -198,6 +198,7 @@
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
+    border: 1px solid var(--border)
 }
 
 
@@ -348,6 +349,7 @@
 .share-buttons li,
 .share-buttons a {
     display: inline-flex;
+    
 }
 
 .share-buttons a:not(:last-of-type) {
