@@ -19,7 +19,7 @@
 
 .dark {
     --theme: #000000; /* Crust */
-    --entry: #000000; /* Surface 0 */
+    --entry: #1D1D1F; /* Surface 0 */
     --primary: #F5F5F7; /* Text */
     --secondary: #F5F5F7; /* Subtext 0 */
     --tertiary: #1D1D1F; /* Overlay 1 */
