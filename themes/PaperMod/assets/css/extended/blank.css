@@ -4,8 +4,11 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
 body {
-    font-family: "JetBrains Mono", serif;
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-family: "Work Sans", sans-serif; /* Use sans-serif for a cleaner look */
+    font-size: 1.125rem; /* Slightly larger for better readability */
+    line-height: 1.6; /* Increased line height for more breathing space */
     margin: 0;
+    padding: 0;
+    word-spacing: 0.05em; /* Adds subtle spacing between words */
+    letter-spacing: 0.01em; /* Slightly spaces out letters for clarity */
 }
