@@ -1,5 +1,8 @@
 ---
-date: "2025-01-15T00:29:39+05:00"
+date: 2024-02-02T04:14:54-08:00
 draft: false
-title: "First"
+params:
+  author: John Smith
+title: Example
+weight: 10
 ---
