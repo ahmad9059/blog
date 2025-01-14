@@ -46,7 +46,7 @@ params:
     - name: "instagram"
       url: "https://instagram.com/ahmad9059.dev"
   assets:
-    favicon: "/assets/favicon.ico"
+    favicon: "/assets/fav.ico"
 
   ShowReadingTime: true
   ShowShareButtons: true
