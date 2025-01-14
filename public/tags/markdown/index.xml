@@ -10,9 +10,9 @@
     <atom:link href="//localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Cheat Sheet</title>
-      <link>//localhost:1313/posts-copy/markdown/</link>
+      <link>//localhost:1313/posts/markdown/</link>
       <pubDate>Tue, 27 Aug 2024 09:16:45 +0000</pubDate>
-      <guid>//localhost:1313/posts-copy/markdown/</guid>
+      <guid>//localhost:1313/posts/markdown/</guid>
       <description>Markdown is a powerful tool for creating rich text using a plain text editor. This cheatsheet is a quick reference for Markdown syntax.</description>
     </item>
   </channel>
