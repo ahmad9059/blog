@@ -1,0 +1,88 @@
+baseURL: "/"
+languageCode: en-us
+title: Home
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+
+params:
+  profileMode:
+    enabled: true
+    title: "Ahmad Hassan" # optional default will be site title
+    subtitle: "My Home on Internet"
+    imageUrl: "/assets/profile-picture.webp" # Ensure this file exists
+    imageTitle: "profile-picture" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: blog
+        url: "/posts/"
+      - name: tools
+        url: "/tools/"
+      - name: resume
+        url: "/ahmad-hassan-cv.pdf"
+  socialIcons:
+    - name: "linkedin"
+      url: "https://linkedin.com/in/ahmad9059"
+    - name: "github"
+      url: "https://github.com/ahmad9059"
+    - name: "leetcode"
+      url: "https://leetcode.com/u/ahmad9059"
+    - name: "email"
+      url: "mailto:ahmadhassan9059@gmail.com"
+    - name: "instagram"
+      url: "https://instagram.com/ahmad9059.dev"
+  assets:
+    favicon: "/assets/favicon.ico"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: dracula
+    tabWidth: 4
+    wrapperClass: highlight
