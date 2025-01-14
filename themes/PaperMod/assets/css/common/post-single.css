@@ -149,9 +149,8 @@
     margin: auto 0;
 }
 
-.post-content .highlight pre {
-    background-color: var(--theme) !important;
-    margin: 0;
+.post-content .highlight table {
+    border-radius: var(--radius);
 }
 
 .post-content .highlight:not(table) {
@@ -193,22 +192,18 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    
-    font-size: 0.75em;
+    font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
-    border: 1px solid var(--border)
 }
-
 
 .post-content pre code {
     display: grid;
     margin: auto 0;
     padding: 10px;
-    font-family: "JetBrains Mono", serif;
     color: rgb(213, 213, 214);
-    background: var(--code-block-bg);
+    background: var(--code-block-bg) !important;
     border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;
@@ -232,7 +227,7 @@
 }
 
 .post-content img {
-    border-radius: 12px;
+    border-radius: 4px;
     margin: 1rem 0;
 }
 
@@ -320,7 +315,7 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--theme);
+    background: var(--code-bg);
     border: 1px solid var(--border);
 }
 
@@ -330,7 +325,7 @@
     color: var(--secondary);
     font-size: 14px;
     line-height: 34px;
-    background: var(--theme);
+    background: var(--code-bg);
 }
 
 .post-tags a:hover,
@@ -349,7 +344,6 @@
 .share-buttons li,
 .share-buttons a {
     display: inline-flex;
-    
 }
 
 .share-buttons a:not(:last-of-type) {

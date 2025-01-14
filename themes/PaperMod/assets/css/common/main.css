@@ -30,7 +30,7 @@
 
 .social-icons a {
     display: inline-flex;
-    padding: 5px;
+    padding: 10px;
 }
 
 .social-icons a svg {
@@ -53,7 +53,7 @@ pre {
     top: 4px;
     right: 4px;
     color: rgba(255, 255, 255, 0.8);
-    background: var(--theme);
+    background: rgba(78, 78, 78, 0.8);
     border-radius: var(--radius);
     padding: 0 5px;
     font-size: 14px;
