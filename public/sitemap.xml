@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/posts/web-dev-roadmap/</loc>
+    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
+    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/computer/</loc>
+    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/computernetwork/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/forher/</loc>
@@ -23,6 +32,12 @@
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/tech/</loc>
+    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/tech-/</loc>
+    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/thoughts/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,12 +45,6 @@
     <lastmod>2024-08-27T09:16:45+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/markdown/</loc>
-    <lastmod>2024-08-27T09:16:45+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/tech/</loc>
-    <lastmod>2024-08-27T09:16:45+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/tech-/</loc>
     <lastmod>2024-08-27T09:16:45+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/about/</loc>

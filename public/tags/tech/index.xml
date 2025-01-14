@@ -6,8 +6,22 @@
     <description>Recent content in Tech on Home</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Aug 2024 09:16:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Becoming a Full-Stack Web Developer in 2025</title>
+      <link>//localhost:1313/posts/web-dev-roadmap/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/web-dev-roadmap/</guid>
+      <description>Want to become a full-stack developer in 2025? Follow this step-by-step roadmap to master web development skills and build projects that stand out!</description>
+    </item>
+    <item>
+      <title>Computer Network Basics</title>
+      <link>//localhost:1313/posts/computernetwork/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/computernetwork/</guid>
+      <description>This my notes for computer networking course that has information about computer network basic componets and other stuff that help to revise knowledge and I am also writing alot more</description>
+    </item>
     <item>
       <title>Markdown Cheat Sheet</title>
       <link>//localhost:1313/posts/markdown/</link>
