@@ -10,8 +10,6 @@ tags:
   - tech
 ---
 
-![Computer Network](posts/computer-networks-notes/assets/basic-network.png)
-
 ## Computer Network
 
 A **computer network** is a system that connects multiple computers and devices to share resources, data, and applications. Networks allow for communication between devices, and they’re fundamental to both small-scale setups (like local area networks in offices) and large-scale systems (like the internet).
