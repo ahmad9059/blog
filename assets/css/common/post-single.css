@@ -197,7 +197,7 @@
     font-size: 0.75em;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 2px;
+    border-radius: 6px;
     border: 1px solid var(--border)
 }
 

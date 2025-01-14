@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "http://localhost"
 languageCode: en-us
 title: Home
 theme: PaperMod
@@ -23,12 +23,12 @@ params:
     enabled: true
     title: "Ahmad Hassan" # optional default will be site title
     subtitle: "My Home on Internet"
-    imageUrl: "/assets/profile-picture.webp" # Ensure this file exists
+    imageUrl: "/assets/pic1.jpeg" # Ensure this file exists
     imageTitle: "profile-picture" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     buttons:
-      - name: blog
+      - name: blogs
         url: "/posts/"
       - name: tools
         url: "/tools/"

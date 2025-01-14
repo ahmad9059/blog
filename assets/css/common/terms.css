@@ -22,8 +22,9 @@
 }
 
 .terms-tags a {
+    font-family: "JetBrains Mono", serif;
     display: block;
-    padding: 3px 10px 20px;
+    padding: 3px 30px 20px;
     background: var(--entry);
     border-radius: 6px;
     transition: transform 0.1s;
