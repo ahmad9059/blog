@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "/"
 languageCode: en-us
 title: Home
 theme: PaperMod
@@ -21,12 +21,12 @@ menu:
 params:
   profileMode:
     enabled: true
-    title: "Ahmad Hassan" # optional default will be site title
+    title: "Ahmad Hassan"
     subtitle: "My Home on Internet"
-    imageUrl: "/assets/profile-picture.webp" # Ensure this file exists
-    imageTitle: "profile-picture" # optional
-    imageWidth: 120 # custom size
-    imageHeight: 120 # custom size
+    imageUrl: "/assets/profile-picture.webp"
+    imageTitle: "profile-picture"
+    imageWidth: 120
+    imageHeight: 120
     buttons:
       - name: blog
         url: "/posts/"
@@ -34,6 +34,7 @@ params:
         url: "/tools/"
       - name: resume
         url: "/ahmad-hassan-cv.pdf"
+
   socialIcons:
     - name: "linkedin"
       url: "https://linkedin.com/in/ahmad9059"
@@ -45,6 +46,7 @@ params:
       url: "mailto:ahmadhassan9059@gmail.com"
     - name: "instagram"
       url: "https://instagram.com/ahmad9059.dev"
+
   assets:
     favicon: "/assets/favicon.ico"
 
@@ -68,21 +70,12 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # necessary for search
+    - JSON
 
 markup:
   highlight:
-    anchorLineNos: false
-    codeFences: true
-    guessSyntax: false
-    hl_Lines: ""
-    hl_inline: false
-    lineAnchors: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
-    noHl: false
     style: dracula
     tabWidth: 4
-    wrapperClass: highlight
+    lineNos: true
+    noClasses: true
+    codeFences: true
