@@ -1,5 +1,5 @@
 ---
-title: "For Her"
+title: "The Weight of Silence: A Journey Through Love, Loss, and Healing"
 draft: false
 date: 2024-12-24
 description: "For her that leave me behind"
