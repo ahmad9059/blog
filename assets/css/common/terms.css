@@ -22,8 +22,7 @@
 }
 
 .terms-tags a {
-    font-family: "Work Sans", sans-serif;
-    font-weight: bold;
+    font-family: "JetBrains Mono", sans-serif;
     display: block;
     padding: 3px 30px 20px;
     background: var(--entry);
