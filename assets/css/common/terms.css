@@ -23,6 +23,7 @@
 
 .terms-tags a {
     font-family: "Work Sans", sans-serif;
+    font-weight: bold;
     display: block;
     padding: 3px 30px 20px;
     background: var(--entry);
