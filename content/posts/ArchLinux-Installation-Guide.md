@@ -98,11 +98,11 @@ $ mkswap /path/to/swap/partition
 we will use the pre-mounted disk configuration for that run
 
 ```bash
-mkdir /mnt/archinstall
-mount /path/to/root/partition /mnt/archinstall
-mkdir /mnt/archinstall/boot
-mount /path/to/efi/partition/ /mnt/archinstall/boot
-swapon /path/to/swap/partition
+$ mkdir /mnt/archinstall
+$ mount /path/to/root/partition /mnt/archinstall
+$ mkdir /mnt/archinstall/boot
+$ mount /path/to/efi/partition/ /mnt/archinstall/boot
+$ swapon /path/to/swap/partition
 ```
 
 now we are done with partitioning the partitions
