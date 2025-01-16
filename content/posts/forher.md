@@ -1,5 +1,5 @@
 ---
-title: "The Weight of Silence: A Journey Through Love, Loss, and Healing"
+title: "What It Means to Feel for Someone"
 draft: false
 date: 2024-12-24
 author: Ahmad Hassan
