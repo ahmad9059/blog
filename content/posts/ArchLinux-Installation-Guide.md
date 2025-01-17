@@ -1,5 +1,5 @@
 ---
-title: ArchLinux Installation Guide Using My Dotfiles. A Step-by-Step Guide
+title: ArchLinux Installation Guide Using My Dotfiles
 draft: false
 date: 2025-01-15
 description: ArchLinux Installation Guide Using My Dotfiles. A Step-by-Step Guide
@@ -7,7 +7,7 @@ categories:
   - tech 👨🏻‍💻
 tags:
   - tech
-  - "#arch"
+  - arch
   - linux
 Author: Ahmad Hassan
 ---
