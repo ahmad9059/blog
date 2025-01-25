@@ -144,3 +144,77 @@ after that just press the `install` and wait for installation to be finished
 ![](/posts/assets/archlinux/4.webp)
 
 Congratulations🎉!! You have successfully installed the ArchLinux and now you can say that _I use Arch btw_
+
+## 2. Installing JaKooLit Arch-Hyprland Script.
+
+reboot your system and login with username and password and connect with internet and clone the repo and preform these operations.
+
+```bash
+git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git ~/Arch-Hyprland
+cd ~/Arch-Hyprland
+chmod +x install.sh
+./install.sh
+```
+
+select the option according the option given in image I have explained each one of them and those without comment means go with that are in image.
+
+![](/posts/assets/archlinux/arch-hyprland.webp)
+
+After selecting all the options, I will start installing Hyprland and additional components. During the installation, you may be prompted to enter the password 2-3 times, so stay attentive. Once the installation is successful, it will show a prompt to press 'Y' to reboot the system.
+
+![](/posts/assets/archlinux/installation.png)
+
+You have successfully installed Archlinux+Hyprland.
+
+## 3. My Dotfiles Configuration
+
+To set up your environment using these dotfiles, follow these steps:
+
+1. **Clone the Repository**:
+
+```bash
+git clone https://github.com/ahmad9059/dotfiles.git
+cd dotfiles
+```
+
+2. **Backup Existing Dotfiles**: Before copying new configurations, it's wise to back up your current dotfiles:
+
+```bash
+mkdir -p ~/dotfiles_backup
+cp ~/.config ~/dotfiles_backup -r
+cp ~/.tmux.conf ~/dotfiles_backup
+cp ~/.zshrc ~/dotfiles_backup
+```
+
+3. **Copy New Configurations**:
+Remember you must in `dotfiles` folder to run following commands
+
+```bash
+cp -r .config ~/
+cp .zshrc ~/
+cp -r .themes ~/.themes
+cd .icons
+cp .icons.zip ~/
+cd ~/
+unzip .icons.zip
+rm .icons.zip
+```
+
+After the installation, you can start using the configured applications. Open your `GTK settings` and set the widget theme to `Andromeda-dark`, the icon theme to `Dracula`, and the mouse cursor to `Future-black Cursors`.
+#### Packages `pacman`:
+Install of these Packages using `pacman`
+
+```bash
+sudo pacman -S  foot alacritty lsd bat tmux neovim tldr obs-studio vlc yazi
+```
+
+#### Packages `yay`(Optional):
+
+Install of these Packages Using `yay`. Remember they are according to my preference like I have install vscode, telegram etc.
+
+```bash
+yay -S thorium-browser-bin visual-studio-code-bin 64gram-desktop-bin apple-fonts fum
+```
+
+
+Congratulations! You have successfully completed the installation.
