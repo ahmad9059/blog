@@ -18,7 +18,17 @@ menu:
       url: /categories/
       weight: 20
 
+minify:
+  disableXML: false
+  minifyOutput: true
+
 params:
+  env: production
+  keywords: [Blog, Portfolio]
+  description: "Ahmad's Home on Internet"
+  author: Ahmad
+  defaultTheme: auto
+  images: ["/assets/opengraph.webp"]
   profileMode:
     enabled: true
     title: "Ahmad Hassan" # optional default will be site title
@@ -47,6 +57,12 @@ params:
       url: "https://instagram.com/ahmad9059.dev"
   assets:
     favicon: "/assets/fav.ico"
+    favicon16x16: "/assets/favicon-16x16.png"
+    favicon32x32: "</assets/favicon-32x32.png"
+    apple_touch_icon: "<apple-touch-icon.png"
+  analytics:
+    google:
+      SiteVerificationTag: "G-2GLY0PDB4W"
 
   ShowReadingTime: true
   ShowShareButtons: true
