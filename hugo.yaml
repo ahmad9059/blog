@@ -18,6 +18,11 @@ menu:
       url: /categories/
       weight: 20
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
 minify:
   disableXML: false
   minifyOutput: true
