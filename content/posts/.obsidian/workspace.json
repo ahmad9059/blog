@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ArchLinux-Installation-Guide.md",
+                "file": "Fundamentals-of-JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ArchLinux-Installation-Guide"
+              "title": "Fundamentals-of-JavaScript"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -162,10 +163,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "718ff021f8c6d31f",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
-    "assets/archlinux/installation.png",
+    "Templetes/thought-template.md",
+    "Templetes/frontmatter.md",
+    "Templetes/default-template.md",
+    "Templetes/date-template.md",
+    "Templetes",
     "ArchLinux-Installation-Guide.md",
+    "assets/archlinux/installation.png",
     "assets/archlinux/arch-hyprland.webp",
     "assets/archlinux/archlinux.webp",
     "assets/Pasted image 20250125113327.png",
@@ -205,14 +211,10 @@
     "7. Full-Stack Development/HTML",
     "7. Full-Stack Development/Untitled.canvas",
     "7. Full-Stack Development/HTML.md",
-    "2.1- Notes/Fundamentals of AI/assets",
     "3- Rough Notes/ahmad.md",
     "1- blog/Random.md",
     "1- blog/posts/ArchLinux Installation Guide Using My Dotfiles. A Step-by-Step Guide.md",
     "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
-    "1- blog/posts/assets/ArchLinux-Installation-Guide.md",
-    "Templetes/frontmatter.md",
-    "Templetes/default-template.md",
     "5- Daily Tasks/Roadmap.canvas"
   ]
 }
