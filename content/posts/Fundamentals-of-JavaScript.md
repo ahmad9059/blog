@@ -4,8 +4,7 @@ draft: false
 date: 2025-02-08
 description: 
 categories:
-  - tech 👨🏻‍💻
-  - life life 🌱
+  - tech 💻
 tags:
   - tech
 ---
