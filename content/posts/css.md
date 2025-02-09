@@ -93,7 +93,8 @@ Add the line after tittle tag in your html file
 - **padding:** padding is the space inside an element, between its content and its border.
 - **margin:** margin is the space outside an element, between the element's border and other elements.
 
-<img src="https://images.ctfassets.net/pdf29us7flmy/6FMwLUnze6f6SQjjxpB5lq/4da8905078cce5668a00b488f913340d/-IND-004-082-_When_and_How_To_Use_Margin_vs._Padding_in_CSS_-_Final.png" width="400" height="300" style="display: block; margin: 0 auto;">
+![margin-padding](/posts/assets/web/CSS/margin-padding.webp)
+
 18. `border:` A shorthand property for `border-width`, `border-style`, `border-color` *ex:* `border: 3px solid gray`
 19. `border-radius:` A shorthand property for the for border `*_radius` properties. We can also add radius on only one corner. like using these properties `border-bottom-left-radius`, `border-bottom-right-radius`,`border-top-left-radius`,`border-top-right-radius` 
 
@@ -297,7 +298,7 @@ Earlier in this tutorial we made a web page with rows and columns, and it was re
 
 Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.
 
-![](/posts/assets/web/CSS/mobile.webp)
+![mobile](/posts/assets/web/CSS/mobile.webp)
 
 #### Always Design for Mobile First
 
