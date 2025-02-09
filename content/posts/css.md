@@ -128,7 +128,7 @@ Add the line after tittle tag in your html file
 ## Flexbox:
 ---
 Flexbox is a CSS layout model designed to help arrange elements in a responsive flexible way. It simplifies alignment, distribution, and spacing of items within a container-even when their size is unknown or dynamic. The Flexbox model is one-dimensional, meaning it handles either row or a column layout, Unlike CSS Grid which is two-dimensional(rows and columns).
-![](Pasted%20image%2020250121121047.png)
+![](/posts/assets/web/CSS/flexbox.webp)
 
 **Key Concepts:**
 - *Flex Container:* The parent element that holds flex items. We can define a flex container by applying `display: flex;` to it.
@@ -297,7 +297,7 @@ Earlier in this tutorial we made a web page with rows and columns, and it was re
 
 Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.
 
-![](Pasted%20image%2020250124214905.png)
+![](/posts/assets/web/CSS/mobile.webp)
 
 #### Always Design for Mobile First
 
