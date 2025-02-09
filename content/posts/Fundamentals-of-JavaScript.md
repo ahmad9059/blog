@@ -13,7 +13,7 @@ tags:
 Author: Ahmad Hassan
 ---
 
-![JS Image](/posts/assets/JS/js.webp)
+![JS Image](/posts/assets/web/JS/js.webp)
 
 JavaScript was originally created to bring static web pages to life, enabling them to respond dynamically to user interactions. Its code, known as scripts, is directly embedded within HTML documents and executed by the browser as soon as the page loads. Because these scripts are delivered and interpreted as plain text, they bypass the need for a separate compilation process—this makes development swift and flexible.
 
