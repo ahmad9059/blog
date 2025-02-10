@@ -10,7 +10,7 @@ tags:
   - javascript
 imageNameKey: js-part2
 ---
-![](assets/web/JS/js.webp)
+![](posts/assets/web/JS/js.webp)
 # Arrays
 
 Objects allow you to store keyed collections of values. That’s fine.
