@@ -292,7 +292,7 @@ console.log("End");
 ✔ **Long-running tasks should be asynchronous to avoid UI freezing.**
 
 
-### **Difference Between Callbacks, Promises, and Async/Await**
+### Difference Between Callbacks, Promises, and Async/Await
 
 |Feature|Callbacks|Promises|Async/Await|
 |---|---|---|---|
