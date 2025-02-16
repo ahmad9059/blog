@@ -145,19 +145,9 @@
               "icon": "lucide-list",
               "title": "Outline of software-engineering-notes"
             }
-          },
-          {
-            "id": "4e575ef989641609",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",

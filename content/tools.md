@@ -10,11 +10,11 @@ My motivation behind choosing my operating system and software is to maximize ef
 
 ## Software
 
-- For my operating system, I use Arch Linux (btw). It’s the only Linux distribution that truly gets out of my way and lets me focus on my work. While the initial learning curve can be steep, it’s minimal, customizable, and absolutely worth the investment.
+- For my operating system, I use **[Arch Linux (btw)](https://archlinux.org/)**. It’s the only Linux distribution that truly gets out of my way and lets me focus on my work. While the initial learning curve can be steep, it’s minimal, customizable, and absolutely worth the investment.
 
-- *Hyprland* is my window manager—basically, “**how I make my desktop look cool.**” A tiling window manager is essential for my workflow, and Hyprland, being Wayland-based, provides smooth animations along with efficiency. Previously, I’ve used other setups, but Hyprland fits my needs best.
+- *[Hyprland](https://hyprland.org/)* is my window manager—basically, “**how I make my desktop look cool.**” A tiling window manager is essential for my workflow, and Hyprland, being Wayland-based, provides smooth animations along with efficiency. Previously, I’ve used other setups, but Hyprland fits my needs best.
 
-- **Waybar** serves as my status bar at the top.
+- **[Waybar](https://github.com/Alexays/Waybar)** serves as my status bar at the top.
 
 - For my terminal, I use **foot** because of its speed, customization, and support for images in Wayland. My shell is **Zsh**, enhanced with plugins for syntax highlighting and auto-completion, making it even more productive.
 
