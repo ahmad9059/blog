@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of JavaScript
 draft: false
-date: 2025-01-25
+date: 2025-02-08
 description: JavaScript is a versatile language that powers the modern web. Learn about its history, design philosophy, and key features. 
 categories:
   - tech 👨🏻‍💻

@@ -1,7 +1,7 @@
 ---
 title: CSS - Cascading Style Sheets
 draft: false
-date: 2025-01-12
+date: 2025-01-08
 description: CSS is the style sheet language that's use to specify how a document written in HTML or XML should be presented and styled. 
 categories:
   - tech 👨🏻‍💻
