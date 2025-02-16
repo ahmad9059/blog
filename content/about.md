@@ -2,6 +2,7 @@
 showtoc: false
 searchHidden: true
 ShowShareButtons: false
+ShowRssButtonInSectionTermList: false
 ---
 
 ## Education
@@ -26,7 +27,7 @@ ShowShareButtons: false
 ## Experience
 
 - **2024 - Current**  
-  **Joiner Member**  
+  **Technical Lead**  
   _CyberSec_  
   Active member of the cybersecurity community, participating in awareness campaigns and initiatives aimed at combating cybercrime. Educates individuals on secure navigation of the digital landscape and collaborates with professionals to foster a safer online environment.
 
