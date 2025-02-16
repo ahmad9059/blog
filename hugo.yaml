@@ -1,6 +1,6 @@
 baseURL: "https://itsahmad.me"
 languageCode: en-us
-title: ahmad
+title: Ahmad Hassan
 theme: PaperMod
 
 menu:
@@ -65,12 +65,7 @@ params:
     favicon16x16: "/assets/favicon-16x16.png"
     favicon32x32: "</assets/favicon-32x32.png"
     apple_touch_icon: "<apple-touch-icon.png"
-  analytics:
-    google:
-      SiteVerificationTag: "G-2GLY0PDB4W"
-      googleAnalytics: G-2GLY0PDB4W
-  googleAnalytics: G-2GLY0PDB4W
-
+  
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
