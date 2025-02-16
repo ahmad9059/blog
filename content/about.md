@@ -40,18 +40,6 @@ searchHidden: true
 
 ---
 
-## Certificates
-
-- **Google Cloud Digital Leader**  
-  Credential ID: RFTCJ5KWNSMR  
-  _Issued on: 21 Feb 2024_
-
-- **Solving Problems with Creative and Critical Thinking**  
-  Credential ID: W8BYDH8QGBLW  
-  _Issued on: 11 Jan 2024_
-
----
-
 ## Skills
 
 ### MERN Stack Skills
@@ -64,11 +52,12 @@ searchHidden: true
 
 ### Coding Skills
 
-- Data Structures and Algorithms (DSA): 85%
-- Linux: 90%
+- Data Structures and Algorithms (DSA): 75%
+- Operating Systems: 70%
+- Computer Networking: 70%
+- Databases: 80%
+- Linux: 70%
 - Python: 90%
-- Operating Systems: 85%
-- Computer Networking: 85%
 
 ---
 
