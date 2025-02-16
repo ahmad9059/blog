@@ -1,7 +1,7 @@
 ---
 title: HTML - The Language of the Web
 draft: false
-date: 2025-01-08
+date: 2025-02-08
 description: HTML is the backbone of the web. Learn the basics of HTML, its structure, and how to create your first webpage.
 categories:
   - tech 👨🏻‍💻
