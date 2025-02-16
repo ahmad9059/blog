@@ -1,7 +1,7 @@
 ---
 title: Tailwind CSS - A Utility-First CSS Framework
 draft: false
-date: 2025-02-08
+date: 2025-01-20
 description: Tailwind CSS is a utility-first CSS framework designed to allow developers to build custom designs quickly. Learn how to use Tailwind CSS for styling web elements.
 categories:
   - tech 👨🏻‍💻
