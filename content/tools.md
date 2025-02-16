@@ -51,3 +51,6 @@ For an application launcher, I use **Tofi**. I previously used Rofi, but I had s
 - I use the **Tokyo Night and Catppuccin** color scheme for just about everything.
 - For my terminal font, I use **[JetBrains Mono](https://www.programmingfonts.org/#jetbrainsmono)**. Of course, I also use [Nerd Font](https://www.youtube.com/watch?v=b_FSqS4C1Ns) icons.
 
+## This Website
+
+- This site is built with **[Hugo](https://www.youtube.com/watch?v=KwkjqMs7ZYI)** and **PaperMod theme**, Hugo a static site generator that just outputs HTML and CSS instead of the bloated mess that is most of the modern web.
