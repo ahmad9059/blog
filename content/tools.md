@@ -12,9 +12,19 @@ My motivation behind choosing my operating system and software is to maximize ef
 
 ## Software
 
-For my operating system, I use Arch Linux (btw). It’s the only Linux distribution that gets out of my way and just lets me do my work. It’s very minimal and easy-to-use after you get over the initial learning curve, but it’s definitely worth the investment.
-Hyprland is my window manager, or basically “how I make my desktop look cool”. For my workflow, a tiling window manager is essential once you get over the learning curve. Hyprland uses Wayland and also has some nice animations. Previously, I’ve used bspwm in some older videos.
-Waybar is the status bar at the top.
-I currently use kitty for my terminal due to its support for images in Wayland. It’s very customizable but still very fast. For my shell, I use zsh with a few plugins for niceties like syntax highlighting and auto-complete.
-For my web browser, I use Firefox. I’ve tried every other browser and Firefox, despite its flaws, remains the best. However, I use a custom user.js file (based on Betterfox) to disable trackers and remove annoying features. I also use a custom theme to make it look a bit nicer. Brave is also very good and I still use it occasionally for websites that don’t work in Firefox.
-For browser extensions, I use uBlock Origin to block ads and trackers, Vimium for vim-like keybindings, and Bitwarden for password management. Everything else is superfluous.
+- For my operating system, I use Arch Linux (btw). It’s the only Linux distribution that truly gets out of my way and lets me focus on my work. While the initial learning curve can be steep, it’s minimal, customizable, and absolutely worth the investment.
+
+- Hyprland is my window manager—basically, “how I make my desktop look cool.” A tiling window manager is essential for my workflow, and Hyprland, being Wayland-based, provides smooth animations along with efficiency. Previously, I’ve used other setups, but Hyprland fits my needs best.
+
+- Waybar serves as my status bar at the top.
+
+- For my terminal, I use Kitty because of its speed, customization, and support for images in Wayland. My shell is Zsh, enhanced with plugins for syntax highlighting and auto-completion, making it even more productive.
+
+- I use Thorium as my web browser. It’s Chromium-based, offering great speed and efficiency while avoiding the telemetry and bloat of other browsers. It’s my go-to for everything web-related.
+
+- For browser extensions, I keep things minimal:
+
+    - uBlock Origin to block ads and trackers.
+    - Vimium for vim-like keybindings.
+
+
