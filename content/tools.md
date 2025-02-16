@@ -1,5 +1,5 @@
 ---
-ShowReadingTime: false
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
