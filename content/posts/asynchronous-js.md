@@ -1,7 +1,7 @@
 ---
 title: Asynchronous JavaScript
 draft: false
-date: 2025-02-29
+date: 2025-02-08
 description: Learn about synchronous vs asynchronous JavaScript, callbacks, Promises, async/await, Web Workers, and the Event Loop. Understand how JavaScript handles async tasks efficiently. 
 categories:
   - tech 👨🏻‍💻
