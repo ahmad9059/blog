@@ -1,6 +1,7 @@
 ---
 showtoc: false
 searchHidden: true
+ShowShareButtons: false
 ---
 
 ## Education
