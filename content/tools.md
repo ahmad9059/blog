@@ -30,7 +30,7 @@ My motivation behind choosing my operating system and software is to maximize ef
 
 I use **Neovim** for all of my coding. Vim notoriously has a steep learning curve, but as with most things, I think the payoff is worth it.  
 
-**VSCodium** is my secondary code editor for when I’m working on larger projects. It’s essentially VS Code but without Microsoft’s telemetry, making it a great open-source alternative.  
+**VSCodium** is my secondary code editor for when I want to show my code to other, they scared when they see my setup :(. It’s essentially VS Code but without Microsoft’s telemetry, making it a great open-source alternative.  
 
 For file management in the terminal, I use **Yazi**. It’s fast, highly customizable, and supports image previews, making navigation much smoother.  
 
