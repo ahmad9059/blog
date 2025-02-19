@@ -53,4 +53,4 @@ For an application launcher, I use **Tofi**. I previously used Rofi, but I had s
 
 ## This Website
 
-- This site is built with **[Hugo](https://www.youtube.com/watch?v=KwkjqMs7ZYI)** and **PaperMod theme**, Hugo a static site generator that just outputs HTML and CSS instead of the bloated mess that is most of the modern web.
+- This site is built with **[Hugo](https://gohugo.io/)** and **PaperMod theme**, Hugo a static site generator that just outputs HTML and CSS instead of the bloated mess that is most of the modern web.
