@@ -49,7 +49,7 @@ For an application launcher, I use **Tofi**. I previously used Rofi, but I had s
 ## Theme
 
 - I use the **Tokyo Night and Catppuccin** color scheme for just about everything.
-- For my terminal font, I use **[JetBrains Mono](https://www.programmingfonts.org/#jetbrainsmono)**. Of course, I also use [Nerd Font](https://www.youtube.com/watch?v=b_FSqS4C1Ns) icons.
+- For my terminal font, I use **[JetBrains Mono](https://www.programmingfonts.org/#jetbrainsmono)**. Of course, I also use [Nerd Font](https://www.nerdfonts.com/) icons.
 
 ## This Website
 
