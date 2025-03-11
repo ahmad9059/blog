@@ -18,6 +18,8 @@ menu:
       url: /categories/
       weight: 20
 
+ignoreLogs: 'warning-goldmark-raw-html'
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
