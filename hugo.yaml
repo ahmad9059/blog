@@ -40,7 +40,7 @@ params:
     enabled: true
     title: "Ahmad Hassan" # optional default will be site title
     subtitle: "My Home on Internet"
-    imageUrl: "/assets/pic1.webp" # Ensure this file exists
+    imageUrl: "/assets/profile.png" # Ensure this file exists
     imageTitle: "profile-picture" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
