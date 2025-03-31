@@ -50,7 +50,7 @@ params:
       - name: tools
         url: "/tools/"
       - name: resume
-        url: "/ahmad-hassan-cv.pdf"
+        url: "/ahmad-hassan-cv2.pdf"
   socialIcons:
     - name: "linkedin"
       url: "https://linkedin.com/in/ahmad9059"
