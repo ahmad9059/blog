@@ -330,7 +330,7 @@ SELECT * FROM student WHERE marks > 90 OR city="Lahore";
 - **BETWEEN** : select for a given range
 
 ```mysql
-SELECT * FROM student WHERE marks 80 AND 90;
+SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
 ```
 
 
