@@ -89,3 +89,8 @@ Or add a Hyprland hook to start the container at login:
 ```bash 
 docker start sql_server
 ```
+
+
+## Conclusion
+
+You now have a fully functional SQL Server instance running on Arch Linux via Docker, and you can manage it using Azure Data Studio. This setup allows you to leverage the power of SQL Server without needing to run a full Windows environment.
