@@ -1,5 +1,5 @@
 ---
-title: MySQL
+title: Introduction to Databases - MySQL
 draft: false
 date: 2025-03-11
 description: MySQL is an open-source relational database management system. It is used to store and manage data in a structured format.
