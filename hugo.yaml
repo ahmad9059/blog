@@ -69,7 +69,7 @@ params:
     apple_touch_icon: "<apple-touch-icon.png"
   
   ShowReadingTime: true
-  ShowShareButtons: false
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
