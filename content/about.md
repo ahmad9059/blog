@@ -3,6 +3,8 @@ showtoc: false
 searchHidden: true
 ShowShareButtons: false
 ShowRssButtonInSectionTermList: false
+showShareButtons: false
+showPostNavLinks: false
 ---
 
 # About
