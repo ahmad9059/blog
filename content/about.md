@@ -3,8 +3,15 @@ showtoc: false
 searchHidden: true
 ShowShareButtons: false
 ShowRssButtonInSectionTermList: false
-showShareButtons: false
-showPostNavLinks: false
+ShowReadingTime: false
+ShowShareButtons: false
+ShowPostNavLinks: false
+ShowBreadCrumbs: false
+ShowCodeCopyButtons: false
+ShowWordCount: false
+ShowRssButtonInSectionTermList: false
+UseHugoToc: false
+
 ---
 
 # About
