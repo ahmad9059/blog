@@ -13,7 +13,7 @@ tags:
 Author: Ahmad Hassan
 ---
 
-![Thumbnail Image](/posts/assets/web/tech/chatbot.webp)
+![Thumbnail Image](posts/assets/tech/chatbot.webp)
 
 In this article, we’ll walk through the complete process of building an AI chatbot web app powered by Google Gemini and deploying it to the web using Vercel. We’ll use AssistantUI, a modern framework to create conversational experiences using powerful LLMs.
 
