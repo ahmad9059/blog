@@ -1,5 +1,5 @@
 ---
-title: AI Chatbot Web App with Google Gemini and Vercel
+title: Build an AI Chatbot Web App with Google Gemini and Deploy on Vercel
 draft: false
 date: 2025-04-19
 description: Learn how to build an AI chatbot web app using Google Gemini and deploy it on Vercel.
@@ -12,6 +12,8 @@ tags:
   - AI
 Author: Ahmad Hassan
 ---
+
+![Thumbnail Image](/posts/assets/web/tech/chatbot.webp)
 
 In this article, we’ll walk through the complete process of building an AI chatbot web app powered by Google Gemini and deploying it to the web using Vercel. We’ll use AssistantUI, a modern framework to create conversational experiences using powerful LLMs.
 
