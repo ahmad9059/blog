@@ -7,7 +7,7 @@ categories:
   - tech 👨🏻‍💻
 tags:
   - tech
-  - sql 
+  - sql
   - database
 Author: Ahmad Hassan
 ---
@@ -19,7 +19,7 @@ Installing MS SQL Server along with Azure Data Studio on Arch Linux requires a c
 Azure Data Studio is available via AUR.
 
 ```bash
-yay -S azure-data-studio-bin
+yay -S azuredatastudio-bin
 ```
 
 This installs the latest prebuilt version from Microsoft.
@@ -37,7 +37,7 @@ cd azuredatastudio-linux-x64
 ./azuredatastudio
 ```
 
-##  Step 2: Install Microsoft SQL Server (Docker Method – Recommended)
+## Step 2: Install Microsoft SQL Server (Docker Method – Recommended)
 
 Microsoft SQL Server is not supported natively on Arch, but the Docker container is fully functional and easiest to manage.
 
@@ -50,6 +50,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 ```
+
 2. Pull SQL Server Image:
 
 ```bash
@@ -71,10 +72,12 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YourStrong!Passw0rd" \
 1. Launch Azure Data Studio.
 2. Click on New Connection.
 3. Fill out the fields:
- - Server: `localhost`
- - Authentication: `SQL Login`
- - User: `sa`
- - Password: `YourStrong!Passw0rd`
+
+- Server: `localhost`
+- Authentication: `SQL Login`
+- User: `sa`
+- Password: `YourStrong!Passw0rd`
+
 4. Hit **Connect**
 
 ## Step 4: (Optional) Autostart Docker with Hyprland
@@ -84,12 +87,12 @@ If you want SQL Server to start with your system:
 ```bash
 sudo systemctl enable docker
 ```
+
 Or add a Hyprland hook to start the container at login:
 
-```bash 
+```bash
 docker start sql_server
 ```
-
 
 ## Conclusion
 
