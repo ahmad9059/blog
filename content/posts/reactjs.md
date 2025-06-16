@@ -1403,7 +1403,7 @@ It acts as a **bridge between Redux and React**.
 
 ### Redux Flow Diagram:
 
-![](7.%20Full-Stack%20Development/React.js/assets/Redux-Toolkit%20Flow.png)
+![JS Image](/posts/assets/react/redux.png)
 
 
 ### 📦 `Store` – Global State Container
