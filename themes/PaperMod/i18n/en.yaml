@@ -27,7 +27,7 @@
   translation: "Edit"
 
 - id: code_copy
-  translation: "copy"
+  translation: "Copy"
 
 - id: code_copied
-  translation: "copied!"
+  translation: "✓ Copied!"
