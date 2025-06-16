@@ -2,7 +2,7 @@
 title: React – A JavaScript Library
 draft: false
 date: 2025-06-16
-description: A comprehensive guide to React.js, covering its key features, state management, props, routing, redux, and more. I
+description: A comprehensive guide to React.js, covering its key features, state management, props, routing, redux, and more.
 categories:
   - tech 👨🏻‍💻
 tags:
