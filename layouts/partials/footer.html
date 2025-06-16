@@ -100,9 +100,9 @@
         copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
 
         function copyingDone() {
-            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
+            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied code!" }}';
             setTimeout(() => {
-                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy the code" }}';
             }, 2000);
         }
 
