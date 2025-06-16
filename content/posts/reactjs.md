@@ -13,6 +13,12 @@ tags:
 Author: Ahmad Hassan
 ---
 
+
+
+![JS Image](/posts/assets/react/react.webp)
+
+
+
 - React.js is a JavaScript library for building **user interfaces**.
 - Developed by **Facebook** (now Meta) in 2013.
 - It is **component-based**, **declarative**, and allows for efficient UI updates.
