@@ -1,37 +1,32 @@
 import os
 import re
-import shutil
 
-# Paths
+# Path to the directory containing markdown files
 posts_dir = "/home/ahmad/Documents/blog/content/posts/"
-attachments_dir = "/home/ahmad/Documents/obsidian/posts/assets/"
-static_images_dir = "/home/ahmad/Documents/blog/content/posts/assets/"
 
-# Step 1: Process each markdown file in the posts directory
+# Matches any image path not starting with a slash
+image_link_pattern = re.compile(r'(!\[[^\]]*\])\((?!/)([^)]+)\)')
+
+print("Processing image links in Markdown files...")
+
+# Process each markdown file
 for filename in os.listdir(posts_dir):
     if filename.endswith(".md"):
         filepath = os.path.join(posts_dir, filename)
-        
+
         with open(filepath, "r") as file:
             content = file.read()
-        
-        # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
-        images = re.findall(r'\[\[([^]]*\.png)\]\]', content)
-        
-        # Step 3: Replace image links and ensure URLs are correctly formatted
-        for image in images:
-            # Prepare the Markdown-compatible link with %20 replacing spaces
-            markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
-            content = content.replace(f"[[{image}]]", markdown_image)
-            
-            # Step 4: Copy the image to the Hugo static/images directory if it exists
-            image_source = os.path.join(attachments_dir, image)
-            if os.path.exists(image_source):
-                shutil.copy(image_source, static_images_dir)
 
-        # Step 5: Write the updated content back to the markdown file
-        with open(filepath, "w") as file:
-            file.write(content)
+        # Add leading slash to image paths that don't start with one
+        updated_content = image_link_pattern.sub(r"\1(/\\2)", content)
+        updated_content = re.sub(r'\\/', '/', updated_content)  # Clean up any escaping
 
-print("Markdown files processed and images copied successfully.")
+        # Write back only if there were changes
+        if updated_content != content:
+            with open(filepath, "w") as file:
+                file.write(updated_content)
+            print(f"✅ Updated: {filename}")
+        else:
+            print(f"⏩ Skipped (no changes): {filename}")
 
+print("Done.")
