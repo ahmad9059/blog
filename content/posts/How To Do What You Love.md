@@ -172,3 +172,6 @@ Whichever route you take, expect a struggle. Finding work you love is very diffi
 [6] This is isomorphic to the principle that you should prevent your beliefs about how things are from being contaminated by how you wish they were. Most people let them mix pretty promiscuously. The continuing popularity of religion is the most visible index of that.  
   
 [7] A more accurate metaphor would be to say that the graph of jobs is not very well connected.
+
+
+![](posts/assets/img.png)
