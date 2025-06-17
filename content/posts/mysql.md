@@ -75,7 +75,7 @@ USE db_name;
 SQL is a language used to perform CRUD operations in Relational DB, while MySQL is a RDBMS that uses SQL.
 
 
-![](/posts/assets/mysql/img.webp)
+![](/posts/assets/mysql/img.png)
 #### Creating Table
 
 We can create the table in db using the **CREATE TABLE** command whole syntax is given below.
@@ -205,7 +205,7 @@ It is a column (or set of columns) in a table that uniquely identifies each row.
 
 A foreign key is a column (or set of columns) in a table that refers to the primary key in another table. There can be multiple FKs. FKs can be have duplicate & null values.
 
-![](/posts/assets/mysql/img-1.webp)
+![](/posts/assets/mysql/img-1.png)
 
 ### Secondary Key
 
