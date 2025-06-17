@@ -67,3 +67,5 @@ On the other hand, if you make something amazing, you'll often be helping people
 We could also combine the first two principles, since people are part of the world. Why should our species get special treatment? I won't try to justify this choice, but I'm skeptical that anyone who claims to think differently actually lives according to their principles.  
   
 [2] Confucius was also excluded from public life after ending up on the losing end of a power struggle, and presumably he too would not be so famous now if it hadn't been for this long stretch of enforced leisure.
+
+![](/posts/assets/img-6.png)
