@@ -1,86 +1,69 @@
 #!/bin/bash
+set -Eeuo pipefail
 
-
-# Set the notification icon path (adjust to your setup)
+# Notification icon
 NOTIF_ICON="$HOME/.config/swaync/images/profile.png"
 
-# Trap any error and show notification
-trap 'notify-send -e -u critical -i "$NOTIF_ICON" "❌ Blog Sync Failed" "An error occurred during blog sync."' ERR
-
-
-set -euo pipefail
+# Error handler
+on_error() {
+    local exit_code=$?
+    local last_command=${BASH_COMMAND}
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Blog Sync Failed" "Command \`$last_command\` failed with exit code $exit_code."
+    exit $exit_code
+}
+trap on_error ERR
 
 # Change to the script's directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# Set variables for Obsidian to Hugo copy
+# Define paths
 sourcePath="/home/ahmad/Documents/obsidian/posts/"
-destinationPath="/home/ahmad//Documents/blog/content/posts/"
-
-# Set GitHub Repo
+destinationPath="/home/ahmad/Documents/blog/content/posts/"
 myrepo="blog"
 
 # Check for required commands
 for cmd in git rsync python3 hugo; do
     if ! command -v $cmd &> /dev/null; then
-        echo "$cmd is not installed or not in PATH."
+        notify-send -e -u critical -i "$NOTIF_ICON" "❌ Missing Command" "$cmd is not installed or not in PATH."
         exit 1
     fi
 done
 
-# Step 1: Check if Git is initialized, and initialize if necessary
-# if [ ! -d ".git" ]; then
-#     echo "Initializing Git repository..."
-#     git init
-#     git remote add origin $myrepo
-# else
-#     echo "Git repository already initialized."
-#     if ! git remote | grep -q 'origin'; then
-#         echo "Adding remote origin..."
-#         git remote add origin $myrepo
-#     fi
-# fi
-#
-# Step 2: Sync posts from Obsidian to Hugo content folder using rsync
-echo "Syncing posts from Obsidian..."
-
+# Ensure paths exist
 if [ ! -d "$sourcePath" ]; then
-    echo "Source path does not exist: $sourcePath"
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Source Path Missing" "$sourcePath does not exist."
     exit 1
 fi
 
 if [ ! -d "$destinationPath" ]; then
-    echo "Destination path does not exist: $destinationPath"
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Destination Path Missing" "$destinationPath does not exist."
     exit 1
 fi
 
-rsync -av --delete "$sourcePath" "$destinationPath"
+# Rsync sync
+echo "Syncing posts from Obsidian..."
+if ! rsync -av --delete "$sourcePath" "$destinationPath"; then
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Rsync Failed" "Failed to sync posts to Hugo."
+    exit 1
+fi
 
-# Step 3: Process Markdown files with Python script to handle image links
-echo "Processing image links in Markdown files..."
+# Process Markdown files with images.py
+echo "Processing image links..."
 if [ ! -f "images.py" ]; then
-    echo "Python script images.py not found."
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Missing Script" "images.py not found."
     exit 1
 fi
 
 if ! python3 images.py; then
-    echo "Failed to process image links."
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Image Conversion Failed" "images.py encountered an error."
     exit 1
 fi
 
-# Step 4: Build the Hugo site
-#echo "Building the Hugo site..."
-#if ! hugo; then
-#    echo "Hugo build failed."
-#    exit 1
-#fi
-
-# Step 5: Add changes to Git
-echo "Staging changes for Git..."
+# Git stage, commit and push
+echo "Staging changes..."
 git add .
 
-# Step 6: Commit changes with a dynamic message
 commit_message="New Blog Post on $(date +'%Y-%m-%d %H:%M:%S')"
 if git diff --cached --quiet; then
     echo "No changes to commit."
@@ -89,34 +72,11 @@ else
     git commit -m "$commit_message"
 fi
 
-# Step 7: Push all changes to the main branch
-echo "Deploying to GitHub Main..."
-git push origin main || { 
-    echo "Failed to push to main branch."
-    notify-send -e -u critical -i "$NOTIF_ICON_FAIL" "❌ Git Push Failed" "Failed to push to GitHub main branch."
-    exit 1 
-}
+echo "Pushing to GitHub..."
+if ! git push origin main; then
+    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Git Push Failed" "Failed to push to main branch."
+    exit 1
+fi
 
-
-# # Step 8: Push the public folder to the hostinger branch using subtree split and force push
-# echo "Deploying to GitHub Hostinger..."
-# if git branch --list | grep -q 'hostinger-deploy'; then
-#     git branch -D hostinger-deploy
-# fi
-#
-# if ! git subtree split --prefix public -b hostinger-deploy; then
-#     echo "Subtree split failed."
-#     exit 1
-# fi
-#
-# if ! git push origin hostinger-deploy:hostinger --force; then
-#     echo "Failed to push to hostinger branch."
-#     git branch -D hostinger-deploy
-#     exit 1
-# fi
-#
-# git branch -D hostinger-deploy
-#
-# echo "All done! Site synced, processed, committed, built, and deployed."
-
+# ✅ Success notification
 notify-send -e -u low -i "$NOTIF_ICON" "✅ Blog Sync Completed" "Your blog has been synced and pushed to GitHub."
