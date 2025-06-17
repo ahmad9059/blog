@@ -10,7 +10,7 @@ tags:
   - love
 Author: Ahmad Hassan
 ---
-![](posts/assets/img.png)
+![](/posts/assets/img.webp)
 
 
 To do something well you have to like it. That idea is not exactly novel. We've got it down to four words: "Do what you love." But it's not enough just to tell people that. Doing what you love is complicated.  
