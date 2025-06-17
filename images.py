@@ -3,7 +3,7 @@ import re
 from PIL import Image
 
 # Directories
-posts_dir = "/home/ahmad/Documents/obsidian/posts/"
+posts_dir = "/home/ahmad/Documents/blog/content/posts/"
 assets_dir = os.path.join(posts_dir, "assets")
 
 # Regex to fix image links missing leading slash
