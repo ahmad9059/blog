@@ -13,7 +13,7 @@ tags:
 Author: Ahmad Hassan
 ---
 
-![](/posts/assets/img-5.png)
+![](/posts/assets/img-5.webp)
 
 
 What should one do? That may seem a strange question, but it's not meaningless or unanswerable. It's the sort of question kids ask before they learn not to ask big questions. I only came across it myself in the process of investigating something else. But once I did, I thought I should at least try to answer it.  
@@ -68,4 +68,4 @@ We could also combine the first two principles, since people are part of the wor
   
 [2] Confucius was also excluded from public life after ending up on the losing end of a power struggle, and presumably he too would not be so famous now if it hadn't been for this long stretch of enforced leisure.
 
-![](/posts/assets/img-6.png)
+![](/posts/assets/img-6.webp)
