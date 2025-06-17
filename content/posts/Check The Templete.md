@@ -17,10 +17,10 @@ Author: Ahmad Hassan
 hello
 akdfjalskfd
 alkdjfalsdfk
-![](posts/assets/img.png)
+![](/posts/assets/img.png)
 
-![](posts/assets/img-1.png)
+![](/posts/assets/img-1.png)
 
-![](posts/assets/img-2.png)
+![](/posts/assets/img-2.png)
 
 hello add images changes made hello world
