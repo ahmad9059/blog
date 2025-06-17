@@ -2,7 +2,7 @@
 
 
 # Set the notification icon path (adjust to your setup)
-NOTIF_ICON="$HOME/.config/swaync/images/ja.png"
+NOTIF_ICON="$HOME/.config/swaync/images/pic1.webp"
 
 # Trap any error and show notification
 trap 'notify-send -e -u critical -i "$NOTIF_ICON" "❌ Blog Sync Failed" "An error occurred during blog sync."' ERR
