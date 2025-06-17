@@ -174,4 +174,4 @@ Whichever route you take, expect a struggle. Finding work you love is very diffi
 [7] A more accurate metaphor would be to say that the graph of jobs is not very well connected.
 
 
-![](posts/assets/img.png)
+![](/posts/assets/img.webp)
