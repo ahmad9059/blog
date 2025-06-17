@@ -15,7 +15,6 @@ Author: Ahmad Hassan
 
 ![](/posts/assets/img-5.png)
 
-![](/posts/assets/img.png)
 
 What should one do? That may seem a strange question, but it's not meaningless or unanswerable. It's the sort of question kids ask before they learn not to ask big questions. I only came across it myself in the process of investigating something else. But once I did, I thought I should at least try to answer it.  
   

@@ -1,4 +1,13 @@
 #!/bin/bash
+
+
+# Set the notification icon path (adjust to your setup)
+NOTIF_ICON="$HOME/.config/swaync/images/ja.png"
+
+# Trap any error and show notification
+trap 'notify-send -e -u critical -i "$NOTIF_ICON" "❌ Blog Sync Failed" "An error occurred during blog sync."' ERR
+
+
 set -euo pipefail
 
 # Change to the script's directory
@@ -108,3 +117,4 @@ fi
 #
 # echo "All done! Site synced, processed, committed, built, and deployed."
 
+notify-send -e -u low -i "$NOTIF_ICON" "✅ Blog Sync Completed" "Your blog has been synced and pushed to GitHub."
