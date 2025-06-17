@@ -91,10 +91,12 @@ fi
 
 # Step 7: Push all changes to the main branch
 echo "Deploying to GitHub Main..."
-if ! git push origin main; then
+git push origin main || { 
     echo "Failed to push to main branch."
-    exit 1
-fi
+    notify-send -e -u critical -i "$NOTIF_ICON_FAIL" "❌ Git Push Failed" "Failed to push to GitHub main branch."
+    exit 1 
+}
+
 
 # # Step 8: Push the public folder to the hostinger branch using subtree split and force push
 # echo "Deploying to GitHub Hostinger..."
