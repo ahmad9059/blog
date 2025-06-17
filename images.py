@@ -4,10 +4,8 @@ import re
 # Path to the directory containing markdown files
 posts_dir = "/home/ahmad/Documents/blog/content/posts/"
 
-# Matches any image path not starting with a slash
-image_link_pattern = re.compile(r'(!\[[^\]]*\])\((?!/)([^)]+)\)')
-
-print("Processing image links in Markdown files...")
+# Regex to find image links without leading slash
+image_link_pattern = re.compile(r'!\[\]\((?!/)(posts/assets/[^)]+)\)')
 
 # Process each markdown file
 for filename in os.listdir(posts_dir):
@@ -17,16 +15,11 @@ for filename in os.listdir(posts_dir):
         with open(filepath, "r") as file:
             content = file.read()
 
-        # Add leading slash to image paths that don't start with one
-        updated_content = image_link_pattern.sub(r"\1(/\\2)", content)
-        updated_content = re.sub(r'\\/', '/', updated_content)  # Clean up any escaping
+        # Add leading slash to image paths that don't have it
+        updated_content = image_link_pattern.sub(r"![](/\1)", content)
 
-        # Write back only if there were changes
-        if updated_content != content:
-            with open(filepath, "w") as file:
-                file.write(updated_content)
-            print(f"✅ Updated: {filename}")
-        else:
-            print(f"⏩ Skipped (no changes): {filename}")
+        # Write the updated content back
+        with open(filepath, "w") as file:
+            file.write(updated_content)
 
-print("Done.")
+print("Image paths updated successfully.")
