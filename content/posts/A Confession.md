@@ -8,7 +8,7 @@ tags:
 Author: Ahmad Hassan
 ---
 **Hey,**  
-Just wanted to clarify something first — _khadija_ameen000_ is my only beloved sister (you can even cross-verify with my father’s name 😂).
+Just wanted to clarify something first — _khadija_ameen000_ is my only beloved sister (you can even cross-verify with my father’s name 😂(Muhammad Ameen)).
 
 I wanted to say that yes, I do have feelings for you. I’m genuinely interested, but I don’t expect anything in return. I completely respect whatever your response may be. I just felt it was important to express my feelings honestly and respectfully.
 
