@@ -1,6 +1,6 @@
 ---
 title: A Confession
-draft: true
+draft: false
 date: 2025-06-23
 description: Confession
 categories: 
