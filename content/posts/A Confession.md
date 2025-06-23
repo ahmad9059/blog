@@ -2,8 +2,8 @@
 title: A Confession
 draft: false
 date: 2025-06-23
-description: JavaScript is a versatile language that powers the modern web. Learn about its history, design philosophy, and key features.
-categories: []
+description: Confession
+categories: 
 tags: 
 Author: Ahmad Hassan
 ---
