@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
 
-/* Force Noto Nastaliq Urdu on Urdu language spans and override defaults */
 [lang="ur"],
 .urdu {
   font-family: "Noto Nastaliq Urdu", serif !important;

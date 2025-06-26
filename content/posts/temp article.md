@@ -12,8 +12,5 @@ tags:
   - web
 Author: Ahmad Hassan
 ---
-<p lang="ur" style="font-family: 'Noto Nastaliq Urdu'; font-size: 30px;">کیا یہ فونٹ کام کر رہا ہے؟</p>
 
-<p class="urdu" lang="ur" >یہ کلاس اردو فونٹ کے لیے ہے۔</p>
-
-hello world
+<span lang="ur">میری اردو پوسٹ کا یہ حصہ ہے۔</span>
