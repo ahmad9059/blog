@@ -12,14 +12,6 @@ tags:
   - web
 Author: Ahmad Hassan
 ---
-
-This is English text.
-
-<span lang="ur">یہ اردو ہے۔</span>
-
-Another test: 
-
-
 <p lang="ur" style="font-family: 'Noto Nastaliq Urdu'; font-size: 30px;">کیا یہ فونٹ کام کر رہا ہے؟</p>
 
 <p class="urdu" lang="ur" >یہ کلاس اردو فونٹ کے لیے ہے۔</p>
