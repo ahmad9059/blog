@@ -1,130 +1,131 @@
 .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: calc(var(--nav-width) + var(--gap) * 10);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    line-height: var(--header-height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc(var(--nav-width) + var(--gap) * 10);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  line-height: var(--header-height);
 }
 
 .nav a {
-    display: block;
+  display: block;
 }
 
 .logo,
 #menu {
-    display: flex;
-    margin: auto var(--gap);
+  display: flex;
+  margin: auto var(--gap);
 }
 
 .logo {
-    flex-wrap: inherit;
+  flex-wrap: inherit;
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.logo a img, .logo a svg {
-    display: inline;
-    vertical-align: middle;
-    pointer-events: none;
-    transform: translate(0, -10%);
-    border-radius: 6px;
-    margin-inline-end: 8px;
+.logo a img,
+.logo a svg {
+  display: inline;
+  vertical-align: middle;
+  pointer-events: none;
+  transform: translate(0, -10%);
+  border-radius: 6px;
+  margin-inline-end: 8px;
 }
 .logo a:hover {
-    transition: 0.15s;
-    color: var(--border);
+  transition: 0.15s;
+  color: var(--border);
 }
 svg:hover {
-    transition: 0.15s;
+  transition: 0.15s;
 }
 
-.social-icons a:nth-child(1) svg:hover{
-    color: deepskyblue !important;
+.social-icons a:nth-child(1) svg:hover {
+  color: deepskyblue !important;
 }
 
 .social-icons a:nth-child(2) svg:hover {
-    color: green !important;
+  color: green !important;
 }
-.social-icons a:nth-child(3) svg:hover{
-    color: yellow !important;
+.social-icons a:nth-child(3) svg:hover {
+  color: yellow !important;
 }
-.social-icons a:nth-child(4) svg:hover{
-    color: dodgerblue !important;
+.social-icons a:nth-child(4) svg:hover {
+  color: dodgerblue !important;
 }
-.social-icons a:nth-child(5) svg:hover{
-    color: red !important;
+.social-icons a:nth-child(5) svg:hover {
+  color: red !important;
 }
 #moon:hover {
-    transition: 0.15s;
-    color: deepskyblue;
+  transition: 0.15s;
+  color: deepskyblue;
 }
 
 #sun:hover {
-    transition: 0.15s;
-    color: gold;
+  transition: 0.15s;
+  color: gold;
 }
 #menu a:hover {
-    transition: 0.15s;
-    color: var(--border);
+  transition: 0.15s;
+  color: var(--border);
 }
 
 button#theme-toggle {
-    font-size: 26px;
-    margin: auto 4px;
+  font-size: 26px;
+  margin: auto 4px;
 }
 
 body.dark #moon {
-    vertical-align: middle;
-    display: none;
+  vertical-align: middle;
+  display: none;
 }
 
 body:not(.dark) #sun {
-    display: none;
+  display: none;
 }
 
 #menu {
-    list-style: none;
-    word-break: keep-all;
-    overflow-x: auto;
-    white-space: nowrap;
+  list-style: none;
+  word-break: keep-all;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 #menu li + li {
-    margin-inline-start: var(--gap);
+  margin-inline-start: var(--gap);
 }
 
 #menu a {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+  font-weight: 500;
+  border-bottom: 2px solid currentColor;
 }
 
 .lang-switch li,
 .lang-switch ul,
 .logo-switches {
-    display: inline-flex;
-    margin: auto 4px;
+  display: inline-flex;
+  margin: auto 4px;
 }
 
 .lang-switch {
-    display: flex;
-    flex-wrap: inherit;
+  display: flex;
+  flex-wrap: inherit;
 }
 
 .lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
+  margin: auto 3px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .logo-switches {
-    flex-wrap: inherit;
+  flex-wrap: inherit;
 }
