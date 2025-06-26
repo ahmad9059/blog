@@ -19,4 +19,4 @@ This is English text.
 
 Another test: <p lang="ur" style="font-family: 'Noto Nastaliq Urdu'; font-size: 30px;">کیا یہ فونٹ کام کر رہا ہے؟</p>
 
-<p class="urdu">یہ کلاس اردو فونٹ کے لیے ہے۔</p>
+<p class="urdu" lang="ur" >یہ کلاس اردو فونٹ کے لیے ہے۔</p>
