@@ -192,15 +192,6 @@
   margin-bottom: 0;
 }
 
-[lang="ur"],
-.urdu {
-  font-family: "Noto Nastaliq Urdu", serif !important;
-  font-weight: normal;
-  direction: rtl;
-  text-align: right;
-  line-height: 2.2;
-}
-
 .post-content code {
   margin: auto 4px;
   padding: 4px 6px;
