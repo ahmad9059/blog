@@ -2,7 +2,7 @@
 title: temp article
 draft: false
 date: 2025-06-26
-description: temp
+description: 
 categories:
   - tech 👨🏻‍💻
   - web 🌐
@@ -13,8 +13,10 @@ tags:
 Author: Ahmad Hassan
 ---
 
-<span lang="ur">یہ ایک اردو جملہ ہے۔</span>
+This is English text.
 
-<!-- OR -->
+<span lang="ur">یہ اردو ہے۔</span>
 
-<p class="urdu">یہ بھی ایک اردو مثال ہے۔</p>
+Another test: <p lang="ur" style="font-family: 'Noto Nastaliq Urdu'; font-size: 30px;">کیا یہ فونٹ کام کر رہا ہے؟</p>
+
+<p class="urdu">یہ کلاس اردو فونٹ کے لیے ہے۔</p>
