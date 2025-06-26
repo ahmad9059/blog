@@ -13,4 +13,4 @@ tags:
 Author: Ahmad Hassan
 ---
 
-<span lang="ur">میری اردو پوسٹ کا یہ حصہ ہے۔</span>
+<span lang="ur">برائے مہربانی انتظار کریں ، اردو ٹائپنگ سافٹ ویئر لوڈ ہورہا ہے…</span>
