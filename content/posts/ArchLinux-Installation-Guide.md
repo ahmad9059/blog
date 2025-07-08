@@ -187,4 +187,6 @@ cd dotfiles
 
 Follow the instruction on script as it prompt 
 
+![](/posts/assets/img-1.webp)
+
 Congratulations!🎉 You have successfully completed the installation.
