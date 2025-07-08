@@ -177,44 +177,14 @@ git clone https://github.com/ahmad9059/dotfiles.git
 cd dotfiles
 ```
 
-2. **Backup Existing Dotfiles**: Before copying new configurations, it's wise to back up your current dotfiles:
+2. **Run the Install Script**
 
 ```bash
-mkdir -p ~/dotfiles_backup
-cp ~/.config ~/dotfiles_backup -r
-cp ~/.tmux.conf ~/dotfiles_backup
-cp ~/.zshrc ~/dotfiles_backup
+./setup_dotfiles.sh
 ```
 
-3. **Copy New Configurations**:
-Remember you must in `dotfiles` folder to run following commands
+![](/posts/assets/img.webp)
 
-```bash
-cp -r .config ~/
-cp .zshrc ~/
-cp -r .themes ~/.themes
-cd .icons
-cp .icons.zip ~/
-cd ~/
-unzip .icons.zip
-rm .icons.zip
-```
+Follow the instruction on script as it prompt 
 
-After the installation, you can start using the configured applications. Open your `GTK settings` and set the widget theme to `Andromeda-dark`, the icon theme to `Dracula`, and the mouse cursor to `Future-black Cursors`.
-#### Packages `pacman`:
-Install of these Packages using `pacman`
-
-```bash
-sudo pacman -S  foot alacritty lsd bat tmux neovim tldr obs-studio vlc yazi
-```
-
-#### Packages `yay`(Optional):
-
-Install of these Packages Using `yay`. Remember they are according to my preference like I have install vscode, telegram etc.
-
-```bash
-yay -S thorium-browser-bin visual-studio-code-bin 64gram-desktop-bin apple-fonts fum
-```
-
-
-Congratulations! You have successfully completed the installation.
+Congratulations!🎉 You have successfully completed the installation.
