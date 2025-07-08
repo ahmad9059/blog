@@ -11,8 +11,7 @@ tags:
   - linux
 Author: Ahmad Hassan
 ---
-
-![](/posts/assets/archlinux/archlinux.webp)
+![](/posts/assets/archlinux.webp)
 
 I recently uploaded a video showcasing my Arch Linux (btw) setup just for fun, and to my surprise, it went viral within the Linux community! Since then, I’ve received numerous messages asking about the installation process. Although I wanted to make a detailed video tutorial, my laptop's older specs make it difficult to handle both recording and installation simultaneously. So, I’ve decided to write this article to guide you through the installation process using my dotfiles and the installation script from Ja.Kool.It. Below, you’ll find a step-by-step guide to get started.
 
