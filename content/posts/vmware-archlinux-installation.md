@@ -1,11 +1,11 @@
 ---
 title: vmware-archlinux-installation
-draft: false
+draft: true
 date: 2025-07-02
 description: 
 categories:
   - tech 👨🏻‍💻
-tags: []
+tags: 
 Author: Ahmad Hassan
 ---
 
