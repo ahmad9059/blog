@@ -158,11 +158,18 @@ chmod +x install.sh
 
 select the option according the option given in image I have explained each one of them and those without comment means go with that are in image.
 
-![](/posts/assets/archlinux/arch-hyprland.webp)
+![](/posts/assets/img-2.webp)
 
-After selecting all the options, I will start installing Hyprland and additional components. During the installation, you may be prompted to enter the password 2-3 times, so stay attentive. Once the installation is successful, it will show a prompt to press 'Y' to reboot the system.
+Select you prefered AUR Helper  yay or paru
 
-![](/posts/assets/archlinux/installation.webp)
+![](/posts/assets/img-3.webp)
+
+Select the Selected options must and others if you want.
+
+
+After selecting all the options, It will start installing Hyprland and additional components. During the installation, you may be prompted to enter the password 2-3 times, so stay attentive. Once the installation is successful, it will show a prompt to press 'Y' to reboot the system.
+
+![](/posts/assets/img-5.webp)
 
 You have successfully installed Archlinux+Hyprland.
 
