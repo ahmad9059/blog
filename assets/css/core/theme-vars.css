@@ -1,40 +1,37 @@
 :root {
-    --gap: 24px;
-    --content-gap: 20px;
-    --nav-width: 1024px;
-    --main-width: 720px;
-    --header-height: 60px;
-    --footer-height: 60px;
-    --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --main-width: 720px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --radius: 8px;
+  --theme: rgb(255, 255, 255);
+  --entry: rgb(255, 255, 255);
+  --primary: rgb(30, 30, 30);
+  --secondary: rgb(108, 108, 108);
+  --tertiary: rgb(214, 214, 214);
+  --content: rgb(31, 31, 31);
+  --code-block-bg: rgb(28, 29, 33);
+  --code-bg: rgb(245, 245, 245);
+  --border: rgb(238, 238, 238);
 }
 
 .dark {
-    --theme: rgb(17, 17, 27);
-    --entry: rgb(24, 24, 37); 
-    --primary: rgb(205, 214, 244); 
-    --secondary: rgb(166, 173, 200); 
-    --tertiary: rgb(30, 30, 46); 
-    --content: rgb(186, 194, 222); 
-    --code-block-bg: rgb(24, 24, 37); 
-    --code-bg: #181825; 
-    --border: rgb(88, 91, 112); 
-
+  --theme: #1a1a1a;
+  --entry: #2a2a2a;
+  --primary: #ffffff;
+  --secondary: #ffffff;
+  --tertiary: #2a2a2a;
+  --content: #ffffff;
+  --code-block-bg: #2a2a2a;
+  --code-bg: #1a1a1a;
+  --border: #2a2a2a;
 }
-
-
 .list {
-    background: var(--code-bg);
+  background: var(--code-bg);
 }
 
 .dark.list {
-    background: var(--theme);
+  background: var(--theme);
 }
