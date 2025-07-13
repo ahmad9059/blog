@@ -51,6 +51,7 @@ pre {
   position: absolute;
   top: 4px;
   right: 4px;
+  margin: 4px;
   color: rgba(255, 255, 255, 0.8);
   background: var(--theme);
   border-radius: var(--radius);
