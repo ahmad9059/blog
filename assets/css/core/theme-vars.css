@@ -18,16 +18,17 @@
 }
 
 .dark {
-  --theme: #000000;
-  --entry: #2a2a2a;
-  --primary: #ffffff;
-  --secondary: #ffffff;
-  --tertiary: #2a2a2a;
-  --content: #ffffff;
-  --code-block-bg: #2a2a2a;
-  --code-bg: #1a1a1a;
-  --border: #2a2a2a;
+  --theme: #0f0f0f; /* Main background */
+  --entry: #1a1a1a; /* Secondary container background */
+  --primary: #ffffff; /* Main text color */
+  --secondary: #cccccc; /* Subtext color */
+  --tertiary: #2a2a2a; /* Tertiary background / separators */
+  --content: #f1f1f1; /* Highlight or slightly muted content */
+  --code-block-bg: #1a1a1a; /* Background for code blocks */
+  --code-bg: #0f0f0f; /* Deeper code background */
+  --border: #2a2a2a; /* Border and card outline */
 }
+
 .list {
   background: var(--code-bg);
 }
