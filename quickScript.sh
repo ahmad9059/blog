@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 
 # Notification icon
-NOTIF_ICON="$HOME/.config/swaync/images/profile.png"
+NOTIF_ICON="$HOME/.config/swaync/images/ja.png"
 
 # Error handler
 on_error() {
@@ -45,18 +45,6 @@ fi
 echo "Syncing posts from Obsidian..."
 if ! rsync -av --delete "$sourcePath" "$destinationPath"; then
     notify-send -e -u critical -i "$NOTIF_ICON" "❌ Rsync Failed" "Failed to sync posts to Hugo."
-    exit 1
-fi
-
-# Process Markdown files with images.py
-echo "Processing image links..."
-if [ ! -f "images.py" ]; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Missing Script" "images.py not found."
-    exit 1
-fi
-
-if ! python3 images.py; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Image Conversion Failed" "images.py encountered an error."
     exit 1
 fi
 

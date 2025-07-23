@@ -11,7 +11,7 @@ tags:
   - linux
 Author: Ahmad Hassan
 ---
-![](/posts/assets/archlinux.webp)
+![](posts/assets/archlinux.png)
 
 I recently uploaded a video showcasing my Arch Linux (btw) setup just for fun, and to my surprise, it went viral within the Linux community! Since then, I’ve received numerous messages asking about the installation process. Although I wanted to make a detailed video tutorial, my laptop's older specs make it difficult to handle both recording and installation simultaneously. So, I’ve decided to write this article to guide you through the installation process using my dotfiles and the installation script from Ja.Kool.It. Below, you’ll find a step-by-step guide to get started.
 
@@ -157,18 +157,18 @@ chmod +x install.sh
 
 select the option according the option given in image I have explained each one of them and those without comment means go with that are in image.
 
-![](/posts/assets/img-2.webp)
+![](posts/assets/img-2.png)
 
 Select you prefered AUR Helper  yay or paru
 
-![](/posts/assets/img-3.webp)
+![](posts/assets/img-3.png)
 
 Select the Selected options must and others if you want.
 
 
 After selecting all the options, It will start installing Hyprland and additional components. During the installation, you may be prompted to enter the password 2-3 times, so stay attentive. Once the installation is successful, it will show a prompt to press 'Y' to reboot the system.
 
-![](/posts/assets/img-5.webp)
+![](posts/assets/img-5.png)
 
 You have successfully installed Archlinux+Hyprland.
 
@@ -189,10 +189,10 @@ cd dotfiles
 ./setup_dotfiles.sh
 ```
 
-![](/posts/assets/img.webp)
+![](posts/assets/img.png)
 
 Follow the instruction on script as it prompt 
 
-![](/posts/assets/img-1.webp)
+![](posts/assets/img-1.png)
 
 Congratulations!🎉 You have successfully completed the installation.
