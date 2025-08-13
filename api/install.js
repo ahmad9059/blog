@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const url =
-    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/install.sh";
+    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/entry.sh";
   const response = await fetch(url);
 
   if (!response.ok) {
