@@ -1,3 +1,4 @@
+// Redirct the file
 export default async function handler(req, res) {
   const url =
     "https://raw.githubusercontent.com/ahmad9059/Scripts/main/installer_maker.sh";
