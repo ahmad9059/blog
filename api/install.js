@@ -9,7 +9,6 @@ export default async function handler(req, res) {
       .send(`Error fetching script: ${response.statusText}`);
     return;
   }
-
   const script = await response.text();
   res.setHeader("Content-Type", "text/plain");
   res.send(script);
