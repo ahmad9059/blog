@@ -8,6 +8,7 @@
   "buildCommand": "hugo --gc --minify",
   "rewrites": [
     { "source": "/install", "destination": "/api/install.js" },
-    { "source": "/install-auto", "destination": "/api/install-auto.js" }
+    { "source": "/complete", "destination": "/api/complete.js" },
+    { "source": "/install-quick", "destination": "/api/install-quick.js" }
   ]
 }

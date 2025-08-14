@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const url =
-    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/boot-auto.sh";
+    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/install-quick.sh";
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -13,5 +13,3 @@ export default async function handler(req, res) {
   res.setHeader("Content-Type", "text/plain");
   res.send(script);
 }
-
-//
