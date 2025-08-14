@@ -6,6 +6,8 @@
     }
   },
   "buildCommand": "hugo --gc --minify",
-  "rewrites": [{ "source": "/install", "destination": "/api/install.js" }]
+  "rewrites": [
+    { "source": "/install", "destination": "/api/install.js" },
+    { "source": "/install-auto", "destination": "/api/install-auto.js" }
+  ]
 }
-

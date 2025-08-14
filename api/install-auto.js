@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const url =
-    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/boot.sh";
+    "https://raw.githubusercontent.com/ahmad9059/Scripts/main/boot-auto.sh";
   const response = await fetch(url);
 
   if (!response.ok) {
