@@ -8,7 +8,7 @@ NOTIF_ICON="$HOME/.config/swaync/images/ja.png"
 on_error() {
     local exit_code=$?
     local last_command=${BASH_COMMAND}
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Blog Sync Failed" "Command \`$last_command\` failed with exit code $exit_code."
+    notify-send -e -u critical -i "$NOTIF_ICON" "Blog Sync Failed" "Command \`$last_command\` failed with exit code $exit_code."
     exit $exit_code
 }
 trap on_error ERR
@@ -25,26 +25,26 @@ myrepo="blog"
 # Check for required commands
 for cmd in git rsync python3 hugo; do
     if ! command -v $cmd &> /dev/null; then
-        notify-send -e -u critical -i "$NOTIF_ICON" "❌ Missing Command" "$cmd is not installed or not in PATH."
+        notify-send -e -u critical -i "$NOTIF_ICON" "Missing Command" "$cmd is not installed or not in PATH."
         exit 1
     fi
 done
 
 # Ensure paths exist
 if [ ! -d "$sourcePath" ]; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Source Path Missing" "$sourcePath does not exist."
+    notify-send -e -u critical -i "$NOTIF_ICON" "Source Path Missing" "$sourcePath does not exist."
     exit 1
 fi
 
 if [ ! -d "$destinationPath" ]; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Destination Path Missing" "$destinationPath does not exist."
+    notify-send -e -u critical -i "$NOTIF_ICON" "Destination Path Missing" "$destinationPath does not exist."
     exit 1
 fi
 
 # Rsync sync
 echo "Syncing posts from Obsidian..."
 if ! rsync -av --delete "$sourcePath" "$destinationPath"; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Rsync Failed" "Failed to sync posts to Hugo."
+    notify-send -e -u critical -i "$NOTIF_ICON" "Rsync Failed" "Failed to sync posts to Hugo."
     exit 1
 fi
 
@@ -62,7 +62,7 @@ fi
 
 echo "Pushing to GitHub..."
 if ! git push origin main; then
-    notify-send -e -u critical -i "$NOTIF_ICON" "❌ Git Push Failed" "Failed to push to main branch."
+    notify-send -e -u critical -i "$NOTIF_ICON" "Git Push Failed" "Failed to push to main branch."
     exit 1
 fi
 
