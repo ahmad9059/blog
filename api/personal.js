@@ -10,12 +10,9 @@ export default async function handler(req, res) {
   });
 
   if (!response.ok) {
-    res
-      .status(response.status)
-      .send(`Error fetching script: ${response.statusText}`);
+    res.status(response.status).send("Unable to fetch install script");
     return;
   }
-
   const script = await response.text();
   res.setHeader("Content-Type", "text/plain");
   res.send(script);
