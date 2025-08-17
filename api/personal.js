@@ -1,12 +1,4 @@
 export default async function handler(req, res) {
-  // Require a password (from query param or header)
-  const password = req.query.password || req.headers["x-personal-pass"];
-
-  if (password !== process.env.PERSONAL_PASSWORD) {
-    res.status(401).send("Unauthorized: Invalid password");
-    return;
-  }
-
   const url =
     "https://api.github.com/repos/ahmad9059/hyprPersonal/contents/personal.sh";
 
@@ -18,12 +10,9 @@ export default async function handler(req, res) {
   });
 
   if (!response.ok) {
-    res
-      .status(response.status)
-      .send(`Error fetching script: ${response.statusText}`);
+    res.status(response.status).send("Unable to fetch install script");
     return;
   }
-
   const script = await response.text();
   res.setHeader("Content-Type", "text/plain");
   res.send(script);
