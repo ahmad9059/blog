@@ -1,10 +1,10 @@
 export default async function handler(req, res) {
   const url =
-    "https://api.github.com/repos/ahmad9059/hyprPersonal/contents/personal.sh?ref=main";
+    "https://api.github.com/repos/ahmad9059/hyprPersonal/contents/personal.sh";
 
   const response = await fetch(url, {
     headers: {
-      Authorization: `token ${process.env.GITHUB_TOKEN}`, // <-- store token in env
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
       Accept: "application/vnd.github.v3.raw",
     },
   });
