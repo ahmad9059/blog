@@ -1,4 +1,10 @@
 export default async function handler(req, res) {
+  const password = req.query.p || req.headers["x-personal-pass"];
+
+  if (password !== process.env.PERSONAL_PASSWORD) {
+    res.status(401).send("Unauthorized: Invalid password");
+    return;
+  }
   const url =
     "https://api.github.com/repos/ahmad9059/hyprPersonal/contents/personal.sh";
 
