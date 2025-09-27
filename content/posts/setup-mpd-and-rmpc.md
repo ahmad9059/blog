@@ -16,7 +16,7 @@ Author: Ahmad Hassan
 
 ## What is RMPC?
 
-RMPC is a **TUI (terminal UI) client** for MPD — it does _not_ do audio output itself, it just sends commands to MPD. ([mierak.github.io](https://mierak.github.io/rmpc/next/installation/?utm_source=chatgpt.com "Installation | rmpc - GitHub Pages"))
+RMPC is a **TUI (terminal UI) client** for MPD — it does _not_ do audio output itself, it just sends commands to MPD. ([mierak.github.io](https://mierak.github.io/rmpc/next/installation "Installation | rmpc - GitHub Pages"))
 
 So the setup has two parts:
 
@@ -56,7 +56,7 @@ On Arch:
 cp /usr/share/doc/mpd/mpdconf.example ~/.config/mpd/mpd.conf
 ```
 
-Or check `/usr/share/mpd/mpdconf.example`. ([IPv6rs](https://ipv6.rs/tutorial/Arch_Linux/mpd/?utm_source=chatgpt.com "How to Install mpd on Arch Linux - IPv6rs"))
+Or check `/usr/share/mpd/mpdconf.example`. ([IPv6rs](https://ipv6.rs/tutorial/Arch_Linux/mpd/"How to Install mpd on Arch Linux - IPv6rs"))
 
 3. Open `~/.config/mpd/mpd.conf` in your editor and set the basic paths. Here is a minimal working example:
     
@@ -82,7 +82,7 @@ follow_outside_symlinks "yes"
 follow_inside_symlinks  "yes"
 ```
 
-You can also use `type "alsa"` or `type "pulse"` depending on your system. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon?utm_source=chatgpt.com "Music Player Daemon - ArchWiki"))
+You can also use `type "alsa"` or `type "pulse"` depending on your system. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon "Music Player Daemon - ArchWiki"))
 
 ---
 
@@ -94,7 +94,7 @@ You can also use `type "alsa"` or `type "pulse"` depending on your system. ([Arc
     
 - Ensure that all parent directories have the “execute” bit (so they can be entered).
     
-- Avoid running MPD as root. Use the user service. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon?utm_source=chatgpt.com "Music Player Daemon - ArchWiki"))
+- Avoid running MPD as root. Use the user service. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon "Music Player Daemon - ArchWiki"))
     
 
 ---
@@ -120,9 +120,9 @@ To check status:
 systemctl --user status mpd
 ```
 
-The ArchWiki notes this approach. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon?utm_source=chatgpt.com "Music Player Daemon - ArchWiki"))
+The ArchWiki notes this approach. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon "Music Player Daemon - ArchWiki"))
 
-Also note: MPD supports socket activation via `mpd.socket`. You can enable that instead if you prefer MPD to start on demand. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon?utm_source=chatgpt.com "Music Player Daemon - ArchWiki"))
+Also note: MPD supports socket activation via `mpd.socket`. You can enable that instead if you prefer MPD to start on demand. ([ArchWiki](https://wiki.archlinux.org/title/Music_Player_Daemon "Music Player Daemon - ArchWiki"))
 
 ---
 
@@ -149,7 +149,7 @@ If nothing appears, double-check your `music_directory` path and permissions.
 
 ## Step 6: Install RMPC
 
-Follow the instructions in RMPC’s docs: ([mierak.github.io](https://mierak.github.io/rmpc/next/installation/?utm_source=chatgpt.com "Installation | rmpc - GitHub Pages"))
+Follow the instructions in RMPC’s docs: ([mierak.github.io](https://mierak.github.io/rmpc/next/installation/ "Installation | rmpc - GitHub Pages"))
 
 If you're on Arch:
 
@@ -163,7 +163,7 @@ Or build via `cargo` etc.
 
 ## Step 7: Configure RMPC(Optional)
 
-RMPC needs to know where MPD is (host / port / socket). By default it uses `127.0.0.1:6600`. ([mierak.github.io](https://mierak.github.io/rmpc/next/configuration/?utm_source=chatgpt.com "General configuration | rmpc - GitHub Pages"))
+RMPC needs to know where MPD is (host / port / socket). By default it uses `127.0.0.1:6600`. ([mierak.github.io](https://mierak.github.io/rmpc/next/configuration "General configuration | rmpc - GitHub Pages"))
 
 You can create or edit its config file to set:
 
