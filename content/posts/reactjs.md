@@ -15,7 +15,7 @@ Author: Ahmad Hassan
 
 
 
-![JS Image](8-%20posts/assets/react/react.webp)
+![JS Image](posts/assets/react/react.webp)
 
 
 

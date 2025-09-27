@@ -10,7 +10,7 @@ tags:
   - tech
 ---
 
-![cover-image](8-%20posts/assets/web-dev-roadmap/web-dev-roadmap.webp)
+![cover-image](posts/assets/web-dev-roadmap/web-dev-roadmap.webp)
 
 Web development is a continuously evolving field, and becoming a proficient full-stack developer in 2025 requires not only mastering essential basics but also adopting advanced tools and concepts. This roadmap will guide you, step by step, through the skills and technologies you need to become job-ready and adaptable to industry trends.
 

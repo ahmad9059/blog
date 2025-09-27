@@ -93,7 +93,7 @@ Add the line after tittle tag in your html file
 - **padding:** padding is the space inside an element, between its content and its border.
 - **margin:** margin is the space outside an element, between the element's border and other elements.
 
-![margin-padding](8-%20posts/assets/web/CSS/margin-padding.webp)
+![margin-padding](posts/assets/web/CSS/margin-padding.webp)
 
 18. `border:` A shorthand property for `border-width`, `border-style`, `border-color` *ex:* `border: 3px solid gray`
 19. `border-radius:` A shorthand property for the for border `*_radius` properties. We can also add radius on only one corner. like using these properties `border-bottom-left-radius`, `border-bottom-right-radius`,`border-top-left-radius`,`border-top-right-radius` 
@@ -129,7 +129,7 @@ Add the line after tittle tag in your html file
 ## Flexbox:
 ---
 Flexbox is a CSS layout model designed to help arrange elements in a responsive flexible way. It simplifies alignment, distribution, and spacing of items within a container-even when their size is unknown or dynamic. The Flexbox model is one-dimensional, meaning it handles either row or a column layout, Unlike CSS Grid which is two-dimensional(rows and columns).
-![Flexbox](8-%20posts/assets/web/CSS/flex.webp)
+![Flexbox](posts/assets/web/CSS/flex.webp)
 
 **Key Concepts:**
 - *Flex Container:* The parent element that holds flex items. We can define a flex container by applying `display: flex;` to it.
@@ -298,7 +298,7 @@ Earlier in this tutorial we made a web page with rows and columns, and it was re
 
 Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.
 
-![mobile](8-%20posts/assets/web/CSS/mobile.webp)
+![mobile](posts/assets/web/CSS/mobile.webp)
 
 #### Always Design for Mobile First
 

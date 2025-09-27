@@ -11,7 +11,7 @@ tags:
   - linux
 Author: Ahmad Hassan
 ---
-![|678x381](8-%20posts/assets/archlinux.png)
+![|678x381](posts/assets/archlinux.png)
 
 I recently uploaded a video showcasing my Arch Linux (btw) setup just for fun, and to my surprise, it went viral within the Linux community! Since then, I’ve received numerous messages asking about the installation process. Although I wanted to make a detailed video tutorial, my laptop's older specs make it difficult to handle both recording and installation simultaneously. So, I’ve decided to write this article to guide you through the installation process using my dotfiles and the installation script from Ja.Kool.It. Below, you’ll find a step-by-step guide to get started.
 
@@ -70,7 +70,7 @@ $ lsblk
 
 if will show your all partitions and there information
 
-![|714x386](8-%20posts/assets/archlinux/a1.webp)
+![|714x386](posts/assets/archlinux/a1.webp)
 
 ```bash
 $ cfdisk
@@ -78,7 +78,7 @@ $ cfdisk
 
 it show you all of your information about your drives
 
-![](8-%20posts/assets/archlinux/a2.webp)
+![](posts/assets/archlinux/a2.webp)
 
 You have to make 3 partitions
 
@@ -118,7 +118,7 @@ $ archinstall
 
 After running the `archinstall` command it will show you something like this.
 
-![|0x0](8-%20posts/assets/archlinux/a3.webp)
+![|0x0](posts/assets/archlinux/a3.webp)
 
 1. **Locales :** In locales select your _keyboard layout_, _locale language_, and _endcoding_
 2. **Mirrors :** In Mirrors select best mirror region according to your location
@@ -140,7 +140,7 @@ After running the `archinstall` command it will show you something like this.
 
 after that just press the `install` and wait for installation to be finished
 
-![|846x273](8-%20posts/assets/archlinux/a4.webp)
+![|846x273](posts/assets/archlinux/a4.webp)
 
 Congratulations🎉!! You have successfully installed the ArchLinux and now you can say that _I use Arch btw_
 
@@ -157,18 +157,18 @@ chmod +x install.sh
 
 select the option according the option given in image I have explained each one of them and those without comment means go with that are in image.
 
-![|840x516](8-%20posts/assets/img-2.png)
+![|840x516](posts/assets/img-2.png)
 
 Select you prefered AUR Helper  yay or paru
 
-![|744x476](8-%20posts/assets/img-3.png)
+![|744x476](posts/assets/img-3.png)
 
 Select the Selected options must and others if you want.
 
 
 After selecting all the options, It will start installing Hyprland and additional components. During the installation, you may be prompted to enter the password 2-3 times, so stay attentive. Once the installation is successful, it will show a prompt to press 'Y' to reboot the system.
 
-![|782x317](8-%20posts/assets/img-5.png)
+![|782x317](posts/assets/img-5.png)
 
 You have successfully installed Archlinux+Hyprland.
 
@@ -189,10 +189,10 @@ cd dotfiles
 ./setup_dotfiles.sh
 ```
 
-![](8-%20posts/assets/img.png)
+![](posts/assets/img.png)
 
 Follow the instruction on script as it prompt 
 
-![](8-%20posts/assets/img-1.png)
+![](posts/assets/img-1.png)
 
 Congratulations!🎉 You have successfully completed the installation.
