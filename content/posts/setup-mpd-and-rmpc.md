@@ -11,6 +11,9 @@ tags:
   - music
 Author: Ahmad Hassan
 ---
+
+![|500x444](/posts/assets/img-1.webp)
+
 ## What is RMPC?
 
 RMPC is a **TUI (terminal UI) client** for MPD — it does _not_ do audio output itself, it just sends commands to MPD. ([mierak.github.io](https://mierak.github.io/rmpc/next/installation/?utm_source=chatgpt.com "Installation | rmpc - GitHub Pages"))
