@@ -198,6 +198,10 @@ If it fails to connect, check:
 - If MPD requires a password, set it in RMPC config
     
 
+
+
+![|715x402](/posts/assets/img-2.webp)
+
 ---
 
 ## Troubleshooting tips & common pitfalls
