@@ -11,7 +11,7 @@ tags:
   - thoughts
 ---
 
-![cover-image](posts/assets/forher/forher.webp)
+![cover-image](/posts/assets/forher/forher.webp)
 
 There comes a time in life when everything around you seems stifling. Every breath becomes a fight; the air seems weighty and pushes against your chest. Until you feel as though you are drowning, the weight of unmet expectations, unresolved grief, and constant disappointment presses down on your soul. Running away is not really an option; you yearn for escape; mountain tops call with promises of seclusion, vast roads whisper freedom into your ears. You thus withdraw inside, running back to yourself as the last haven remaining.
 
