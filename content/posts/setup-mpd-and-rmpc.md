@@ -158,7 +158,7 @@ Or build via `cargo` etc.
 
 ---
 
-## Step 7: Configure RMPC
+## Step 7: Configure RMPC(Optional)
 
 RMPC needs to know where MPD is (host / port / socket). By default it uses `127.0.0.1:6600`. ([mierak.github.io](https://mierak.github.io/rmpc/next/configuration/?utm_source=chatgpt.com "General configuration | rmpc - GitHub Pages"))
 
