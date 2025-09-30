@@ -1,7 +1,7 @@
 ---
 title: Introduction to Shell Scripting
 draft: false
-date: 2025-03-09
+date: 2025-09-30
 description: Learn Shell Scripting From Scratch and Dive Deep Into Scripting
 categories:
   - tech 👨🏻‍💻
