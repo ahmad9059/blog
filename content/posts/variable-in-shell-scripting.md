@@ -1,5 +1,5 @@
 ---
-title: Learn About Variables in Shell Scripting
+title: Variables in Shell Scripting
 draft: false
 date: 2025-09-30
 description: Learn About Variables in Shell Scripting
