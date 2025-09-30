@@ -1,8 +1,8 @@
 ---
-title: Shell Expension in Shell Scripting
+title: Shell Expansion in Shell Scripting
 draft: false
 date: 2025-09-30
-description: Learn About Shell Expension in Shell Scripting
+description: Learn About Shell Expansion in Shell Scripting
 categories:
   - tech 👨🏻‍💻
 tags:
@@ -12,7 +12,9 @@ tags:
 Author: Ahmad Hassan
 ---
 
-# Shell Expension
+# Shell Expansion
+
+In Section we are going to learn about Shell Expansion, How bash perform the Shell Expansion
 
 ## What is Expansion?
 ---
