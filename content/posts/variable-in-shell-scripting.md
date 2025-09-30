@@ -435,10 +435,6 @@ echo "Done! Archive created: $1.tar.gz"
 ```
 
 
-Got it Ahmad 👍 That transcript is explaining **special parameters in Bash**. I’ll make you clean, structured notes so you can review them anytime.
-
----
-
 
 ## What Are Special Parameters?
 
