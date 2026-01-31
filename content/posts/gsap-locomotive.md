@@ -4,8 +4,8 @@ draft: false
 date: 2025-02-15
 description: Learn how to use GSAP (Greensock Animation Platform) and Locomotive Scroll to create smooth animations and scroll-based effects in web development. 
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - JavaScript

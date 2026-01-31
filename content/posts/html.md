@@ -4,8 +4,8 @@ draft: false
 date: 2025-01-05
 description: HTML is the backbone of the web. Learn the basics of HTML, its structure, and how to create your first webpage.
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - html

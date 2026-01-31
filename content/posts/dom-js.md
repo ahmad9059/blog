@@ -4,8 +4,8 @@ draft: false
 date: 2025-02-02
 description: Learn how to manipulate the DOM (Document Object Model) in JavaScript by selecting, creating, and removing elements dynamically. Understand the differences between innerHTML, innerText, and textContent.
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - JavaScript

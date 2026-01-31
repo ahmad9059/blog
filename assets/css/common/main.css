@@ -48,19 +48,33 @@ pre {
 }
 
 .copy-code {
-    display: none;
     position: absolute;
-    top: 4px;
-    right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: var(--theme);
-    border-radius: var(--radius);
-    padding: 0 5px;
-    font-size: 14px;
-    user-select: none;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    padding: 4px;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: inherit;
 }
 
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
+    opacity: 0.5;
+}
+
+.copy-code:hover {
+    opacity: 1 !important;
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.copy-code svg {
     display: block;
 }

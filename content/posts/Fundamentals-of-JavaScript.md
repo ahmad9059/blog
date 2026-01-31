@@ -4,8 +4,8 @@ draft: false
 date: 2025-01-20
 description: JavaScript is a versatile language that powers the modern web. Learn about its history, design philosophy, and key features. 
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - JavaScript

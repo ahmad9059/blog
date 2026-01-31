@@ -4,8 +4,8 @@ draft: false
 date: 2025-04-19
 description: Learn how to build an AI chatbot web app using Google Gemini and deploy it on Vercel.
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - web

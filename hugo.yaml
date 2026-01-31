@@ -73,6 +73,7 @@ params:
     apple_touch_icon: "<apple-touch-icon.png"
     css:
       - css/extended/urdu-font.css
+      - css/extended/code-light.css
 
   ShowReadingTime: true
   ShowShareButtons: true

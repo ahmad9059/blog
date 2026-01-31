@@ -4,7 +4,7 @@ draft: false
 date: 2025-09-30
 description: Learn Shell Expansion From Scratch and Dive Deep Into Scripting
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - shell

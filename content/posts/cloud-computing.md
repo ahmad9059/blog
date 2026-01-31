@@ -4,7 +4,7 @@ draft: false
 date: 2025-08-20
 description: Learn the Cloud Computing by Preparing the AWS CCP Exam
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - cloud

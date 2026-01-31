@@ -4,8 +4,8 @@ draft: false
 date: 2025-01-25
 description: Advanced JavaScript concepts like closures, event listeners, higher-order functions, and more. Learn how to use these concepts to write better JavaScript code.
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - JavaScript

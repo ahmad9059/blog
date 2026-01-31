@@ -4,7 +4,7 @@ draft: false
 date: 2025-09-27
 description: Learn How to setup MPD and RMPC Completely From Start
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - terminal

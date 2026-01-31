@@ -5,7 +5,7 @@ date: 2024-12-24
 author: Ahmad Hassan
 description: "For her that leave me behind"
 categories:
-  - life 🌱
+  - life
 tags:
   - love
   - thoughts

@@ -4,7 +4,7 @@ draft: false
 date: 2025-09-30
 description: Learn About Variables in Shell Scripting
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - shell

@@ -4,7 +4,7 @@ draft: false
 date: 2025-04-15
 description: Installing MS SQL Server and Azure Data Studio on Arch Linux using Docker.
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - sql

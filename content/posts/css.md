@@ -4,8 +4,8 @@ draft: false
 date: 2025-01-12
 description: CSS is the style sheet language that's use to specify how a document written in HTML or XML should be presented and styled. 
 categories:
-  - tech 👨🏻‍💻
-  - web 🌐
+  - tech
+  - web
 tags:
   - tech
   - CSS

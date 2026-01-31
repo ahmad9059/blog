@@ -4,7 +4,7 @@ draft: true
 date: 2025-07-02
 description: 
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags: 
 Author: Ahmad Hassan
 ---

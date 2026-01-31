@@ -4,7 +4,7 @@ draft: false
 date: 2024-12-24
 description: Want to become a full-stack developer in 2025? Follow this step-by-step roadmap to master web development skills and build projects that stand out!
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - computer
   - tech
