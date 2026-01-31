@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Databases & Analytics"
+title: "Databases & Analytics"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Databases & Analytics"

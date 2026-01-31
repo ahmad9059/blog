@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Amazon S3"
+title: "Amazon S3"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Amazon S3"

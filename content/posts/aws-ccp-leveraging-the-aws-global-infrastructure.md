@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Leveraging the AWS Global Infrastructure"
+title: "Leveraging the AWS Global Infrastructure"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Leveraging the AWS Global Infrastructure"

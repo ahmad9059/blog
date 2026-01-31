@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Cloud Integrations"
+title: "Cloud Integrations"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Cloud Integrations"

@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Account Management, Billing & Support"
+title: "Account Management, Billing & Support"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Account Management, Billing & Support"

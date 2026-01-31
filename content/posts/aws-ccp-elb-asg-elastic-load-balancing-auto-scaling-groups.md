@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - ELB & ASG - Elastic Load Balancing & Auto Scaling Groups"
+title: "ELB & ASG - Elastic Load Balancing & Auto Scaling Groups"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on ELB & ASG - Elastic Load Balancing & Auto Scaling Groups"

@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - EC2 - Elastic Compute Cloud"
+title: "EC2 - Elastic Compute Cloud"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on EC2 - Elastic Compute Cloud"

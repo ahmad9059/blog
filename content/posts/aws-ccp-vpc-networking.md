@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - VPC & Networking"
+title: "VPC & Networking"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on VPC & Networking"

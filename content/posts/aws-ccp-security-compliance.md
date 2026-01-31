@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Security & Compliance"
+title: "Security & Compliance"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Security & Compliance"

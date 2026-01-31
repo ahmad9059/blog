@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Deployments & Managing Infrastructure at Scale"
+title: "Deployments & Managing Infrastructure at Scale"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Deployments & Managing Infrastructure at Scale"

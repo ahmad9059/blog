@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Machine Learning"
+title: "Machine Learning"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Machine Learning"

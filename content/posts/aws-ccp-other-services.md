@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Other Services"
+title: "Other Services"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Other Services"

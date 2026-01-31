@@ -1,5 +1,5 @@
 ---
-title: "AWS CCP - Advanced Identity"
+title: "Advanced Identity"
 draft: false
 date: 2026-01-31
 description: "AWS Certified Cloud Practitioner notes on Advanced Identity"
