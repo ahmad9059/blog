@@ -17,11 +17,12 @@ HTML(Hyper Text Markup Language) is the standard language use to create and stru
 
 **Why learn html:** because we need to create website for that we need html, or because of content.
 
-## Getting with HTML
+## Getting Started with HTML
 
 Tip: type - `html:5` / `!` - for boilerplate code
 
-##### Boilerplate Code
+### Boilerplate Code
+
 ```html
 <!DOCTYPE html> <!-- tells that we are using HTML5 -->
 <html lang="en"> <!--The tag represents the root of an HTML document.-->
@@ -29,14 +30,14 @@ Tip: type - `html:5` / `!` - for boilerplate code
 <meta charset="UTF-8"> <!--tag defines metadata about an HTML document-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title> <!--defines the title of the document.-->
-</head> 
+</head>
 <body> <!-- defines the document's body.-->
 	<!-- content added here -->
 </body>
 </html>
 ```
 
-### Tags in HTML 
+## Tags in HTML
 
 1. `<h1></h1>` - heading tag and Most Importance
 2. `<h2></h2>` - less Importance than h1
@@ -54,7 +55,7 @@ Tip: type - `html:5` / `!` - for boilerplate code
 14. `<ol></ol>` - used to add ordered list
 15. `<ul></ul>` - used to add unordered list
 16. `<li></li>` - used to add items in list
-17. `<a href ="source"> </a>` - used to make text clickable/hyperlink 
+17. `<a href ="source"> </a>` - used to make text clickable/hyperlink
 	- Tip: to open link in new tab use this `target="_blank"`
 18. `<img src="source" alt=" ">` - used to add image to website
 19. `<form></form>` - used to create the form
@@ -67,7 +68,8 @@ Tip: type - `html:5` / `!` - for boilerplate code
 24. `<td></td>` - Each table cell is defined by a and a tag
 25. `<tr></tr>` - table row starts with a and ends with a tag
 26. `<th></th>` - Defines a header cell in a table
-### Input Types for Input tag
+
+## Input Types for Input tag
 
 1. **text :** `<input type="text" placeholder="Name">`
 2. **email :** `<input type="email" placeholder="Email">`
@@ -80,14 +82,18 @@ Tip: type - `html:5` / `!` - for boilerplate code
 9. **date :** `<input type="date" >`
 10. **submit :** `<input type="submit" >`
 
-##### id:
+### id
+
 id is attribute that is used to assign id to an element. It is very helpful when we have multiple of same type but we need to treat them differently. id must be unique of element.
-##### class:
+
+### class
+
 As we know that we are not allowed to assign same id to different element but when we need this type of thing we use the class attribute.
 
 ## HTML5 Semantics
 
 HTML5 semantics refers to the use of specific tags like `<header>`,`<footer>`,`<nav>`,`<article>`,`<section>`,etc, to provide clearer structure and meaning to web content. This improves accessibility, better SEO, and facilitates better better understanding by both human and machines, These tags did not to something special they act like normal div but with clearer structure and meaning about there content.
+
 ### Semantics Elements
 
 1. `<header>` : First section website can be called header

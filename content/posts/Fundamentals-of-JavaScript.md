@@ -53,14 +53,15 @@ The terms above are good to remember because they are used in developer articles
 > 
 > The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
 
-### What makes JavaScript unique?
+## What makes JavaScript unique?
+
 There are at least three great things about JavaScript:
 
 - Full integration with HTML/CSS.
 - Simple things are done simply.
 - Supported by all major browsers and enabled by default.
 
-### Link JavaScript to HTML
+## Link JavaScript to HTML
 
 - We can use a `<script>` tag to add JavaScript code to a page.
 - The `type` and `language` attributes are not required.
@@ -76,6 +77,7 @@ There are at least three great things about JavaScript:
 > That reduces traffic and makes pages faster.
 
 ## Semicolons
+
 A semicolon may be omitted in most cases when a line break exists.
 This would also work:
 
@@ -134,12 +136,15 @@ console.log("Hello")[1, 2].forEach(console.log);
 
 It's recommend putting semicolons between statements even if they are separated by newlines. This rule is widely adopted by the community. Let’s note once again – it is possible to leave out semicolons most of the time. But it’s safer – especially for a beginner – to use them.
 
-#### Comments
+## Comments
+
 As time goes on, programs become more and more complex. It becomes necessary to add comments which describe what the code does and why.
 
 Comments can be put into any place of a script. They don’t affect its execution because the engine simply ignores them.
 
-##### One-line comments start with two forward slash characters //.
+### One-line comments
+
+One-line comments start with two forward slash characters `//`.
 
 The rest of the line is a comment. It may occupy a full line of its own or follow a statement.
 Like here:
@@ -151,7 +156,9 @@ console.log('Hello');
 console.log('World'); // This comment follows the statement
 ```
 
-##### Multiline comments start with a forward slash and an asterisk /* and end with an asterisk and a forward slash */.
+### Multiline comments
+
+Multiline comments start with a forward slash and an asterisk `/*` and end with an asterisk and a forward slash `*/`.
 
 ```js
 /* An example with two messages.
@@ -201,8 +208,9 @@ console.log("some code");
 ```
 
 
-#### Should we “use strict”?
-The question may sound obvious, but it’s not so.
+### Should we "use strict"?
+
+The question may sound obvious, but it's not so.
 
 One could recommend to start scripts with "use strict"… But you know what’s cool?
 
@@ -435,7 +443,7 @@ message = 123456;
 
 Programming languages that allow such things, such as JavaScript, are called *“dynamically typed”*, meaning that there exist data types, but variables are not bound to any of them.
 
-### 1. Number:
+## Number
 
 The _number_ type represents both integer and floating point numbers.
 
@@ -475,7 +483,7 @@ console.log( "not a number" / 2 - 1 ); // NaN
 So, if there’s a `NaN` somewhere in a mathematical expression, it propagates to the whole result (there’s only one exception to that: `NaN ** 0` is `1`).
 
 
-#### BigInt
+### BigInt
 
 In JavaScript, the “number” type cannot safely represent integer values larger than `(253-1)` (that’s `9007199254740991`), or less than `-(253-1)` for negatives.
 
@@ -502,7 +510,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
 ```
 
 
-## 2. String
+## String
 
 A string in JavaScript must be surrounded by quotes.
 
@@ -541,7 +549,7 @@ console.log( `the result is ${1 + 2}` ); // the result is 3
 > In JavaScript, there is no such type. There’s only one type: `string`. A string may consist of zero characters (be empty), one character or many of them.
 
 
-## 3. Boolean (logical type)
+## Boolean (logical type)
 
 The boolean type has only two values: `true` and `false`.
 
@@ -555,7 +563,7 @@ let ageFieldChecked = false; // no, age field is not checked
 ```
 
 
-## 4. The “null” value
+## The "null" value
 
 The special `null` value does not belong to any of the types described above.
 
@@ -786,7 +794,7 @@ console.log(8 % 3); // 2, the remainder of 8 divided by 3
 console.log(8 % 4); // 0, the remainder of 8 divided by 4
 ```
 
-### Exponentiation:
+### Exponentiation
 
 The exponentiation operator `a ** b` raises `a` to the power of `b`.
 
@@ -904,7 +912,7 @@ console.log( +apples + +oranges ); // 5
 
 From a mathematician’s standpoint, the abundance of pluses may seem strange. But from a programmer’s standpoint, there’s nothing special: unary pluses are applied first, they convert strings to numbers, and then the binary plus sums them up.
 
-## Operator Precedence:
+## Operator Precedence
 
 If an expression has more than one operator, the execution order is defined by their _precedence_, or, in other words, the default priority order of operators.
 
@@ -1135,7 +1143,7 @@ In this article we’ll learn more about different types of comparisons, how Jav
 
 At the end you’ll find a good recipe to avoid “JavaScript quirks”-related issues.
 
-### Boolean is the result
+## Boolean is the result
 
 All comparison operators return a boolean value:
 
@@ -1157,7 +1165,8 @@ let result = 5 > 4; // assign the result of the comparison
 console.log( result ); // true
 ```
 
-### String comparison
+## String comparison
+
 To see whether a string is greater than another, JavaScript uses the so-called “dictionary” or “lexicographical” order.
 
 In other words, strings are compared letter-by-letter.
@@ -1192,7 +1201,7 @@ The second comparison `'Glow'` and `'Glee'` needs more steps as strings are 
 > 
 > For instance, case matters. A capital letter `"A"` is not equal to the lowercase `"a"`. Which one is greater? The lowercase `"a"`. Why? Because the lowercase character has a greater index in the internal encoding table JavaScript uses (Unicode). We’ll get back to specific details and consequences of this in the chapter [Strings](https://javascript.info/string).
 
-### Comparison of different types
+## Comparison of different types
 
 When comparing values of different types, JavaScript converts the values to numbers.
 
@@ -1306,7 +1315,7 @@ The reason is that an equality check `==` and comparisons `> < >= <=` work d
 On the other hand, the equality check `==` for `undefined` and `null` is defined such that, without any conversions, they equal each other and don’t equal anything else. That’s why (2) `null == 0` is false.
 
 
-### An incomparable undefined
+## An incomparable undefined
 
 The value `undefined` shouldn’t be compared to other values:
 
@@ -1324,7 +1333,7 @@ We get these results because:
 - Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
 - The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
 
-### Avoid Problems
+## Avoid Problems
 
 Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there’s a solid way to avoid problems with them:
 
@@ -1398,7 +1407,8 @@ if (cond) {
 }
 ```
 
-### The “else” clause
+### The "else" clause
+
 The if statement may contain an optional else block. It executes when the condition is falsy.
 
 For example:
@@ -1413,8 +1423,9 @@ if (year == 2015) {
 }
 ```
 
-### Several conditions: “else if”
-Sometimes, we’d like to test several variants of a condition. The else if clause lets us do that.
+### Several conditions: "else if"
+
+Sometimes, we'd like to test several variants of a condition. The else if clause lets us do that.
 
 For example:
 
@@ -1434,7 +1445,8 @@ In the code above, JavaScript first checks `year < 2015`. If that is falsy, it 
 
 There can be more `else if` blocks. The final `else` is optional.
 
-### Conditional operator ‘?’
+### Conditional operator '?'
+
 Sometimes, we need to assign a variable depending on a condition.
 
 For instance:
@@ -1776,7 +1788,7 @@ if (x > 0) alert( 'Greater than zero!' );
 
 Although, the variant with `&&` appears shorter, `if` is more obvious and tends to be a little bit more readable. So we recommend using every construct for its purpose: use `if` if we want `if` and use `&&` if we want AND.
 
-### ! (NOT)
+## ! (NOT)
 The boolean NOT operator is represented with an exclamation sign !.
 
 The syntax is pretty simple:
