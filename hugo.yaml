@@ -8,7 +8,7 @@ menu:
     - identifier: search
       name: Search
       url: /search/
-      weight: 40
+      weight: 50
     - identifier: about
       name: About
       url: /about/
@@ -17,6 +17,10 @@ menu:
       name: Categories
       url: /categories/
       weight: 20
+    - identifier: certifications
+      name: Certs & Achievements
+      url: /certifications/
+      weight: 30
 
 ignoreLogs: "warning-goldmark-raw-html"
 
@@ -93,6 +97,9 @@ outputs:
     - JSON # necessary for search
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     anchorLineNos: false
     codeFences: true

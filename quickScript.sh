@@ -66,5 +66,5 @@ if ! git push origin main; then
     exit 1
 fi
 
-# ✅ Success notification
+# Success notification
 notify-send -e -u low -i "$NOTIF_ICON" "Blog Sync Completed" "Your blog has been synced and pushed to GitHub."
