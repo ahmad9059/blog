@@ -394,11 +394,61 @@ ShowShareButtons: false
 
 <div id="achievements" class="tab-content">
 <div class="achievement-list">
+
+<div class="achievement-item">
+<h3>CALICO Spring '25 - Rank #92 Worldwide, #2 in Pakistan</h3>
+<p>Secured Rank #92 globally and #2 in Pakistan in the CALICO Spring '25 programming competition by UC Berkeley.</p>
+<div class="date">2025</div>
+</div>
+
+<div class="achievement-item">
+<h3>2000+ GitHub Contributions</h3>
+<p>Made over 2000 contributions on GitHub in 2025, demonstrating consistent open-source involvement.</p>
+<div class="date">2025</div>
+</div>
+
+<div class="achievement-item">
+<h3>HyprFlux - 800+ Stars</h3>
+<p>Launched HyprFlux, a Hyprland dotfiles project that reached 800+ stars on GitHub.</p>
+<div class="date">2025</div>
+</div>
+
+<div class="achievement-item">
+<h3>Full-Time Job Offer at VieroMind</h3>
+<p>Received a full job offer at VieroMind based on performance and skills.</p>
+<div class="date">2025</div>
+</div>
+
+<div class="achievement-item">
+<h3>2nd Position - Pakathon (VieroMind)</h3>
+<p>Secured 2nd position in Pakathon, a nationwide hackathon organized by VieroMind.</p>
+<div class="date">2024</div>
+</div>
+
+<div class="achievement-item">
+<h3>1st Position - Maktab-e-Gulab Programming Competition</h3>
+<p>Won 1st place in the Maktab-e-Gulab Programming Competition.</p>
+<div class="date">2024</div>
+</div>
+
 <div class="achievement-item">
 <h3>1st Position - Cybersecurity Workshop</h3>
-<p>Secured 1st Position in a 3-day Cybersecurity Workshop organized by Ignite - National Technology Fund.</p>
+<p>Secured 1st place in a 3-day hands-on Cybersecurity Workshop organized by Ignite - National Technology Fund.</p>
 <div class="date">Sep 2024</div>
 </div>
+
+<div class="achievement-item">
+<h3>3rd Position - Speed Programming (ACM-W)</h3>
+<p>Secured 3rd place in the Speed Programming competition at the ACM-W Celebration Event held at Air University.</p>
+<div class="date">2024</div>
+</div>
+
+<div class="achievement-item">
+<h3>400+ Problems Solved</h3>
+<p>Solved over 400+ problems on LeetCode and GeeksforGeeks platforms.</p>
+<div class="date">Ongoing</div>
+</div>
+
 </div>
 </div>
 
