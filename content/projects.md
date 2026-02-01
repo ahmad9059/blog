@@ -183,4 +183,24 @@ ShowShareButtons: false
 </div>
 </div>
 
+<div class="project-card">
+<img src="/assets/projects/codinghawks.webp" alt="CodingHawks">
+<div class="project-card-info">
+<h3>CodingHawks</h3>
+<p>Official website for Coding Hawks Society at MNS-UoA, empowering coders through projects, learning, and competitions.</p>
+<div class="project-tags">
+<span>TypeScript</span>
+<span>Next.js</span>
+<span>Tailwind CSS</span>
+<span>Prisma</span>
+<span>Supabase</span>
+<span>shadcn/ui</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/ahmad9059/codinghawks" target="_blank">GitHub</a>
+<a href="https://codinghawks.vercel.app" target="_blank">Live Demo</a>
+</div>
+</div>
+</div>
+
 </div>
