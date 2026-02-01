@@ -1,7 +1,7 @@
 ---
 title: "Cloud Computing"
 draft: false
-date: 2026-01-31
+date: 2026-01-14
 description: "AWS Certified Cloud Practitioner notes on Cloud Computing"
 categories:
   - tech
@@ -97,7 +97,7 @@ Author: Ahmad Hassan
 - **Gmail**: Cloud email service (pay only for storage used).
 - **Dropbox, Google Drive, iCloud**: Cloud storage services.
 - **Netflix**: Entirely built on AWS, delivering video-on-demand globally.
-- ✅ Point: You may already use cloud services daily, often without realizing it.
+- Point: You may already use cloud services daily, often without realizing it.
 
 ### Types of Cloud
 

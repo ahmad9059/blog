@@ -1,7 +1,7 @@
 ---
 title: "Other Compute Services ECS, Lambda, Batch, Lightsail"
 draft: false
-date: 2026-01-31
+date: 2026-01-21
 description: "AWS Certified Cloud Practitioner notes on Other Compute Services ECS, Lambda, Batch, Lightsail"
 categories:
   - tech

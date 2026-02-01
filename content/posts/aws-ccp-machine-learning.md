@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning"
 draft: false
-date: 2026-01-31
+date: 2026-01-28
 description: "AWS Certified Cloud Practitioner notes on Machine Learning"
 categories:
   - tech
