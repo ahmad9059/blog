@@ -36,32 +36,39 @@
   border-radius: 6px;
   margin-inline-end: 8px;
 }
+/* Logo hover */
 .logo a:hover {
   transition: 0.15s;
-  color: var(--border);
-}
-svg:hover {
-  transition: 0.15s;
+  color: var(--accent, #5b8def);
 }
 
-/* Social icon hovers with accent color */
+/* Menu item hovers */
+#menu a {
+  transition: color 0.15s ease;
+}
+
+#menu a:hover {
+  color: var(--accent, #5b8def);
+}
+
+/* Social icon hovers */
+.social-icons a svg {
+  transition: color 0.15s ease;
+}
+
 .social-icons a svg:hover {
-  color: #5b8def !important;
-  transition: 0.15s;
+  color: var(--accent, #5b8def) !important;
 }
 
+/* Theme toggle hovers */
 #moon:hover {
   transition: 0.15s;
-  color: #5b8def;
+  color: var(--accent, #5b8def);
 }
 
 #sun:hover {
   transition: 0.15s;
   color: #ffcb6b;
-}
-#menu a:hover {
-  transition: 0.15s;
-  color: var(--border);
 }
 
 button#theme-toggle {
