@@ -1,7 +1,79 @@
-{{- /* Head custom content area start */ -}} {{- /* Insert any custom code
-(web-analytics, resources, etc.) - it will appear in the <head></head> section
-of every page. */ -}} {{- /* Can be overwritten by partial with the same name in
-the global layouts. */ -}} {{- /* Head custom content area end */ -}}
+{{- /* Head custom content area start */ -}}
+{{- /* SEO Meta Tags */ -}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="{{ site.Params.author | default site.Title }}">
+<meta name="generator" content="Hugo {{ hugo.Version }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* Open Graph / Facebook */ -}}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="en_US">
+
+{{- /* Twitter Card */ -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@ahmad9059">
+
+{{- /* Additional SEO */ -}}
+{{- with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{- else }}
+<meta name="keywords" content="{{ delimit site.Params.keywords ", " }}">
+{{- end }}
+
+{{- /* JSON-LD Schema for Person/Website */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}",
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Hassan",
+    "url": "{{ site.BaseURL }}",
+    "sameAs": [
+      "https://github.com/ahmad9059",
+      "https://linkedin.com/in/ahmad9059",
+      "https://leetcode.com/u/ahmad9059"
+    ]
+  },
+  "description": "{{ site.Params.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- end }}
+
+{{- /* JSON-LD Schema for Blog Posts */ -}}
+{{- if and .IsPage (eq .Section "posts") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Summary | plainify | truncate 160 }}",
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Hassan"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Ahmad Hassan"
+  }
+}
+</script>
+{{- end }}
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link

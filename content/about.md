@@ -1,4 +1,7 @@
 ---
+title: "About Ahmad Hassan"
+description: "Software Engineer & Full Stack Developer passionate about building web applications, open-source projects, and sharing knowledge."
+keywords: [Ahmad Hassan, About, Software Engineer, Developer, Pakistan]
 showtoc: false
 searchHidden: true
 ShowRssButtonInSectionTermList: false

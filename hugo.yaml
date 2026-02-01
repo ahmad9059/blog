@@ -1,7 +1,8 @@
 baseURL: "https://itsahmad.vercel.app"
 languageCode: en-us
-title: ahmad
+title: Ahmad Hassan | Software Engineer
 theme: PaperMod
+copyright: "Ahmad Hassan"
 
 menu:
   main:
@@ -33,15 +34,25 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
+services:
+  rss:
+    limit: 20
+
 minify:
   disableXML: false
   minifyOutput: true
 
 params:
   env: production
-  keywords: [Blog, Portfolio]
-  description: "Ahmad's Home on Internet"
-  author: Ahmad
+  keywords: [Ahmad Hassan, Software Engineer, Full Stack Developer, Web Developer, Portfolio, Blog, React, Next.js, TypeScript, Python, AWS, Cloud, Open Source, Pakistan]
+  description: "Ahmad Hassan - Software Engineer & Full Stack Developer. Building innovative web applications, open-source projects, and sharing knowledge through technical blogs."
+  author: Ahmad Hassan
+  title: Ahmad Hassan | Software Engineer & Developer
   defaultTheme: auto
   images: ["/assets/opengraph.webp"]
   profileMode:
@@ -70,6 +81,8 @@ params:
       url: "mailto:ahmadhassan9059@gmail.com"
     - name: "instagram"
       url: "https://instagram.com/ahmad9059.dev"
+    - name: "rss"
+      url: "/index.xml"
   assets:
     favicon: "/assets/fav.ico"
     favicon16x16: "/assets/favicon-16x16.png"

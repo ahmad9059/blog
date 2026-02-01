@@ -1,5 +1,7 @@
 ---
 title: "Projects"
+description: "Portfolio of projects by Ahmad Hassan including SehatScan, HyprFlux, MindOasis, HisaabScore, and more web applications."
+keywords: [Projects, Portfolio, SehatScan, HyprFlux, MindOasis, HisaabScore, Next.js, React, TypeScript]
 showtoc: false
 searchHidden: true
 ShowRssButtonInSectionTermList: false

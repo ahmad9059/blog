@@ -1,5 +1,7 @@
 ---
 title: "Certifications & Achievements"
+description: "Professional certifications and achievements by Ahmad Hassan including AWS, Meta, Google, IBM, GitHub certifications and competition wins."
+keywords: [Certifications, Achievements, AWS, Meta, Google, IBM, GitHub, HackerRank, Programming Competitions]
 showtoc: false
 searchHidden: true
 ShowRssButtonInSectionTermList: false
