@@ -1,3 +1,4 @@
+/* Custom dark theme based on #131418 */
 :root {
     --gap: 24px;
     --content-gap: 20px;
@@ -6,28 +7,31 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+    /* Light mode */
+    --theme: #f8f9fa;
+    --entry: #ffffff;
+    --primary: #131418;
+    --secondary: #5a5d6b;
+    --tertiary: #e9ecef;
+    --content: #1a1c23;
+    --code-block-bg: #131418;
+    --code-bg: #eef0f3;
+    --border: #dee2e6;
+    --accent: #5b8def;
 }
 
+/* Dark mode - #131418 base */
 .dark {
-    --theme: rgb(17, 17, 27);
-    --entry: rgb(24, 24, 37); 
-    --primary: rgb(205, 214, 244); 
-    --secondary: rgb(166, 173, 200); 
-    --tertiary: rgb(30, 30, 46); 
-    --content: rgb(186, 194, 222); 
-    --code-block-bg: rgb(24, 24, 37); 
-    --code-bg: #181825; 
-    --border: rgb(88, 91, 112); 
-
+    --theme: #131418;
+    --entry: #1a1c23;
+    --primary: #e4e6ed;
+    --secondary: #8b8f9e;
+    --tertiary: #1f222a;
+    --content: #d1d4dc;
+    --code-block-bg: #0d0e11;
+    --code-bg: #1a1c23;
+    --border: #2a2d37;
+    --accent: #5b8def;
 }
 
 

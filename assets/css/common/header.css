@@ -44,30 +44,20 @@ svg:hover {
   transition: 0.15s;
 }
 
-.social-icons a:nth-child(1) svg:hover {
-  color: deepskyblue !important;
+/* Social icon hovers with accent color */
+.social-icons a svg:hover {
+  color: #5b8def !important;
+  transition: 0.15s;
 }
 
-.social-icons a:nth-child(2) svg:hover {
-  color: green !important;
-}
-.social-icons a:nth-child(3) svg:hover {
-  color: yellow !important;
-}
-.social-icons a:nth-child(4) svg:hover {
-  color: dodgerblue !important;
-}
-.social-icons a:nth-child(5) svg:hover {
-  color: red !important;
-}
 #moon:hover {
   transition: 0.15s;
-  color: deepskyblue;
+  color: #5b8def;
 }
 
 #sun:hover {
   transition: 0.15s;
-  color: gold;
+  color: #ffcb6b;
 }
 #menu a:hover {
   transition: 0.15s;

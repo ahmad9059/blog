@@ -1,14 +1,15 @@
-/* Light mode code blocks */
+/* Light mode code blocks for #131418 theme */
 body:not(.dark) .highlight,
 body:not(.dark) .highlight pre,
 body:not(.dark) pre {
-  background: #f5f5f5 !important;
+  background: #eef0f3 !important;
+  border: 1px solid #dee2e6;
 }
 
 body:not(.dark) .highlight code,
 body:not(.dark) pre code {
   background: transparent !important;
-  color: #24292e !important;
+  color: #1a1c23 !important;
 }
 
 /* Syntax colors for light mode */
@@ -34,7 +35,7 @@ body:not(.dark) .highlight .se,
 body:not(.dark) .highlight .sh,
 body:not(.dark) .highlight .si,
 body:not(.dark) .highlight .sx {
-  color: #032f62 !important;
+  color: #0a6640 !important;
 }
 
 body:not(.dark) .highlight .na,
@@ -67,8 +68,9 @@ body:not(.dark) .highlight .p {
 
 /* Inline code in light mode */
 body:not(.dark) code {
-  background: #f0f0f0 !important;
-  color: #24292e !important;
+  background: #eef0f3 !important;
+  color: #1a1c23 !important;
+  border: 1px solid #dee2e6;
 }
 
 /* Dark mode copy button */
