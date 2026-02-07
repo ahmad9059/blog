@@ -69,7 +69,6 @@ hugo --gc --minify
 - Set `HUGO_ENV=production` or rely on Vercel defaults for minified output and sitemap/robots generation.
 
 ## Automation Helpers
-- `scripts/import-aws-articles.sh` copies AWS CCP notes from a local path, fixes image references, and stamps front matter. Update `SOURCE_DIR`/`DEST_DIR` before running.
 - `quickScript.sh` rsyncs posts from an Obsidian vault, stages, commits, and pushes. Paths and notification icon are workstation-specific; tailor before use.
 
 ## Troubleshooting
