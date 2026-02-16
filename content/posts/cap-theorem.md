@@ -2,7 +2,7 @@
 title: CAP Theorem
 draft: false
 date: 2026-02-15
-description:
+description: "Understanding the CAP theorem for distributed systems - consistency, availability, and partition tolerance trade-offs explained for system designers."
 categories:
   - tech
 tags:

@@ -2,7 +2,7 @@
 title: Event Driven Architecture
 draft: false
 date: 2026-02-15
-description:
+description: "A practical guide to Event Driven Architecture - producers, consumers, message brokers like Kafka and RabbitMQ, and building loosely coupled systems."
 categories:
   - tech
 tags:

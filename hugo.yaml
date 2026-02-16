@@ -87,8 +87,8 @@ params:
   assets:
     favicon: "/assets/fav.ico"
     favicon16x16: "/assets/favicon-16x16.png"
-    favicon32x32: "</assets/favicon-32x32.png"
-    apple_touch_icon: "<apple-touch-icon.png"
+    favicon32x32: "/assets/favicon-32x32.png"
+    apple_touch_icon: "/assets/apple-touch-icon.png"
     css:
       - css/extended/urdu-font.css
       - css/extended/code-light.css
@@ -129,7 +129,7 @@ markup:
     lineNoStart: 1
     lineNos: false
     lineNumbersInTable: true
-    noClasses: true
+    noClasses: false
     noHl: false
     style: dracula
     tabWidth: 4

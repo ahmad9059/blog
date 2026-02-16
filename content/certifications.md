@@ -207,7 +207,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>AWS Certified Cloud Practitioner</h3>
 <p>Amazon Web Services</p>
-<a href="https://www.credly.com/badges/d12ea9df-c9c3-40c2-8f48-e8d3cc289900" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.credly.com/badges/d12ea9df-c9c3-40c2-8f48-e8d3cc289900" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -216,7 +216,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>CALICO Spring '25</h3>
 <p>UC Berkeley</p>
-<a href="https://hkn.eecs.berkeley.edu/examfiles/certificates?id=5721" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://hkn.eecs.berkeley.edu/examfiles/certificates?id=5721" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -225,7 +225,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Meta Front-End Developer</h3>
 <p>Meta</p>
-<a href="https://www.coursera.org/account/accomplishments/professional-cert/EOD4GA2NMYMM" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/professional-cert/EOD4GA2NMYMM" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -234,7 +234,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>SQL (Intermediate)</h3>
 <p>HackerRank</p>
-<a href="https://www.hackerrank.com/certificates/32242ff98c07" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.hackerrank.com/certificates/32242ff98c07" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -243,7 +243,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Database Structures & MySQL</h3>
 <p>Meta</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/647YYNTB39M2" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/647YYNTB39M2" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -252,7 +252,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>CS50x Puzzle Day 2025</h3>
 <p>Harvard University</p>
-<a href="https://certificates.cs50.io/d7ecbce7-91eb-4f1d-8dc1-bda0c3564972" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://certificates.cs50.io/d7ecbce7-91eb-4f1d-8dc1-bda0c3564972" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -261,7 +261,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Introduction to Databases</h3>
 <p>Meta</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/ITLH074TW550" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/ITLH074TW550" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -270,7 +270,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Introduction to Generative AI</h3>
 <p>Amazon Web Services</p>
-<a href="https://www.credly.com/badges/5a8f69dc-f881-4c30-94e3-94a89ca62c52" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.credly.com/badges/5a8f69dc-f881-4c30-94e3-94a89ca62c52" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -279,7 +279,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Agile Project Management</h3>
 <p>Google</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/YKWFRIEPJQST" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/YKWFRIEPJQST" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -288,7 +288,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>GitHub Foundations</h3>
 <p>GitHub</p>
-<a href="https://www.credly.com/badges/4ddc90a7-090b-4a36-b318-76da222cabba" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.credly.com/badges/4ddc90a7-090b-4a36-b318-76da222cabba" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -297,7 +297,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Problem Solving (Intermediate)</h3>
 <p>HackerRank</p>
-<a href="https://www.hackerrank.com/certificates/7542b0741a9d" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.hackerrank.com/certificates/7542b0741a9d" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -306,7 +306,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Programming with JavaScript</h3>
 <p>Meta</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/YY8J2RAW0UWY" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/YY8J2RAW0UWY" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -315,7 +315,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Introduction to DevOps</h3>
 <p>IBM</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/HEJPAL3ZNCQD" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/HEJPAL3ZNCQD" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -324,7 +324,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Introduction to Software Engineering</h3>
 <p>IBM</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/SSFJX9Q9LOVD" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/SSFJX9Q9LOVD" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -333,7 +333,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Google Cloud Digital Leader</h3>
 <p>Google</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/RFTCJ5KWNSMR" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/RFTCJ5KWNSMR" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -342,7 +342,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Crash Course on Python</h3>
 <p>Google</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/KQDGM9ECXRF9" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/KQDGM9ECXRF9" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -351,7 +351,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Foundations: Data, Data, Everywhere</h3>
 <p>Google</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/7JGEDDR7PASY" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/7JGEDDR7PASY" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -360,7 +360,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Introduction to Git and GitHub</h3>
 <p>Google</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/CHETJ3H9G279" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/CHETJ3H9G279" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -369,7 +369,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Creative & Critical Thinking</h3>
 <p>IBM</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/W8BYDH8QGBLW" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/W8BYDH8QGBLW" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -378,7 +378,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>Critical Thinking Skills</h3>
 <p>UC Davis</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/7HE4RC6U1WUY" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/7HE4RC6U1WUY" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 
@@ -387,7 +387,7 @@ ShowShareButtons: false
 <div class="cert-card-info">
 <h3>AI For Everyone</h3>
 <p>DeepLearning.AI</p>
-<a href="https://www.coursera.org/account/accomplishments/verify/WXYWQ2YNDYDM" target="_blank" class="verify-link" onclick="event.stopPropagation()">Verify</a>
+<a href="https://www.coursera.org/account/accomplishments/verify/WXYWQ2YNDYDM" target="_blank" rel="noopener noreferrer" class="verify-link" onclick="event.stopPropagation()">Verify</a>
 </div>
 </div>
 

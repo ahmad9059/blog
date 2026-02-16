@@ -127,7 +127,7 @@
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
                 {{- if $is_search }}
-                <a href="javascript:void(0)" onclick="openSearchModal()" title="{{ .Title | default .Name }} (Ctrl + K)">
+                <a href="{{ .URL | absLangURL }}" onclick="event.preventDefault();openSearchModal()" title="{{ .Title | default .Name }} (Ctrl + K)">
                     <span>
                         {{- .Pre }}
                         {{- .Name -}}

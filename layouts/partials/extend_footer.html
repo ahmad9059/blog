@@ -95,26 +95,32 @@
 }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 <script>
 (function() {
   const modal = document.getElementById('searchModal');
   const input = document.getElementById('searchModalInput');
   const results = document.getElementById('searchModalResults');
-  let fuse = null, focus = -1;
+  let fuse = null, focus = -1, fuseLoading = false;
 
-  function load() {
-    if (fuse) return;
-    fetch('/index.json').then(r => r.json()).then(data => {
-      fuse = new Fuse(data, { keys: ['title'], threshold: 0.3 });
-    });
+  function loadFuse() {
+    if (fuse || fuseLoading) return;
+    fuseLoading = true;
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js';
+    s.onload = function() {
+      fetch('/index.json').then(r => r.json()).then(data => {
+        fuse = new Fuse(data, { keys: ['title'], threshold: 0.3 });
+        if (input.value.trim()) search(input.value);
+      });
+    };
+    document.head.appendChild(s);
   }
 
   window.openSearchModal = function() {
     modal.classList.add('active');
     input.focus();
     document.body.style.overflow = 'hidden';
-    load();
+    loadFuse();
   };
 
   function close() {

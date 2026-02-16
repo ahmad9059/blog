@@ -97,8 +97,8 @@ ShowShareButtons: false
 <span>Google Gemini</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/SehatScan" target="_blank">GitHub</a>
-<a href="https://sehatscan.vercel.app" target="_blank">Live Demo</a>
+<a href="https://github.com/ahmad9059/SehatScan" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://sehatscan.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -118,8 +118,8 @@ ShowShareButtons: false
 <span>Dotfiles</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/HyprFlux" target="_blank">GitHub</a>
-<a href="https://www.hyprflux.dev" target="_blank">Live Demo</a>
+<a href="https://github.com/ahmad9059/HyprFlux" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://www.hyprflux.dev" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -138,8 +138,8 @@ ShowShareButtons: false
 <span>Google Gemini</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/MindOasis" target="_blank">GitHub</a>
-<a href="https://mindoasis.vercel.app" target="_blank">Live Demo</a>
+<a href="https://github.com/ahmad9059/MindOasis" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://mindoasis.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -159,8 +159,8 @@ ShowShareButtons: false
 <span>Prisma</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/HisaabScore" target="_blank">GitHub</a>
-<a href="https://hisaabscore.vercel.app" target="_blank">Live Demo</a>
+<a href="https://github.com/ahmad9059/HisaabScore" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://hisaabscore.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -180,7 +180,7 @@ ShowShareButtons: false
 <span>Framer Motion</span>
 </div>
 <div class="project-links">
-<a href="https://raf-sp.vercel.app" target="_blank">Live Demo</a>
+<a href="https://raf-sp.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -199,8 +199,8 @@ ShowShareButtons: false
 <span>shadcn/ui</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/codinghawks" target="_blank">GitHub</a>
-<a href="https://codinghawks.vercel.app" target="_blank">Live Demo</a>
+<a href="https://github.com/ahmad9059/codinghawks" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://codinghawks.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
