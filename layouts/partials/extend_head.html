@@ -20,30 +20,58 @@
 <meta name="keywords" content="{{ delimit site.Params.keywords ", " }}">
 {{- end }}
 
-{{- /* JSON-LD Schema for Person/Website */ -}}
+{{- /* JSON-LD Schema for Person + Website */ -}}
 {{- if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.Title }}",
-  "url": "{{ site.BaseURL }}",
-  "author": {
-    "@type": "Person",
-    "name": "Ahmad Hassan",
-    "url": "{{ site.BaseURL }}",
-    "sameAs": [
-      "https://github.com/ahmad9059",
-      "https://linkedin.com/in/ahmad9059",
-      "https://leetcode.com/u/ahmad9059"
-    ]
-  },
-  "description": "{{ site.Params.description }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ site.BaseURL }}search/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.BaseURL }}#person",
+      "name": "Ahmad Hassan",
+      "url": "{{ site.BaseURL }}",
+      "image": "{{ site.BaseURL }}assets/profile-1.webp",
+      "description": "{{ site.Params.description }}",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "VieroMind"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "MNS University of Agriculture, Multan"
+      },
+      "knowsAbout": ["TypeScript", "React", "Next.js", "Python", "AWS", "Full Stack Development", "System Design", "Open Source"],
+      "sameAs": [
+        "https://www.linkedin.com/in/ahmad9059/",
+        "https://github.com/ahmad9059",
+        "https://www.instagram.com/ahmad9059.dev/",
+        "https://www.facebook.com/ahmad9059.dev/",
+        "https://leetcode.com/ahmad9059/"
+      ],
+      "email": "ahmadhassan9059@gmail.com",
+      "nationality": {
+        "@type": "Country",
+        "name": "Pakistan"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.BaseURL }}#website",
+      "name": "{{ site.Title }}",
+      "url": "{{ site.BaseURL }}",
+      "description": "{{ site.Params.description }}",
+      "publisher": {
+        "@id": "{{ site.BaseURL }}#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.BaseURL }}search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
 }
 </script>
 {{- end }}
@@ -55,21 +83,30 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "{{ .Title }}",
-  "description": "{{ .Summary | plainify | truncate 160 }}",
-  "author": {
-    "@type": "Person",
-    "name": "Ahmad Hassan"
-  },
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "url": "{{ .Permalink }}",
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "wordCount": "{{ .WordCount }}",
+  "inLanguage": "{{ .Language.Lang | default "en-us" }}",
+  {{- with .Params.cover.image }}
+  "image": "{{ . | absURL }}",
+  {{- end }}
+  "author": {
+    "@id": "{{ site.BaseURL }}#person"
+  },
+  "publisher": {
+    "@id": "{{ site.BaseURL }}#person"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Ahmad Hassan"
   }
+  {{- with .Params.keywords }},
+  "keywords": [{{ range $i, $e := . }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+  {{- else }}{{- with .Params.tags }},
+  "keywords": [{{ range $i, $e := . }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+  {{- end }}{{- end }}
 }
 </script>
 {{- end }}
