@@ -1,7 +1,7 @@
 ---
 title: "Projects"
-description: "Portfolio of projects by Ahmad Hassan including SehatScan, HyprFlux, MindOasis, HisaabScore, and more web applications."
-keywords: [Projects, Portfolio, SehatScan, HyprFlux, MindOasis, HisaabScore, Next.js, React, TypeScript]
+description: "Projects by Ahmad Hassan — full-stack web apps, open-source tools, and developer infrastructure built with Next.js, TypeScript, AWS, and more."
+keywords: [Projects, Portfolio, SehatScan, HyprFlux, MindOasis, HisaabScore, UAM Tracker, Next.js, React, TypeScript, AWS]
 showtoc: false
 searchHidden: true
 ShowRssButtonInSectionTermList: false
@@ -82,28 +82,6 @@ ShowShareButtons: false
 <div class="project-grid">
 
 <div class="project-card">
-<img src="/assets/projects/sehatscan.webp" alt="SehatScan">
-<div class="project-card-info">
-<h3>SehatScan</h3>
-<p>AI-powered health assessment platform that analyzes medical documents and facial images to generate personalized health insights.</p>
-<div class="project-tags">
-<span>Python</span>
-<span>Next.js</span>
-<span>TypeScript</span>
-<span>AWS</span>
-<span>Redis</span>
-<span>PostgreSQL</span>
-<span>Prisma</span>
-<span>Google Gemini</span>
-</div>
-<div class="project-links">
-<a href="https://github.com/ahmad9059/SehatScan" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a href="https://sehatscan.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
-</div>
-</div>
-</div>
-
-<div class="project-card">
 <img src="/assets/projects/hyprflux.webp" alt="HyprFlux">
 <div class="project-card-info">
 <h3>HyprFlux</h3>
@@ -125,21 +103,23 @@ ShowShareButtons: false
 </div>
 
 <div class="project-card">
-<img src="/assets/projects/mindosis.webp" alt="MindOasis">
+<img src="/assets/projects/sehatscan.webp" alt="SehatScan">
 <div class="project-card-info">
-<h3>MindOasis</h3>
-<p>Hackathon project helping users in Pakistan find mental health professionals with AI-powered profile summaries.</p>
+<h3>SehatScan</h3>
+<p>AI-powered health assessment platform that analyzes medical documents and facial images to generate personalized health insights.</p>
 <div class="project-tags">
-<span>TypeScript</span>
+<span>Python</span>
 <span>Next.js</span>
-<span>Tailwind CSS</span>
-<span>shadcn/ui</span>
-<span>Firebase Genkit</span>
+<span>TypeScript</span>
+<span>AWS</span>
+<span>Redis</span>
+<span>PostgreSQL</span>
+<span>Prisma</span>
 <span>Google Gemini</span>
 </div>
 <div class="project-links">
-<a href="https://github.com/ahmad9059/MindOasis" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a href="https://mindoasis.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+<a href="https://github.com/ahmad9059/SehatScan" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://sehatscan.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
@@ -181,6 +161,47 @@ ShowShareButtons: false
 </div>
 <div class="project-links">
 <a href="https://raf-sp.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<img src="/assets/projects/uam-tracker.webp" alt="UAM Tracker">
+<div class="project-card-info">
+<h3>UAM Tracker</h3>
+<p>Full-stack GPA/CGPA tracker for UAM University students with authenticated dashboards and interactive progress charts.</p>
+<div class="project-tags">
+<span>TypeScript</span>
+<span>Next.js</span>
+<span>Tailwind CSS</span>
+<span>Prisma</span>
+<span>PostgreSQL</span>
+<span>Better Auth</span>
+<span>Recharts</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/ahmad9059/UamTracker" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://uam-tracker.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<img src="/assets/projects/mindosis.webp" alt="MindOasis">
+<div class="project-card-info">
+<h3>MindOasis</h3>
+<p>Hackathon project helping users in Pakistan find mental health professionals with AI-powered profile summaries.</p>
+<div class="project-tags">
+<span>TypeScript</span>
+<span>Next.js</span>
+<span>Tailwind CSS</span>
+<span>shadcn/ui</span>
+<span>Firebase Genkit</span>
+<span>Google Gemini</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/ahmad9059/MindOasis" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://mindoasis.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 </div>
 </div>
 </div>
