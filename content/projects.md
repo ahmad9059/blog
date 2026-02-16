@@ -21,6 +21,8 @@ ShowShareButtons: false
   transition: transform 0.2s, box-shadow 0.2s;
   background: var(--entry);
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover {
   transform: translateY(-4px);
@@ -37,6 +39,9 @@ ShowShareButtons: false
 }
 .project-card-info {
   padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .project-card-info h3 {
   margin: 0 0 0.5rem 0;
@@ -64,6 +69,7 @@ ShowShareButtons: false
 .project-links {
   display: flex;
   gap: 0.75rem;
+  margin-top: auto;
 }
 .project-links a {
   font-size: 0.85rem;
