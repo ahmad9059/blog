@@ -1,9 +1,101 @@
+/* Code block inner padding */
+.highlight pre code {
+  padding: 1rem !important;
+  display: block;
+}
+
+/* ── Language label ── */
+.code-block {
+  position: relative;
+}
+
+.code-block::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
+  font-family: var(--font-mono, monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+  border-radius: 0 var(--radius) 0 var(--radius);
+  pointer-events: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+/* Hide language label when copy button is visible (on hover) */
+.code-block:hover::before {
+  opacity: 0;
+}
+
+.dark .code-block::before {
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body:not(.dark) .code-block::before {
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ── Line numbers ── */
+.chroma .lntd {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.chroma .lntd:first-child {
+  width: auto;
+}
+
+/* Make table cells seamless — background comes from outer .highlight only */
+.chroma .lntd pre,
+.chroma .lntd pre code {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.chroma .lnt {
+  padding: 0 0.8em 0 0.4em !important;
+}
+
+body:not(.dark) .chroma .lnt {
+  color: #9ca3af !important;
+}
+
+/* Ensure line-number table has no gaps */
+.chroma .lntable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* Line-number column padding */
+.chroma .lntd:first-child pre code {
+  padding: 1rem 0 1rem 0.5rem !important;
+}
+
+/* Code column padding */
+.chroma .lntd:last-child pre code {
+  padding: 1rem 1rem 1rem 0.5rem !important;
+}
+
 /* Light mode code blocks for #131418 theme */
-body:not(.dark) .highlight,
-body:not(.dark) .highlight pre,
-body:not(.dark) pre {
+body:not(.dark) .highlight {
   background: #eef0f3 !important;
   border: 1px solid #dee2e6;
+}
+
+body:not(.dark) .highlight pre,
+body:not(.dark) .highlight .chroma {
+  background: #eef0f3 !important;
+  border: none;
 }
 
 body:not(.dark) .highlight code,
