@@ -61,7 +61,7 @@ params:
     title: "Ahmad Hassan" # optional default will be site title
     subtitle: "My Home on Internet"
     imageUrl: "/assets/profile-1.webp" # Ensure this file exists
-    imageTitle: "profile-picture" # optional
+    imageTitle: "Ahmad Hassan - Software Engineer from Pakistan"
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     buttons:
