@@ -4,7 +4,7 @@ draft: false
 date: 2026-02-15
 description:
 categories:
-  - tech 👨🏻‍💻
+  - tech
 tags:
   - tech
   - web
