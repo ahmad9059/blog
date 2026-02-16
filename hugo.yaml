@@ -53,6 +53,7 @@ params:
   description: "Ahmad Hassan - Software Engineer & Full Stack Developer. Building innovative web applications, open-source projects, and sharing knowledge through technical blogs."
   author: Ahmad Hassan
   title: Ahmad Hassan | Software Engineer & Developer
+  seoTitle: Ahmad Hassan - Software Engineer
   defaultTheme: auto
   images: ["/assets/opengraph.webp"]
   profileMode:
