@@ -1,0 +1,314 @@
+[
+  {
+    "id": "bio-intro",
+    "category": "about",
+    "title": "Introduction",
+    "content": "I'm Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. I currently work at VieroMind and study at MNS University of Agriculture, Multan. I build web applications, contribute to open source, and write about things I learn along the way."
+  },
+  {
+    "id": "bio-work",
+    "category": "about",
+    "title": "What I Do",
+    "content": "I work primarily with TypeScript, Next.js, and Golang on the frontend and backend, with cloud infrastructure on AWS. My day-to-day involves building full-stack applications, designing system architecture, and shipping products from idea to deployment."
+  },
+  {
+    "id": "bio-opensource",
+    "category": "about",
+    "title": "Open Source & Community",
+    "content": "Open source is something I genuinely care about. I've made 2,000+ contributions on GitHub in 2025 alone, and I try to build tools that are useful to others. HyprFlux started as my personal dotfiles and turned into something the Linux community actually uses daily with over 800+ stars on GitHub."
+  },
+  {
+    "id": "bio-competitive",
+    "category": "about",
+    "title": "Competitive Programming",
+    "content": "I enjoy competitive programming. I've solved 400+ problems on LeetCode and GeeksforGeeks, ranked #92 worldwide and #2 in Pakistan at UC Berkeley's CALICO Spring '25 competition, and picked up a few wins at national-level hackathons and programming contests."
+  },
+  {
+    "id": "bio-writing",
+    "category": "about",
+    "title": "Writing & Blog",
+    "content": "I write technical blogs covering system design, AWS cloud, web development, databases, shell scripting, and occasionally personal topics. I started writing because it helps me think more clearly about what I'm learning, and if it helps someone else along the way, even better. My blog is available at /posts/."
+  },
+  {
+    "id": "bio-beyond-code",
+    "category": "about",
+    "title": "Beyond Code",
+    "content": "I'm an Arch Linux user running a Hyprland setup. I like my tools fast, minimal, and keyboard-driven. Neovim is my primary editor, Zsh is my shell, and I try to keep things distraction-free. When I'm not coding, I'm usually reading about productivity and self-improvement, customizing my Linux desktop, or exploring new tech."
+  },
+  {
+    "id": "contact-info",
+    "category": "contact",
+    "title": "Contact Information",
+    "content": "You can reach me at: Email: ahmadhassan9059@gmail.com, LinkedIn: linkedin.com/in/ahmad9059, GitHub: github.com/ahmad9059, LeetCode: leetcode.com/u/ahmad9059, Instagram: instagram.com/ahmad9059.dev. My portfolio website is at itsahmad.vercel.app."
+  },
+  {
+    "id": "skills-techstack",
+    "category": "skills",
+    "title": "Technical Skills & Stack",
+    "content": "My primary tech stack includes: Languages: TypeScript, JavaScript, Python, Golang, SQL, Shell scripting. Frontend: React, Next.js, Tailwind CSS, shadcn/ui, Framer Motion, GSAP. Backend: Next.js API routes, Golang, Node.js. Databases: PostgreSQL, MySQL, Supabase, Firebase, Redis. ORMs: Prisma. Cloud: AWS (Certified Cloud Practitioner), Google Cloud. DevOps: Git, GitHub, Docker, Vercel. AI/ML: Google Gemini, Google Genkit, Firebase Genkit. Authentication: Better Auth, Firebase Auth."
+  },
+  {
+    "id": "project-hyprflux",
+    "category": "project",
+    "title": "HyprFlux",
+    "content": "HyprFlux is my most popular project with 800+ GitHub stars. It's a collection of dotfiles and configs for a beautiful, efficient Hyprland desktop on Arch Linux. It's minimal, productive, and fast. Built with Linux, Arch Linux, Hyprland, Waybar, Shell, and CSS. The project has its own website at hyprflux.dev. GitHub: github.com/ahmad9059/HyprFlux"
+  },
+  {
+    "id": "project-sehatscan",
+    "category": "project",
+    "title": "SehatScan",
+    "content": "SehatScan is an AI-powered health assessment platform that analyzes medical documents and facial images to generate personalized health insights. Built with Python, Next.js, TypeScript, AWS, Redis, PostgreSQL, Prisma, and Google Gemini. Live at sehatscan.vercel.app. GitHub: github.com/ahmad9059/SehatScan"
+  },
+  {
+    "id": "project-hisaabscore",
+    "category": "project",
+    "title": "HisaabScore",
+    "content": "HisaabScore is an AI-powered alternative credit scoring system for gig workers and informal economy workers lacking traditional credit history. Built with TypeScript, Next.js, Tailwind CSS, Firebase, Google Genkit, Gemini 2.0, and Prisma. Live at hisaabscore.vercel.app. GitHub: github.com/ahmad9059/HisaabScore"
+  },
+  {
+    "id": "project-raf-sp",
+    "category": "project",
+    "title": "RAF-SP",
+    "content": "RAF-SP is an agricultural data management platform with department management, equipment tracking, and maintenance logs. Built with TypeScript, Next.js, Tailwind CSS, Prisma, Supabase, shadcn/ui, and Framer Motion. Live at raf-sp.vercel.app."
+  },
+  {
+    "id": "project-uam-tracker",
+    "category": "project",
+    "title": "UAM Tracker",
+    "content": "UAM Tracker is a full-stack GPA/CGPA tracker for UAM University students with authenticated dashboards and interactive progress charts. Built with TypeScript, Next.js, Tailwind CSS, Prisma, PostgreSQL, Better Auth, and Recharts. Live at uam-tracker.vercel.app. GitHub: github.com/ahmad9059/UamTracker"
+  },
+  {
+    "id": "project-mindoasis",
+    "category": "project",
+    "title": "MindOasis",
+    "content": "MindOasis is a hackathon project that helps users in Pakistan find mental health professionals with AI-powered profile summaries. Built with TypeScript, Next.js, Tailwind CSS, shadcn/ui, Firebase Genkit, and Google Gemini. Live at mindoasis.vercel.app. GitHub: github.com/ahmad9059/MindOasis"
+  },
+  {
+    "id": "project-codinghawks",
+    "category": "project",
+    "title": "CodingHawks",
+    "content": "CodingHawks is the official website for the Coding Hawks Society at MNS University of Agriculture (MNS-UoA), empowering coders through projects, learning, and competitions. Built with TypeScript, Next.js, Tailwind CSS, Prisma, Supabase, and shadcn/ui. Live at codinghawks.vercel.app. GitHub: github.com/ahmad9059/codinghawks"
+  },
+  {
+    "id": "cert-aws-ccp",
+    "category": "certification",
+    "title": "AWS Certified Cloud Practitioner",
+    "content": "I hold the AWS Certified Cloud Practitioner certification from Amazon Web Services, obtained in October 2025. Verify at: credly.com/badges/d12ea9df-c9c3-40c2-8f48-e8d3cc289900"
+  },
+  {
+    "id": "cert-calico",
+    "category": "certification",
+    "title": "CALICO Spring 25",
+    "content": "I participated in CALICO Spring '25 by UC Berkeley and earned a certificate, obtained in June 2025. I ranked #92 worldwide and #2 in Pakistan. Verify at: hkn.eecs.berkeley.edu/examfiles/certificates?id=5721"
+  },
+  {
+    "id": "cert-meta-frontend",
+    "category": "certification",
+    "title": "Meta Front-End Developer",
+    "content": "I completed the Meta Front-End Developer Professional Certificate from Meta, obtained in June 2025. Verify at: coursera.org/account/accomplishments/professional-cert/EOD4GA2NMYMM"
+  },
+  {
+    "id": "cert-sql-intermediate",
+    "category": "certification",
+    "title": "SQL Intermediate",
+    "content": "I hold the SQL (Intermediate) certification from HackerRank, obtained in May 2025. Verify at: hackerrank.com/certificates/32242ff98c07"
+  },
+  {
+    "id": "cert-meta-mysql",
+    "category": "certification",
+    "title": "Database Structures and MySQL",
+    "content": "I completed the Database Structures and Management with MySQL course from Meta, obtained in April 2025. Verify at: coursera.org/account/accomplishments/verify/647YYNTB39M2"
+  },
+  {
+    "id": "cert-cs50-puzzle",
+    "category": "certification",
+    "title": "CS50x Puzzle Day 2025",
+    "content": "I participated in and completed CS50x Puzzle Day 2025 by Harvard University, obtained in April 2025. Verify at: certificates.cs50.io/d7ecbce7-91eb-4f1d-8dc1-bda0c3564972"
+  },
+  {
+    "id": "cert-meta-intro-db",
+    "category": "certification",
+    "title": "Introduction to Databases",
+    "content": "I completed the Introduction to Databases course from Meta, obtained in March 2025. Verify at: coursera.org/account/accomplishments/verify/ITLH074TW550"
+  },
+  {
+    "id": "cert-aws-genai",
+    "category": "certification",
+    "title": "Introduction to Generative AI",
+    "content": "I completed the Introduction to Generative AI course from Amazon Web Services, obtained in March 2025. Verify at: credly.com/badges/5a8f69dc-f881-4c30-94e3-94a89ca62c52"
+  },
+  {
+    "id": "cert-google-agile",
+    "category": "certification",
+    "title": "Agile Project Management",
+    "content": "I completed the Agile Project Management course from Google, obtained in January 2025. Verify at: coursera.org/account/accomplishments/verify/YKWFRIEPJQST"
+  },
+  {
+    "id": "cert-github-foundations",
+    "category": "certification",
+    "title": "GitHub Foundations",
+    "content": "I hold the GitHub Foundations certification from GitHub, obtained in January 2025. Verify at: credly.com/badges/4ddc90a7-090b-4a36-b318-76da222cabba"
+  },
+  {
+    "id": "cert-problem-solving",
+    "category": "certification",
+    "title": "Problem Solving Intermediate",
+    "content": "I hold the Problem Solving (Intermediate) certification from HackerRank, obtained in January 2025. Verify at: hackerrank.com/certificates/7542b0741a9d"
+  },
+  {
+    "id": "cert-meta-javascript",
+    "category": "certification",
+    "title": "Programming with JavaScript",
+    "content": "I completed the Programming with JavaScript course from Meta, obtained in January 2025. Verify at: coursera.org/account/accomplishments/verify/YY8J2RAW0UWY"
+  },
+  {
+    "id": "cert-ibm-devops",
+    "category": "certification",
+    "title": "Introduction to DevOps",
+    "content": "I completed the Introduction to DevOps course from IBM, obtained in December 2024. Verify at: coursera.org/account/accomplishments/verify/HEJPAL3ZNCQD"
+  },
+  {
+    "id": "cert-ibm-se",
+    "category": "certification",
+    "title": "Introduction to Software Engineering",
+    "content": "I completed the Introduction to Software Engineering course from IBM, obtained in December 2024. Verify at: coursera.org/account/accomplishments/verify/SSFJX9Q9LOVD"
+  },
+  {
+    "id": "cert-google-cloud",
+    "category": "certification",
+    "title": "Google Cloud Digital Leader",
+    "content": "I completed the Google Cloud Digital Leader certification from Google, obtained in February 2024. Verify at: coursera.org/account/accomplishments/verify/RFTCJ5KWNSMR"
+  },
+  {
+    "id": "cert-google-python",
+    "category": "certification",
+    "title": "Crash Course on Python",
+    "content": "I completed the Crash Course on Python from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/KQDGM9ECXRF9"
+  },
+  {
+    "id": "cert-google-data",
+    "category": "certification",
+    "title": "Foundations Data Data Everywhere",
+    "content": "I completed Foundations: Data, Data, Everywhere from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/7JGEDDR7PASY"
+  },
+  {
+    "id": "cert-google-git",
+    "category": "certification",
+    "title": "Introduction to Git and GitHub",
+    "content": "I completed the Introduction to Git and GitHub course from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/CHETJ3H9G279"
+  },
+  {
+    "id": "cert-ibm-thinking",
+    "category": "certification",
+    "title": "Creative and Critical Thinking",
+    "content": "I completed Solving Problems with Creative and Critical Thinking from IBM, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/W8BYDH8QGBLW"
+  },
+  {
+    "id": "cert-ucdavis-thinking",
+    "category": "certification",
+    "title": "Critical Thinking Skills",
+    "content": "I completed Critical Thinking Skills for the Professional from UC Davis, obtained in December 2023. Verify at: coursera.org/account/accomplishments/verify/7HE4RC6U1WUY"
+  },
+  {
+    "id": "cert-deeplearning-ai",
+    "category": "certification",
+    "title": "AI For Everyone",
+    "content": "I completed AI For Everyone from DeepLearning.AI, obtained in November 2023. Verify at: coursera.org/account/accomplishments/verify/WXYWQ2YNDYDM"
+  },
+  {
+    "id": "achievement-calico",
+    "category": "achievement",
+    "title": "CALICO Spring 25 Ranking",
+    "content": "I secured Rank #92 globally and #2 in Pakistan in the CALICO Spring '25 programming competition organized by UC Berkeley in 2025."
+  },
+  {
+    "id": "achievement-github-contributions",
+    "category": "achievement",
+    "title": "2000+ GitHub Contributions",
+    "content": "I made over 2000 contributions on GitHub in 2025, demonstrating consistent open-source involvement and dedication to building software."
+  },
+  {
+    "id": "achievement-hyprflux-stars",
+    "category": "achievement",
+    "title": "HyprFlux 800+ Stars",
+    "content": "I launched HyprFlux, a Hyprland dotfiles project that reached 800+ stars on GitHub, making it widely used in the Linux community."
+  },
+  {
+    "id": "achievement-vieromind",
+    "category": "achievement",
+    "title": "Full-Time Job at VieroMind",
+    "content": "I received a full-time job offer at VieroMind based on my performance and skills in 2025."
+  },
+  {
+    "id": "achievement-pakathon",
+    "category": "achievement",
+    "title": "2nd Position Pakathon",
+    "content": "I secured 2nd position in Pakathon, a nationwide hackathon organized by VieroMind in 2024."
+  },
+  {
+    "id": "achievement-maktab",
+    "category": "achievement",
+    "title": "1st Position Programming Competition",
+    "content": "I won 1st place in the Maktab-e-Gulab Programming Competition in 2024."
+  },
+  {
+    "id": "achievement-cybersecurity",
+    "category": "achievement",
+    "title": "1st Position Cybersecurity Workshop",
+    "content": "I secured 1st place in a 3-day hands-on Cybersecurity Workshop organized by Ignite - National Technology Fund in September 2024."
+  },
+  {
+    "id": "achievement-acmw",
+    "category": "achievement",
+    "title": "3rd Position Speed Programming",
+    "content": "I secured 3rd place in the Speed Programming competition at the ACM-W Celebration Event held at Air University in 2024."
+  },
+  {
+    "id": "achievement-problems-solved",
+    "category": "achievement",
+    "title": "400+ Problems Solved",
+    "content": "I have solved over 400+ problems on LeetCode and GeeksforGeeks platforms, demonstrating strong problem-solving and data structures & algorithms skills."
+  },
+  {
+    "id": "tools-os",
+    "category": "tools",
+    "title": "Operating System and Desktop",
+    "content": "I use Arch Linux as my operating system because it's minimal, customizable, and gets out of my way. My window manager is Hyprland (Wayland-based tiling WM) with Waybar as my status bar. I use Tofi as my application launcher and power menu."
+  },
+  {
+    "id": "tools-terminal",
+    "category": "tools",
+    "title": "Terminal and Shell",
+    "content": "I use foot as my terminal emulator for its speed and Wayland support. My shell is Zsh with syntax highlighting and auto-completion plugins. For file management in the terminal, I use Yazi which is fast and supports image previews."
+  },
+  {
+    "id": "tools-editors",
+    "category": "tools",
+    "title": "Code Editors",
+    "content": "Neovim is my primary code editor. I like my tools fast, minimal, and keyboard-driven. VSCodium is my secondary editor (VS Code without Microsoft telemetry) for when I need to show code to others."
+  },
+  {
+    "id": "tools-apps",
+    "category": "tools",
+    "title": "Applications and Software",
+    "content": "I use Thorium as my web browser (Chromium-based, fast, no telemetry) with uBlock Origin and Vimium extensions. For notes I use Obsidian, for reading books Foliate, for messaging 64gram (Telegram), for office work WPS Office, and for email Thunderbird."
+  },
+  {
+    "id": "tools-theme",
+    "category": "tools",
+    "title": "Theme and Aesthetics",
+    "content": "I use Tokyo Night and Catppuccin color schemes for my setup. My terminal font is JetBrains Mono with Nerd Font icons. I prefer a minimal, distraction-free aesthetic."
+  },
+  {
+    "id": "tools-website",
+    "category": "tools",
+    "title": "Portfolio Website",
+    "content": "This portfolio website is built with Hugo static site generator and the PaperMod theme. Hugo outputs plain HTML and CSS, keeping things fast and lightweight. The site is deployed on Vercel at itsahmad.vercel.app. I write my blog posts in Obsidian and sync them to Hugo using a custom shell script."
+  },
+  {
+    "id": "education",
+    "category": "about",
+    "title": "Education",
+    "content": "I am currently studying at MNS University of Agriculture, Multan, Pakistan. I'm pursuing my degree while working as a Software Engineer at VieroMind."
+  }
+]

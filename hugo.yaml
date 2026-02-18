@@ -22,6 +22,10 @@ menu:
       name: Certs
       url: /certifications/
       weight: 30
+    - identifier: chat
+      name: Chat
+      url: /chat/
+      weight: 45
     - identifier: search
       name: Search
       url: /search/
