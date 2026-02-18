@@ -214,7 +214,10 @@ module.exports = async function handler(req, res) {
     if (!geminiResponse.ok) {
       const errorText = await geminiResponse.text();
       console.error("Gemini API error:", geminiResponse.status, errorText);
-      return res.status(500).json({ error: "Failed to generate response" });
+      return res.status(500).json({ 
+        error: "Failed to generate response", 
+        detail: `Gemini ${geminiResponse.status}: ${errorText}` 
+      });
     }
 
     const geminiData = await geminiResponse.json();
