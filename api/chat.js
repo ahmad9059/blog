@@ -185,7 +185,8 @@ module.exports = async function handler(req, res) {
     });
 
     // Step 5: Call Gemini API (non-streaming for compatibility)
-    const geminiModel = "gemini-2.0-flash";
+    // Use gemini-2.5-flash (free tier, separate quota from 2.0)
+    const geminiModel = "gemini-2.5-flash-lite";
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
 
     const geminiResponse = await fetch(geminiUrl, {
@@ -214,6 +215,17 @@ module.exports = async function handler(req, res) {
     if (!geminiResponse.ok) {
       const errorText = await geminiResponse.text();
       console.error("Gemini API error:", geminiResponse.status, errorText);
+      
+      if (geminiResponse.status === 429) {
+        return res.status(429).json({ 
+          error: "I'm getting too many requests right now. Please try again in a minute." 
+        });
+      }
+      if (geminiResponse.status === 403) {
+        return res.status(500).json({ 
+          error: "API configuration error. Please try again later." 
+        });
+      }
       return res.status(500).json({ 
         error: "Failed to generate response", 
         detail: `Gemini ${geminiResponse.status}: ${errorText}` 

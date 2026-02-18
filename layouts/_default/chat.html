@@ -358,6 +358,11 @@
   let isGenerating = false;
   let conversationHistory = [];
 
+  // Auto-detect API URL: localhost uses dev-server on port 3001, production uses relative path
+  const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ? 'http://localhost:3001/api/chat'
+    : '/api/chat';
+
   // Auto-resize textarea
   chatInput.addEventListener('input', function() {
     this.style.height = 'auto';
@@ -502,7 +507,7 @@
     addTypingIndicator();
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
