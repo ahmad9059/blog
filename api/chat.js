@@ -185,8 +185,7 @@ module.exports = async function handler(req, res) {
     });
 
     // Step 5: Call Gemini API (non-streaming for compatibility)
-    // Use gemini-2.5-flash (free tier, separate quota from 2.0)
-    const geminiModel = "gemini-2.5-flash-lite";
+    const geminiModel = "gemini-2.5-flash";
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
 
     const geminiResponse = await fetch(geminiUrl, {
