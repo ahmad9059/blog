@@ -1,17 +1,27 @@
 // Load knowledge base and embeddings at cold start
 // Using require() ensures Vercel's bundler includes these files
-const knowledge = require("./knowledge.json");
-const embeddingsData = require("./embeddings.json");
+// Wrapped in try-catch to prevent total function crash on load failure
+let knowledge = null;
+let embeddingsData = null;
+let knowledgeMap = {};
+let embeddingsMap = {};
+let loadError = null;
 
-// Build a lookup map: id -> { chunk, vector }
-const knowledgeMap = {};
-knowledge.forEach((chunk) => {
-  knowledgeMap[chunk.id] = chunk;
-});
-const embeddingsMap = {};
-embeddingsData.forEach((item) => {
-  embeddingsMap[item.id] = item.vector;
-});
+try {
+  knowledge = require("./knowledge.json");
+  embeddingsData = require("./embeddings.json");
+
+  // Build lookup maps: id -> { chunk, vector }
+  knowledge.forEach((chunk) => {
+    knowledgeMap[chunk.id] = chunk;
+  });
+  embeddingsData.forEach((item) => {
+    embeddingsMap[item.id] = item.vector;
+  });
+} catch (e) {
+  loadError = e.message;
+  console.error("Failed to load knowledge/embeddings:", e.message);
+}
 
 // Simple in-memory rate limiter
 const rateLimitMap = new Map();
@@ -127,7 +137,13 @@ module.exports = async function handler(req, res) {
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    console.error("Missing GEMINI_API_KEY env var");
     return res.status(500).json({ error: "Server configuration error: missing API key" });
+  }
+
+  if (loadError) {
+    console.error("Data load failed at cold start:", loadError);
+    return res.status(500).json({ error: "Server configuration error: failed to load knowledge data", detail: loadError });
   }
 
   try {
@@ -229,8 +245,13 @@ module.exports = async function handler(req, res) {
   } catch (error) {
     console.error("Chat API error:", error.message, error.stack);
     if (!res.headersSent) {
-      res.status(500).json({ error: "An error occurred: " + error.message });
+      res.status(500).json({ 
+        error: "An error occurred processing your request",
+        detail: error.message,
+        step: "unknown"
+      });
     } else {
+      res.write(`data: ${JSON.stringify({ error: error.message })}\n\n`);
       res.end();
     }
   }
