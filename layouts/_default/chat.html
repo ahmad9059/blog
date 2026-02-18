@@ -213,9 +213,21 @@
 
   .suggested-questions {
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .suggested-row {
+    display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 0.5rem 0;
     justify-content: center;
   }
 
@@ -385,12 +397,16 @@
         <p>Hey! I'm Ahmad -- a Software Engineer and Full Stack Developer from Pakistan. Ask me anything about my projects, skills, experience, or certifications. I'm happy to help!</p>
       </div>
     </div>
+  </div>
 
-    <div class="suggested-questions" id="suggestedQuestions">
-      <button class="suggested-btn" onclick="askSuggested(this)">What are your top projects?</button>
-      <button class="suggested-btn" onclick="askSuggested(this)">What's your tech stack?</button>
-      <button class="suggested-btn" onclick="askSuggested(this)">Tell me about your certifications</button>
+  <div class="suggested-questions" id="suggestedQuestions">
+    <div class="suggested-row">
       <button class="suggested-btn" onclick="askSuggested(this)">What tools do you use?</button>
+      <button class="suggested-btn" onclick="askSuggested(this)">Tell me about your certifications</button>
+    </div>
+    <div class="suggested-row">
+      <button class="suggested-btn" onclick="askSuggested(this)">What's your tech stack?</button>
+      <button class="suggested-btn" onclick="askSuggested(this)">What are your top projects?</button>
       <button class="suggested-btn" onclick="askSuggested(this)">How can I contact you?</button>
     </div>
   </div>
