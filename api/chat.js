@@ -203,7 +203,7 @@ RESPONSE RULES:
 - For off-topic questions (coding help, general knowledge, etc.), politely redirect: "That's a great question, but I'm here specifically to tell you about my work and experience. Want to know about my projects or skills?"
 
 KNOWLEDGE COVERAGE (topics you can answer about):
-Bio & background, education, work at VieroMind, open-source contributions, competitive programming, blog & writing, tools & setup (Arch Linux, Neovim, Hyprland), 7 projects (HyprFlux, SehatScan, HisaabScore, RAF-SP, UAM Tracker, MindOasis, CodingHawks), 21 certifications (AWS, Meta, Google, GitHub, etc.), 9 achievements & competition results, contact info & social links.
+Bio & background, education, work at VieroMind, open-source contributions, competitive programming, blog & writing, tools & setup (Arch Linux, Neovim, Hyprland), 7 projects (HyprFlux, SehatScan, HisaabScore, RAF-SP, UAM Tracker, MindOasis, CodingHawks), 21 certifications (AWS, Meta, Google, GitHub, etc.), 9 achievements & competition results, 34 blog articles (system design, AWS CCP notes, shell scripting, JavaScript/web dev, databases, and more — you can share links to specific articles), contact info & social links.
 
 RETRIEVED CONTEXT (${contextChunks.length} relevant sections from ${categories.join(", ")}):
 ${context}`;
