@@ -57,7 +57,8 @@ async function getQueryEmbedding(text, apiKey) {
   });
 
   if (!response.ok) {
-    throw new Error(`Embedding API error: ${response.status}`);
+    const errBody = await response.text();
+    throw new Error(`Embedding API error ${response.status}: ${errBody}`);
   }
 
   const data = await response.json();
@@ -126,7 +127,7 @@ module.exports = async function handler(req, res) {
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    return res.status(500).json({ error: "Server configuration error" });
+    return res.status(500).json({ error: "Server configuration error: missing API key" });
   }
 
   try {
@@ -167,9 +168,9 @@ module.exports = async function handler(req, res) {
       parts: [{ text: message }],
     });
 
-    // Step 5: Call Gemini API with streaming
+    // Step 5: Call Gemini API (non-streaming for compatibility)
     const geminiModel = "gemini-2.0-flash";
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:streamGenerateContent?alt=sse&key=${apiKey}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
 
     const geminiResponse = await fetch(geminiUrl, {
       method: "POST",
@@ -196,55 +197,39 @@ module.exports = async function handler(req, res) {
 
     if (!geminiResponse.ok) {
       const errorText = await geminiResponse.text();
-      console.error("Gemini API error:", errorText);
+      console.error("Gemini API error:", geminiResponse.status, errorText);
       return res.status(500).json({ error: "Failed to generate response" });
     }
 
-    // Stream the response back using SSE
+    const geminiData = await geminiResponse.json();
+    const responseText = geminiData?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+    if (!responseText) {
+      console.error("No text in Gemini response:", JSON.stringify(geminiData));
+      return res.status(500).json({ error: "Empty response from AI" });
+    }
+
+    // Send response as SSE for frontend compatibility
     res.setHeader("Content-Type", "text/event-stream");
     res.setHeader("Cache-Control", "no-cache");
     res.setHeader("Connection", "keep-alive");
 
-    const reader = geminiResponse.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = "";
-
-    try {
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n");
-        buffer = lines.pop() || "";
-
-        for (const line of lines) {
-          if (line.startsWith("data: ")) {
-            const jsonStr = line.slice(6).trim();
-            if (!jsonStr || jsonStr === "[DONE]") continue;
-
-            try {
-              const parsed = JSON.parse(jsonStr);
-              const text = parsed?.candidates?.[0]?.content?.parts?.[0]?.text;
-              if (text) {
-                res.write(`data: ${JSON.stringify({ text })}\n\n`);
-              }
-            } catch (e) {
-              // Skip malformed JSON chunks
-            }
-          }
-        }
-      }
-    } catch (streamError) {
-      console.error("Stream error:", streamError);
+    // Send the full text in chunks to simulate streaming
+    const words = responseText.split(" ");
+    const chunkSize = 3; // Send 3 words at a time
+    
+    for (let i = 0; i < words.length; i += chunkSize) {
+      const chunk = words.slice(i, i + chunkSize).join(" ");
+      const suffix = i + chunkSize < words.length ? " " : "";
+      res.write(`data: ${JSON.stringify({ text: chunk + suffix })}\n\n`);
     }
 
     res.write("data: [DONE]\n\n");
     res.end();
   } catch (error) {
-    console.error("Chat API error:", error);
+    console.error("Chat API error:", error.message, error.stack);
     if (!res.headersSent) {
-      res.status(500).json({ error: "An error occurred processing your request" });
+      res.status(500).json({ error: "An error occurred: " + error.message });
     } else {
       res.end();
     }
