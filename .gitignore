@@ -1,2 +1,4 @@
 /content/posts/.obsidian/
 public/
+.env
+.env.*
