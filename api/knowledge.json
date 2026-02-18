@@ -3,7 +3,7 @@
     "id": "bio-intro",
     "category": "about",
     "title": "Introduction",
-    "content": "I'm Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. I currently work at VieroMind and study at MNS University of Agriculture, Multan. I build web applications, contribute to open source, and write about things I learn along the way."
+    "content": "I'm Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. I currently work at VieroMind and study at MNS University of Agriculture, Multan. I build web applications, contribute to open source, and write about things I learn along the way. My portfolio is at itsahmad.vercel.app."
   },
   {
     "id": "bio-work",
@@ -310,5 +310,29 @@
     "category": "about",
     "title": "Education",
     "content": "I am currently studying at MNS University of Agriculture, Multan, Pakistan. I'm pursuing my degree while working as a Software Engineer at VieroMind."
+  },
+  {
+    "id": "summary-projects",
+    "category": "project",
+    "title": "Projects Overview",
+    "content": "I have 7 main projects on my portfolio: 1) HyprFlux (800+ stars, Hyprland dotfiles for Arch Linux, hyprflux.dev), 2) SehatScan (AI health assessment with medical document analysis, sehatscan.vercel.app), 3) HisaabScore (AI credit scoring for gig workers, hisaabscore.vercel.app), 4) RAF-SP (agricultural data management, raf-sp.vercel.app), 5) UAM Tracker (GPA/CGPA tracker, uam-tracker.vercel.app), 6) MindOasis (mental health professional finder, mindoasis.vercel.app), 7) CodingHawks (coding society website, codinghawks.vercel.app). Most are built with TypeScript, Next.js, and Tailwind CSS. Several use AI (Google Gemini) and databases (PostgreSQL, Supabase, Firebase)."
+  },
+  {
+    "id": "summary-certifications",
+    "category": "certification",
+    "title": "Certifications Overview",
+    "content": "I hold 21 certifications from organizations including Amazon Web Services (AWS Certified Cloud Practitioner, Intro to Generative AI), Meta (Front-End Developer Professional Certificate, JavaScript, MySQL, Databases), Google (Cloud Digital Leader, Agile Project Management, Python, Git, Data), GitHub (GitHub Foundations), HackerRank (SQL Intermediate, Problem Solving Intermediate), Harvard (CS50x Puzzle Day 2025), UC Berkeley (CALICO Spring '25), IBM (DevOps, Software Engineering, Critical Thinking), UC Davis (Critical Thinking), and DeepLearning.AI (AI For Everyone). My certifications span cloud, frontend, databases, AI, DevOps, and problem-solving."
+  },
+  {
+    "id": "summary-achievements",
+    "category": "achievement",
+    "title": "Achievements Overview",
+    "content": "My key achievements include: Ranked #92 globally and #2 in Pakistan at UC Berkeley's CALICO Spring '25, 2000+ GitHub contributions in 2025, HyprFlux reaching 800+ stars, full-time job offer at VieroMind, 2nd place at Pakathon (nationwide hackathon), 1st place at Maktab-e-Gulab Programming Competition, 1st place at Ignite Cybersecurity Workshop, 3rd place in Speed Programming at ACM-W at Air University, and 400+ problems solved on LeetCode and GeeksforGeeks."
+  },
+  {
+    "id": "summary-tools",
+    "category": "tools",
+    "title": "Tools & Setup Overview",
+    "content": "My development setup: Arch Linux OS with Hyprland (tiling WM), Waybar, and Tofi launcher. Terminal: foot with Zsh shell and Yazi file manager. Editors: Neovim (primary, keyboard-driven) and VSCodium (secondary). Browser: Thorium with uBlock Origin and Vimium. Notes: Obsidian. Theme: Tokyo Night / Catppuccin with JetBrains Mono font. Everything is minimal, fast, and distraction-free. My HyprFlux project (800+ stars) packages this entire setup."
   }
 ]

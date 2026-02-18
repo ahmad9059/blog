@@ -287,6 +287,42 @@
     font-size: 0.85rem;
     text-align: center;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .retry-btn {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #e74c3c;
+    border-radius: 6px;
+    background: transparent;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+
+  .retry-btn:hover {
+    background: #e74c3c;
+    color: #fff;
+  }
+
+  .message-bubble h3, .message-bubble h4 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .message-bubble h3:first-child, .message-bubble h4:first-child {
+    margin-top: 0;
+  }
+
+  .message-bubble ol {
+    margin: 0.25rem 0;
+    padding-left: 1.25rem;
   }
 
   @media (max-width: 600px) {
@@ -385,17 +421,36 @@
     // Bold
     text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     
+    // Italic (single asterisk, but not inside bold)
+    text = text.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+
     // Inline code
     text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
     
     // Links [text](url)
     text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
     
+    // Headings (### h3, ## h2 — only at line start)
+    text = text.replace(/(?:^|\n)### (.+)/g, '\n<h4>$1</h4>');
+    text = text.replace(/(?:^|\n)## (.+)/g, '\n<h3>$1</h3>');
+
+    // Ordered lists (1. item, 2. item)
+    text = text.replace(/(?:^|\n)\d+\.\s+(.+)/g, function(match, item) {
+      return '\n<oli>' + item.trim() + '</oli>';
+    });
+    text = text.replace(/(<oli>.*<\/oli>)/gs, '<ol>$1</ol>');
+    text = text.replace(/<\/ol>\s*<ol>/g, '');
+    text = text.replace(/<oli>/g, '<li>').replace(/<\/oli>/g, '</li>');
+
     // Unordered lists
     text = text.replace(/(?:^|\n)[-*] (.+)/g, function(match, item) {
       return '\n<li>' + item.trim() + '</li>';
     });
-    text = text.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+    text = text.replace(/(<li>.*<\/li>)/gs, function(match) {
+      // Only wrap in <ul> if not already inside <ol>
+      if (match.includes('<ol>')) return match;
+      return '<ul>' + match + '</ul>';
+    });
     // Clean nested ul tags
     text = text.replace(/<\/ul>\s*<ul>/g, '');
 
@@ -403,7 +458,7 @@
     text = text.split('\n\n').map(function(para) {
       para = para.trim();
       if (!para) return '';
-      if (para.startsWith('<ul>') || para.startsWith('<ol>')) return para;
+      if (para.startsWith('<ul>') || para.startsWith('<ol>') || para.startsWith('<h')) return para;
       return '<p>' + para + '</p>';
     }).join('');
 
@@ -467,13 +522,31 @@
     if (typing) typing.remove();
   }
 
+  let lastFailedMessage = null;
+
   function showError(text) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
-    errorDiv.textContent = text;
+    
+    const errorText = document.createElement('span');
+    errorText.textContent = text;
+    errorDiv.appendChild(errorText);
+
+    if (lastFailedMessage) {
+      const retryBtn = document.createElement('button');
+      retryBtn.className = 'retry-btn';
+      retryBtn.textContent = 'Retry';
+      const msgToRetry = lastFailedMessage;
+      retryBtn.onclick = function() {
+        errorDiv.remove();
+        chatInput.value = msgToRetry;
+        sendMessage();
+      };
+      errorDiv.appendChild(retryBtn);
+    }
+
     chatMessages.appendChild(errorDiv);
     scrollToBottom();
-    setTimeout(function() { errorDiv.remove(); }, 5000);
   }
 
   window.askSuggested = function(btn) {
@@ -484,6 +557,9 @@
   window.sendMessage = async function() {
     const message = chatInput.value.trim();
     if (!message || isGenerating) return;
+
+    // Track for retry
+    lastFailedMessage = message;
 
     // Hide suggested questions
     if (suggestedQuestions) {
@@ -565,6 +641,7 @@
 
       if (fullText) {
         conversationHistory.push({ role: 'assistant', content: fullText });
+        lastFailedMessage = null; // Clear on success
       } else if (!bubble) {
         showError('No response received. Please try again.');
       }
