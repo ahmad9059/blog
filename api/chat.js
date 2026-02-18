@@ -1,13 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-
 // Load knowledge base and embeddings at cold start
-const knowledge = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "knowledge.json"), "utf-8")
-);
-const embeddingsData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "embeddings.json"), "utf-8")
-);
+// Using require() ensures Vercel's bundler includes these files
+const knowledge = require("./knowledge.json");
+const embeddingsData = require("./embeddings.json");
 
 // Build a lookup map: id -> { chunk, vector }
 const knowledgeMap = {};
