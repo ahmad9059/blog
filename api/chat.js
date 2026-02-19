@@ -81,7 +81,7 @@ function cosineSimilarity(queryVec, docVec, docNorm) {
 // Embedding — calls Gemini embedding API with timeout
 // -----------------------------------------------------------------------------
 const EMBEDDING_MODEL = "gemini-embedding-001";
-const GEMINI_MODEL = "gemini-2.5-flash";
+const GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]; // Primary → fallback
 const API_TIMEOUT = 15000; // 15 second timeout for API calls
 
 async function fetchWithTimeout(url, options, timeout = API_TIMEOUT) {
@@ -95,24 +95,32 @@ async function fetchWithTimeout(url, options, timeout = API_TIMEOUT) {
   }
 }
 
-// Retry wrapper for Gemini API calls — single retry on 429 with short backoff
-// Keeps total time under Vercel's function timeout (10s hobby / 60s pro)
-async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 1) {
-  const delay = 3000; // 3s backoff — short enough for serverless timeout
-  let lastResponse;
+// Call Gemini with model fallback — tries primary model, falls back on 429/5xx
+async function callGemini(apiKey, requestBody) {
+  for (let i = 0; i < GEMINI_MODELS.length; i++) {
+    const model = GEMINI_MODELS[i];
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
-  for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    lastResponse = await fetchWithTimeout(url, options, timeout);
+    const response = await fetchWithTimeout(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(requestBody),
+    }, 30000); // 30s timeout for generation
 
-    if (lastResponse.status !== 429 || attempt === maxRetries) {
-      return lastResponse;
+    if (response.ok) {
+      console.log(`Generated response using ${model}`);
+      return { response, model };
     }
 
-    console.log(`Rate limited (429), retrying in ${delay / 1000}s (attempt ${attempt + 1}/${maxRetries})`);
-    await new Promise((resolve) => setTimeout(resolve, delay));
-  }
+    // If rate limited or server error, try next model
+    if ((response.status === 429 || response.status >= 500) && i < GEMINI_MODELS.length - 1) {
+      console.log(`${model} returned ${response.status}, falling back to ${GEMINI_MODELS[i + 1]}`);
+      continue;
+    }
 
-  return lastResponse;
+    // Last model or non-retryable error — return as-is
+    return { response, model };
+  }
 }
 
 async function getQueryEmbedding(text, apiKey) {
@@ -328,35 +336,31 @@ module.exports = async function handler(req, res) {
       parts: [{ text: trimmedMessage }],
     });
 
-    // Step 6: Call Gemini API
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
+    // Step 6: Call Gemini API (with model fallback)
+    const requestBody = {
+      system_instruction: {
+        parts: [{ text: systemPrompt }],
+      },
+      contents: conversationHistory,
+      generationConfig: {
+        temperature: 0.7,
+        topP: 0.9,
+        topK: 40,
+        maxOutputTokens: 1024,
+      },
+      safetySettings: [
+        { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
+        { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
+        { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
+        { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
+      ],
+    };
 
-    const geminiResponse = await fetchWithRetry(geminiUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        system_instruction: {
-          parts: [{ text: systemPrompt }],
-        },
-        contents: conversationHistory,
-        generationConfig: {
-          temperature: 0.7,
-          topP: 0.9,
-          topK: 40,
-          maxOutputTokens: 1024,
-        },
-        safetySettings: [
-          { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-          { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-          { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-          { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-        ],
-      }),
-    }, 30000); // 30s timeout for generation (longer than embedding)
+    const { response: geminiResponse, model: usedModel } = await callGemini(apiKey, requestBody);
 
     if (!geminiResponse.ok) {
       const errorText = await geminiResponse.text();
-      console.error("Gemini API error:", geminiResponse.status, errorText);
+      console.error(`Gemini API error (${usedModel}):`, geminiResponse.status, errorText);
 
       if (geminiResponse.status === 429) {
         return res.status(429).json({
