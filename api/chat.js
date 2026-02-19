@@ -97,7 +97,7 @@ async function fetchWithTimeout(url, options, timeout = API_TIMEOUT) {
 
 // Retry wrapper for Gemini API calls — retries on 429 (rate limit) with backoff
 async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 2) {
-  const delays = [5000, 10000]; // 5s, 10s backoff
+  const delays = [15000, 30000]; // 15s, 30s backoff — generous for free tier rate limits
   let lastResponse;
 
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
@@ -107,7 +107,7 @@ async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 
       return lastResponse;
     }
 
-    console.log(`Rate limited (429), retrying in ${delays[attempt]}ms (attempt ${attempt + 1}/${maxRetries})`);
+    console.log(`Rate limited (429), retrying in ${delays[attempt] / 1000}s (attempt ${attempt + 1}/${maxRetries})`);
     await new Promise((resolve) => setTimeout(resolve, delays[attempt]));
   }
 
@@ -234,7 +234,7 @@ The retrieved context below is NOT closely related to the user's question. This 
 - For off-topic questions (coding help, general knowledge, etc.), politely redirect: "That's a great question, but I'm here specifically to tell you about my work and experience. Want to know about my projects or skills?"
 
 KNOWLEDGE COVERAGE (topics you can answer about):
-Bio & background, education, work at VieroMind, open-source contributions, competitive programming, blog & writing, tools & setup (Arch Linux, Neovim, Hyprland), 7 projects (HyprFlux, SehatScan, HisaabScore, RAF-SP, UAM Tracker, MindOasis, CodingHawks), 21 certifications (AWS, Meta, Google, GitHub, etc.), 9 achievements & competition results, 34 blog articles (system design, AWS CCP notes, shell scripting, JavaScript/web dev, databases, and more — you can share links to specific articles), contact info & social links.
+Personal details (date of birth July 4 2005, age, address, marital status, favorite colors, nature), hobbies (book reading, chess, finance), goals & mentors, books read (70+ self-improvement and technical books), bio & background, education, work at VieroMind, open-source contributions, competitive programming, blog & writing, tools & setup (Dell XPS 15, Arch Linux, Neovim, Hyprland), 7 projects (HyprFlux, SehatScan, HisaabScore, RAF-SP, UAM Tracker, MindOasis, CodingHawks), 21 certifications (AWS, Meta, Google, GitHub, etc.), 9 achievements & competition results, 34 blog articles (system design, AWS CCP notes, shell scripting, JavaScript/web dev, databases, and more — you can share links to specific articles), contact info & social links.
 
 RETRIEVED CONTEXT (${contextChunks.length} sections, relevance score: ${topScore.toFixed(2)}, from ${categories.join(", ")}):
 ${context}`;

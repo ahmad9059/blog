@@ -3,7 +3,7 @@
     "id": "bio-intro",
     "category": "about",
     "title": "Introduction",
-    "content": "I'm Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. I currently work at VieroMind and study at MNS University of Agriculture, Multan. I build web applications, contribute to open source, and write about things I learn along the way. My portfolio is at itsahmad.vercel.app."
+    "content": "I'm Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. I was born on July 4, 2005, making me 20 years old (as of 2025). I'm from Nasirabad, Mumtazabad, Multan, Punjab, Pakistan. I currently work at VieroMind and study at MNS University of Agriculture, Multan. I'm single. I build web applications, contribute to open source, and write about things I learn along the way. My portfolio is at itsahmad.vercel.app."
   },
   {
     "id": "bio-work",
@@ -33,7 +33,7 @@
     "id": "bio-beyond-code",
     "category": "about",
     "title": "Beyond Code",
-    "content": "I'm an Arch Linux user running a Hyprland setup. I like my tools fast, minimal, and keyboard-driven. Neovim is my primary editor, Zsh is my shell, and I try to keep things distraction-free. When I'm not coding, I'm usually reading about productivity and self-improvement, customizing my Linux desktop, or exploring new tech."
+    "content": "I'm an Arch Linux user running a Hyprland setup on my Dell XPS 15 laptop. I like my tools fast, minimal, and keyboard-driven. Neovim is my primary editor, Zsh is my shell, and I try to keep things distraction-free. When I'm not coding, I enjoy reading books (both self-improvement and technical), playing chess, and learning about finance and financial literacy. My favorite colors are black and blue. I'm polite and loving by nature. I'm also a dedicated open source contributor."
   },
   {
     "id": "contact-info",
@@ -159,7 +159,7 @@
     "id": "education",
     "category": "about",
     "title": "Education",
-    "content": "I am currently studying at MNS University of Agriculture, Multan, Pakistan. I'm pursuing my degree while working as a Software Engineer at VieroMind."
+    "content": "I am currently studying at MNS University of Agriculture, Multan, Punjab, Pakistan. I'm pursuing my degree while working as a Software Engineer at VieroMind. I was born on July 4, 2005 and I live in Nasirabad, Mumtazabad, Multan."
   },
   {
     "id": "summary-projects",
@@ -226,5 +226,23 @@
     "category": "articles",
     "title": "Other Articles",
     "content": "I also wrote several other articles: 1) 'HTML - The Language of the Web' - basics of HTML and creating webpages (itsahmad.vercel.app/posts/html/), 2) 'Setting Up MPD and RMPC' - setting up MPD and RMPC music player on Linux (itsahmad.vercel.app/posts/setup-mpd-and-rmpc/), 3) 'Becoming a Full-Stack Web Developer in 2025' - step-by-step roadmap to master web development (itsahmad.vercel.app/posts/web-dev-roadmap/), 4) 'The 80/20 Principle' - achieving more with less, productivity and self-improvement (itsahmad.vercel.app/posts/80-20-rule/), 5) 'What It Means to Feel for Someone' - a personal reflection (itsahmad.vercel.app/posts/forher/)."
+  },
+  {
+    "id": "personal-details",
+    "category": "personal",
+    "title": "Personal Details",
+    "content": "My name is Ahmad Hassan. Date of birth: July 4, 2005 (I'm 20 years old as of 2025). I live in Nasirabad, Mumtazabad, Multan, Punjab, Pakistan. Marital status: Single. My laptop is a Dell XPS 15. My favorite colors are black and blue. I'm polite and loving by nature."
+  },
+  {
+    "id": "personal-hobbies-goals",
+    "category": "personal",
+    "title": "Hobbies, Interests & Goals",
+    "content": "My hobbies include book reading, playing chess, and learning about finance (financial literacy). My favorite subject is Computer Science, especially Linux, System Design, Data Structures and Algorithms, and Performance Engineering. I'm a passionate open source contributor. My goal is to become a really good Software Engineer. My mentors and inspirations are Prophet Muhammad (peace be upon him), my father Muhammad Ameen, and Dr. Zeeshan-ul-Hassan Usmani."
+  },
+  {
+    "id": "books-reading",
+    "category": "books",
+    "title": "Books I've Read",
+    "content": "I'm an avid reader. Here are some of my favorite books. Self-improvement: 'Atomic Habits' by James Clear, 'The Psychology of Money' by Morgan Housel, 'Thinking, Fast and Slow' by Daniel Kahneman, 'The 7 Habits of Highly Effective People' by Stephen Covey, 'Rich Dad Poor Dad' by Robert Kiyosaki. Technical: 'Clean Code' by Robert C. Martin, 'Designing Data-Intensive Applications' by Martin Kleppmann, 'Introduction to Algorithms' (CLRS), 'The Pragmatic Programmer' by David Thomas & Andrew Hunt, 'System Design Interview' by Alex Xu (ByteByteGo)."
   }
 ]
