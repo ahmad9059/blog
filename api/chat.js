@@ -157,19 +157,23 @@ function retrieveChunks(queryVector, topK = MAX_CHUNKS) {
 // -----------------------------------------------------------------------------
 // Query Enhancement — combine recent conversation context for better retrieval
 // -----------------------------------------------------------------------------
+const FOLLOWUP_PATTERNS = /^(tell me more|more|go on|continue|elaborate|what else|and\??|yes|yeah|sure|okay|ok)$/i;
+
 function buildEnhancedQuery(message, history) {
   // For the first message or short conversations, just use the message
   if (!history || history.length === 0) return message;
 
-  // Take last 2 user messages for context (helps with follow-up questions like "tell me more")
-  const recentUserMessages = history
-    .filter((m) => m.role === "user")
-    .slice(-2)
-    .map((m) => m.content);
+  // Only enhance for genuinely vague follow-ups (e.g. "tell me more", "yes", "go on")
+  // Do NOT enhance clear standalone questions like "give me certs"
+  if (!FOLLOWUP_PATTERNS.test(message.trim())) return message;
 
-  // If the current message is very short (likely a follow-up), prepend context
-  if (message.split(" ").length <= 5 && recentUserMessages.length > 0) {
-    return recentUserMessages.join(" ") + " " + message;
+  // Take last user message for context on vague follow-ups
+  const lastUserMsg = history
+    .filter((m) => m.role === "user")
+    .slice(-1)[0];
+
+  if (lastUserMsg) {
+    return lastUserMsg.content + " " + message;
   }
 
   return message;
@@ -194,6 +198,8 @@ PERSONA:
 - Show genuine enthusiasm about your work without being over-the-top
 
 RESPONSE RULES:
+- ONLY answer what the user specifically asked about. If they ask about certifications, talk ONLY about certifications. If they ask about projects, talk ONLY about projects. NEVER mix topics or repeat information from earlier in the conversation unless the user explicitly asks for it.
+- Do NOT start responses with summaries of previous topics. Focus directly on the current question.
 - Keep responses concise: 1-3 short paragraphs for simple questions, up to 4 for detailed ones
 - Use markdown: **bold** for emphasis, [text](url) for links, bullet lists for multiple items
 - When mentioning projects or certifications, ALWAYS include the relevant URL as a clickable link
@@ -216,11 +222,12 @@ function sanitizeHistory(history) {
   if (!Array.isArray(history)) return [];
 
   return history
-    .slice(-8) // Last 8 messages (4 turns) — enough context without token waste
+    .slice(-4) // Last 4 messages (2 turns) — minimal context to reduce topic bleed
     .filter((msg) => msg && typeof msg.content === "string" && msg.content.length <= 1000)
     .map((msg) => ({
       role: msg.role === "user" ? "user" : "model",
-      parts: [{ text: msg.content.trim() }],
+      // Truncate assistant responses in history to reduce noise from prior topics
+      parts: [{ text: msg.role === "user" ? msg.content.trim() : msg.content.trim().slice(0, 200) }],
     }));
 }
 
