@@ -3,8 +3,8 @@
 Static portfolio, blog, and certification showcase for Ahmad Hassan. Built with Hugo and a customized PaperMod theme featuring a bespoke #131418 palette, keyboard-driven search, and interactive project/certification grids.
 
 ## Live Site
-- Production: [itsahmad.vercel.app](https://itsahmad.vercel.app)
-- Base URL in config: `https://itsahmad.vercel.app` (update `hugo.yaml` if you fork).
+- Production: [ahmadx.vercel.app](https://ahmadx.vercel.app)
+- Base URL in config: `https://ahmadx.vercel.app` (update `hugo.yaml` if you fork).
 
 ## Stack at a Glance
 - Hugo **0.140.2** (extended) with PaperMod theme bundled locally under `themes/PaperMod`.
