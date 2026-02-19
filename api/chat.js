@@ -95,9 +95,10 @@ async function fetchWithTimeout(url, options, timeout = API_TIMEOUT) {
   }
 }
 
-// Retry wrapper for Gemini API calls — retries on 429 (rate limit) with backoff
-async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 2) {
-  const delays = [15000, 30000]; // 15s, 30s backoff — generous for free tier rate limits
+// Retry wrapper for Gemini API calls — single retry on 429 with short backoff
+// Keeps total time under Vercel's function timeout (10s hobby / 60s pro)
+async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 1) {
+  const delay = 3000; // 3s backoff — short enough for serverless timeout
   let lastResponse;
 
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
@@ -107,8 +108,8 @@ async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 
       return lastResponse;
     }
 
-    console.log(`Rate limited (429), retrying in ${delays[attempt] / 1000}s (attempt ${attempt + 1}/${maxRetries})`);
-    await new Promise((resolve) => setTimeout(resolve, delays[attempt]));
+    console.log(`Rate limited (429), retrying in ${delay / 1000}s (attempt ${attempt + 1}/${maxRetries})`);
+    await new Promise((resolve) => setTimeout(resolve, delay));
   }
 
   return lastResponse;
