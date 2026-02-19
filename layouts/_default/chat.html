@@ -169,12 +169,21 @@
   }
 
   .message-bubble ul, .message-bubble ol {
-    margin: 0.25rem 0;
-    padding-left: 1.25rem;
+    margin: 0.4rem 0;
+    padding-left: 1.5rem;
   }
 
   .message-bubble li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+  }
+
+  .message-bubble li:last-child {
+    margin-bottom: 0;
+  }
+
+  .message.assistant .message-bubble a {
+    color: var(--accent, #5b8def);
   }
 
   .message-bubble code {
@@ -459,61 +468,99 @@
     }
   });
 
-  // Simple markdown parser
+  // Markdown parser — line-by-line approach for reliable list/paragraph handling
   function parseMarkdown(text) {
-    // Escape HTML
-    text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    
-    // Bold
-    text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    
-    // Italic (single asterisk, but not inside bold)
-    text = text.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+    // Apply inline formatting to a line (bold, italic, code, links)
+    function inlineFormat(str) {
+      // Escape HTML first
+      str = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      // Inline code (before bold/italic so backtick content is protected)
+      str = str.replace(/`([^`]+)`/g, '<code>$1</code>');
+      // Bold
+      str = str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      // Italic (single * not inside bold, or _word_)
+      str = str.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+      str = str.replace(/(?<!_)_([^_]+)_(?!_)/g, '<em>$1</em>');
+      // Links [text](url)
+      str = str.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+      return str;
+    }
 
-    // Inline code
-    text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
-    
-    // Links [text](url)
-    text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    
-    // Headings (### h3, ## h2 — only at line start)
-    text = text.replace(/(?:^|\n)### (.+)/g, '\n<h4>$1</h4>');
-    text = text.replace(/(?:^|\n)## (.+)/g, '\n<h3>$1</h3>');
+    var lines = text.split('\n');
+    var html = '';
+    var inUl = false;
+    var inOl = false;
+    var paragraphLines = [];
 
-    // Ordered lists (1. item, 2. item)
-    text = text.replace(/(?:^|\n)\d+\.\s+(.+)/g, function(match, item) {
-      return '\n<oli>' + item.trim() + '</oli>';
-    });
-    text = text.replace(/(<oli>.*<\/oli>)/gs, '<ol>$1</ol>');
-    text = text.replace(/<\/ol>\s*<ol>/g, '');
-    text = text.replace(/<oli>/g, '<li>').replace(/<\/oli>/g, '</li>');
+    function flushParagraph() {
+      if (paragraphLines.length > 0) {
+        html += '<p>' + paragraphLines.join('<br>') + '</p>';
+        paragraphLines = [];
+      }
+    }
 
-    // Unordered lists
-    text = text.replace(/(?:^|\n)[-*] (.+)/g, function(match, item) {
-      return '\n<li>' + item.trim() + '</li>';
-    });
-    text = text.replace(/(<li>.*<\/li>)/gs, function(match) {
-      // Only wrap in <ul> if not already inside <ol>
-      if (match.includes('<ol>')) return match;
-      return '<ul>' + match + '</ul>';
-    });
-    // Clean nested ul tags
-    text = text.replace(/<\/ul>\s*<ul>/g, '');
+    function closeList() {
+      if (inUl) { html += '</ul>'; inUl = false; }
+      if (inOl) { html += '</ol>'; inOl = false; }
+    }
 
-    // Paragraphs
-    text = text.split('\n\n').map(function(para) {
-      para = para.trim();
-      if (!para) return '';
-      if (para.startsWith('<ul>') || para.startsWith('<ol>') || para.startsWith('<h')) return para;
-      return '<p>' + para + '</p>';
-    }).join('');
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      var trimmed = line.trim();
 
-    // Single line breaks within paragraphs
-    text = text.replace(/<p>(.*?)<\/p>/gs, function(match, content) {
-      return '<p>' + content.replace(/\n/g, '<br>') + '</p>';
-    });
+      // Empty line — flush current block
+      if (trimmed === '') {
+        flushParagraph();
+        closeList();
+        continue;
+      }
 
-    return text;
+      // Heading: ### or ##
+      var h4Match = trimmed.match(/^###\s+(.+)$/);
+      if (h4Match) {
+        flushParagraph();
+        closeList();
+        html += '<h4>' + inlineFormat(h4Match[1]) + '</h4>';
+        continue;
+      }
+      var h3Match = trimmed.match(/^##\s+(.+)$/);
+      if (h3Match) {
+        flushParagraph();
+        closeList();
+        html += '<h3>' + inlineFormat(h3Match[1]) + '</h3>';
+        continue;
+      }
+
+      // Unordered list: - item or * item (with any amount of whitespace after marker)
+      var ulMatch = trimmed.match(/^[-*]\s+(.+)$/);
+      if (ulMatch) {
+        flushParagraph();
+        if (inOl) { html += '</ol>'; inOl = false; }
+        if (!inUl) { html += '<ul>'; inUl = true; }
+        html += '<li>' + inlineFormat(ulMatch[1]) + '</li>';
+        continue;
+      }
+
+      // Ordered list: 1. item, 2. item, etc.
+      var olMatch = trimmed.match(/^\d+\.\s+(.+)$/);
+      if (olMatch) {
+        flushParagraph();
+        if (inUl) { html += '</ul>'; inUl = false; }
+        if (!inOl) { html += '<ol>'; inOl = true; }
+        html += '<li>' + inlineFormat(olMatch[1]) + '</li>';
+        continue;
+      }
+
+      // Regular text line — collect into a paragraph
+      closeList();
+      paragraphLines.push(inlineFormat(trimmed));
+    }
+
+    // Flush remaining
+    flushParagraph();
+    closeList();
+
+    return html;
   }
 
   function scrollToBottom() {
