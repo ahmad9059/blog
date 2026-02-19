@@ -95,6 +95,25 @@ async function fetchWithTimeout(url, options, timeout = API_TIMEOUT) {
   }
 }
 
+// Retry wrapper for Gemini API calls — retries on 429 (rate limit) with backoff
+async function fetchWithRetry(url, options, timeout = API_TIMEOUT, maxRetries = 2) {
+  const delays = [5000, 10000]; // 5s, 10s backoff
+  let lastResponse;
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    lastResponse = await fetchWithTimeout(url, options, timeout);
+
+    if (lastResponse.status !== 429 || attempt === maxRetries) {
+      return lastResponse;
+    }
+
+    console.log(`Rate limited (429), retrying in ${delays[attempt]}ms (attempt ${attempt + 1}/${maxRetries})`);
+    await new Promise((resolve) => setTimeout(resolve, delays[attempt]));
+  }
+
+  return lastResponse;
+}
+
 async function getQueryEmbedding(text, apiKey) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:embedContent?key=${apiKey}`;
 
@@ -120,9 +139,9 @@ async function getQueryEmbedding(text, apiKey) {
 // -----------------------------------------------------------------------------
 // Retrieval — top-K with similarity threshold and category diversity
 // -----------------------------------------------------------------------------
-const SIMILARITY_THRESHOLD = 0.3; // Minimum similarity to include a chunk
-const MAX_CHUNKS = 7;             // Maximum chunks to include
-const MIN_CHUNKS = 3;             // Always include at least this many
+const SIMILARITY_THRESHOLD = 0.35; // Minimum similarity to include a chunk
+const MAX_CHUNKS = 8;              // Maximum chunks to include
+const MIN_CHUNKS = 3;              // Always include at least this many
 
 function retrieveChunks(queryVector, topK = MAX_CHUNKS) {
   const scores = [];
@@ -305,7 +324,7 @@ module.exports = async function handler(req, res) {
     // Step 6: Call Gemini API
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
 
-    const geminiResponse = await fetchWithTimeout(geminiUrl, {
+    const geminiResponse = await fetchWithRetry(geminiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

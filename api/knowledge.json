@@ -90,184 +90,34 @@
     "content": "CodingHawks is the official website for the Coding Hawks Society at MNS University of Agriculture (MNS-UoA), empowering coders through projects, learning, and competitions. Built with TypeScript, Next.js, Tailwind CSS, Prisma, Supabase, and shadcn/ui. Live at codinghawks.vercel.app. GitHub: github.com/ahmad9059/codinghawks"
   },
   {
-    "id": "cert-aws-ccp",
+    "id": "certs-cloud-ai",
     "category": "certification",
-    "title": "AWS Certified Cloud Practitioner",
-    "content": "I hold the AWS Certified Cloud Practitioner certification from Amazon Web Services, obtained in October 2025. Verify at: credly.com/badges/d12ea9df-c9c3-40c2-8f48-e8d3cc289900"
+    "title": "Cloud & AI Certifications",
+    "content": "I hold several cloud and AI certifications: 1) AWS Certified Cloud Practitioner from Amazon Web Services (Oct 2025, verify: credly.com/badges/d12ea9df-c9c3-40c2-8f48-e8d3cc289900), 2) Introduction to Generative AI from AWS (Mar 2025, verify: credly.com/badges/5a8f69dc-f881-4c30-94e3-94a89ca62c52), 3) Google Cloud Digital Leader from Google (Feb 2024, verify: coursera.org/account/accomplishments/verify/RFTCJ5KWNSMR), 4) AI For Everyone from DeepLearning.AI (Nov 2023, verify: coursera.org/account/accomplishments/verify/WXYWQ2YNDYDM)."
   },
   {
-    "id": "cert-calico",
+    "id": "certs-frontend-databases",
     "category": "certification",
-    "title": "CALICO Spring 25",
-    "content": "I participated in CALICO Spring '25 by UC Berkeley and earned a certificate, obtained in June 2025. I ranked #92 worldwide and #2 in Pakistan. Verify at: hkn.eecs.berkeley.edu/examfiles/certificates?id=5721"
+    "title": "Frontend & Database Certifications",
+    "content": "I hold several frontend and database certifications: 1) Meta Front-End Developer Professional Certificate from Meta (Jun 2025, verify: coursera.org/account/accomplishments/professional-cert/EOD4GA2NMYMM), 2) SQL (Intermediate) from HackerRank (May 2025, verify: hackerrank.com/certificates/32242ff98c07), 3) Database Structures and Management with MySQL from Meta (Apr 2025, verify: coursera.org/account/accomplishments/verify/647YYNTB39M2), 4) Introduction to Databases from Meta (Mar 2025, verify: coursera.org/account/accomplishments/verify/ITLH074TW550), 5) Programming with JavaScript from Meta (Jan 2025, verify: coursera.org/account/accomplishments/verify/YY8J2RAW0UWY), 6) Crash Course on Python from Google (Jan 2024, verify: coursera.org/account/accomplishments/verify/KQDGM9ECXRF9), 7) Foundations: Data, Data, Everywhere from Google (Jan 2024, verify: coursera.org/account/accomplishments/verify/7JGEDDR7PASY)."
   },
   {
-    "id": "cert-meta-frontend",
+    "id": "certs-devops-problem-solving",
     "category": "certification",
-    "title": "Meta Front-End Developer",
-    "content": "I completed the Meta Front-End Developer Professional Certificate from Meta, obtained in June 2025. Verify at: coursera.org/account/accomplishments/professional-cert/EOD4GA2NMYMM"
+    "title": "DevOps, Problem Solving & Other Certifications",
+    "content": "I hold several DevOps, problem solving, and other certifications: 1) CALICO Spring '25 from UC Berkeley (Jun 2025, ranked #92 worldwide and #2 in Pakistan, verify: hkn.eecs.berkeley.edu/examfiles/certificates?id=5721), 2) CS50x Puzzle Day 2025 from Harvard University (Apr 2025, verify: certificates.cs50.io/d7ecbce7-91eb-4f1d-8dc1-bda0c3564972), 3) Agile Project Management from Google (Jan 2025, verify: coursera.org/account/accomplishments/verify/YKWFRIEPJQST), 4) GitHub Foundations from GitHub (Jan 2025, verify: credly.com/badges/4ddc90a7-090b-4a36-b318-76da222cabba), 5) Problem Solving (Intermediate) from HackerRank (Jan 2025, verify: hackerrank.com/certificates/7542b0741a9d), 6) Introduction to DevOps from IBM (Dec 2024, verify: coursera.org/account/accomplishments/verify/HEJPAL3ZNCQD), 7) Introduction to Software Engineering from IBM (Dec 2024, verify: coursera.org/account/accomplishments/verify/SSFJX9Q9LOVD), 8) Introduction to Git and GitHub from Google (Jan 2024, verify: coursera.org/account/accomplishments/verify/CHETJ3H9G279), 9) Solving Problems with Creative and Critical Thinking from IBM (Jan 2024, verify: coursera.org/account/accomplishments/verify/W8BYDH8QGBLW), 10) Critical Thinking Skills for the Professional from UC Davis (Dec 2023, verify: coursera.org/account/accomplishments/verify/7HE4RC6U1WUY)."
   },
   {
-    "id": "cert-sql-intermediate",
-    "category": "certification",
-    "title": "SQL Intermediate",
-    "content": "I hold the SQL (Intermediate) certification from HackerRank, obtained in May 2025. Verify at: hackerrank.com/certificates/32242ff98c07"
-  },
-  {
-    "id": "cert-meta-mysql",
-    "category": "certification",
-    "title": "Database Structures and MySQL",
-    "content": "I completed the Database Structures and Management with MySQL course from Meta, obtained in April 2025. Verify at: coursera.org/account/accomplishments/verify/647YYNTB39M2"
-  },
-  {
-    "id": "cert-cs50-puzzle",
-    "category": "certification",
-    "title": "CS50x Puzzle Day 2025",
-    "content": "I participated in and completed CS50x Puzzle Day 2025 by Harvard University, obtained in April 2025. Verify at: certificates.cs50.io/d7ecbce7-91eb-4f1d-8dc1-bda0c3564972"
-  },
-  {
-    "id": "cert-meta-intro-db",
-    "category": "certification",
-    "title": "Introduction to Databases",
-    "content": "I completed the Introduction to Databases course from Meta, obtained in March 2025. Verify at: coursera.org/account/accomplishments/verify/ITLH074TW550"
-  },
-  {
-    "id": "cert-aws-genai",
-    "category": "certification",
-    "title": "Introduction to Generative AI",
-    "content": "I completed the Introduction to Generative AI course from Amazon Web Services, obtained in March 2025. Verify at: credly.com/badges/5a8f69dc-f881-4c30-94e3-94a89ca62c52"
-  },
-  {
-    "id": "cert-google-agile",
-    "category": "certification",
-    "title": "Agile Project Management",
-    "content": "I completed the Agile Project Management course from Google, obtained in January 2025. Verify at: coursera.org/account/accomplishments/verify/YKWFRIEPJQST"
-  },
-  {
-    "id": "cert-github-foundations",
-    "category": "certification",
-    "title": "GitHub Foundations",
-    "content": "I hold the GitHub Foundations certification from GitHub, obtained in January 2025. Verify at: credly.com/badges/4ddc90a7-090b-4a36-b318-76da222cabba"
-  },
-  {
-    "id": "cert-problem-solving",
-    "category": "certification",
-    "title": "Problem Solving Intermediate",
-    "content": "I hold the Problem Solving (Intermediate) certification from HackerRank, obtained in January 2025. Verify at: hackerrank.com/certificates/7542b0741a9d"
-  },
-  {
-    "id": "cert-meta-javascript",
-    "category": "certification",
-    "title": "Programming with JavaScript",
-    "content": "I completed the Programming with JavaScript course from Meta, obtained in January 2025. Verify at: coursera.org/account/accomplishments/verify/YY8J2RAW0UWY"
-  },
-  {
-    "id": "cert-ibm-devops",
-    "category": "certification",
-    "title": "Introduction to DevOps",
-    "content": "I completed the Introduction to DevOps course from IBM, obtained in December 2024. Verify at: coursera.org/account/accomplishments/verify/HEJPAL3ZNCQD"
-  },
-  {
-    "id": "cert-ibm-se",
-    "category": "certification",
-    "title": "Introduction to Software Engineering",
-    "content": "I completed the Introduction to Software Engineering course from IBM, obtained in December 2024. Verify at: coursera.org/account/accomplishments/verify/SSFJX9Q9LOVD"
-  },
-  {
-    "id": "cert-google-cloud",
-    "category": "certification",
-    "title": "Google Cloud Digital Leader",
-    "content": "I completed the Google Cloud Digital Leader certification from Google, obtained in February 2024. Verify at: coursera.org/account/accomplishments/verify/RFTCJ5KWNSMR"
-  },
-  {
-    "id": "cert-google-python",
-    "category": "certification",
-    "title": "Crash Course on Python",
-    "content": "I completed the Crash Course on Python from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/KQDGM9ECXRF9"
-  },
-  {
-    "id": "cert-google-data",
-    "category": "certification",
-    "title": "Foundations Data Data Everywhere",
-    "content": "I completed Foundations: Data, Data, Everywhere from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/7JGEDDR7PASY"
-  },
-  {
-    "id": "cert-google-git",
-    "category": "certification",
-    "title": "Introduction to Git and GitHub",
-    "content": "I completed the Introduction to Git and GitHub course from Google, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/CHETJ3H9G279"
-  },
-  {
-    "id": "cert-ibm-thinking",
-    "category": "certification",
-    "title": "Creative and Critical Thinking",
-    "content": "I completed Solving Problems with Creative and Critical Thinking from IBM, obtained in January 2024. Verify at: coursera.org/account/accomplishments/verify/W8BYDH8QGBLW"
-  },
-  {
-    "id": "cert-ucdavis-thinking",
-    "category": "certification",
-    "title": "Critical Thinking Skills",
-    "content": "I completed Critical Thinking Skills for the Professional from UC Davis, obtained in December 2023. Verify at: coursera.org/account/accomplishments/verify/7HE4RC6U1WUY"
-  },
-  {
-    "id": "cert-deeplearning-ai",
-    "category": "certification",
-    "title": "AI For Everyone",
-    "content": "I completed AI For Everyone from DeepLearning.AI, obtained in November 2023. Verify at: coursera.org/account/accomplishments/verify/WXYWQ2YNDYDM"
-  },
-  {
-    "id": "achievement-calico",
+    "id": "achievements-competitions",
     "category": "achievement",
-    "title": "CALICO Spring 25 Ranking",
-    "content": "I secured Rank #92 globally and #2 in Pakistan in the CALICO Spring '25 programming competition organized by UC Berkeley in 2025."
+    "title": "Competition Achievements",
+    "content": "My competition achievements include: 1) Ranked #92 globally and #2 in Pakistan at UC Berkeley's CALICO Spring '25 programming competition (2025), 2) 2nd position in Pakathon, a nationwide hackathon organized by VieroMind (2024), 3) 1st place in the Maktab-e-Gulab Programming Competition (2024), 4) 1st place in a 3-day hands-on Cybersecurity Workshop organized by Ignite - National Technology Fund (September 2024), 5) 3rd place in the Speed Programming competition at the ACM-W Celebration Event at Air University (2024)."
   },
   {
-    "id": "achievement-github-contributions",
+    "id": "achievements-technical",
     "category": "achievement",
-    "title": "2000+ GitHub Contributions",
-    "content": "I made over 2000 contributions on GitHub in 2025, demonstrating consistent open-source involvement and dedication to building software."
-  },
-  {
-    "id": "achievement-hyprflux-stars",
-    "category": "achievement",
-    "title": "HyprFlux 800+ Stars",
-    "content": "I launched HyprFlux, a Hyprland dotfiles project that reached 800+ stars on GitHub, making it widely used in the Linux community."
-  },
-  {
-    "id": "achievement-vieromind",
-    "category": "achievement",
-    "title": "Full-Time Job at VieroMind",
-    "content": "I received a full-time job offer at VieroMind based on my performance and skills in 2025."
-  },
-  {
-    "id": "achievement-pakathon",
-    "category": "achievement",
-    "title": "2nd Position Pakathon",
-    "content": "I secured 2nd position in Pakathon, a nationwide hackathon organized by VieroMind in 2024."
-  },
-  {
-    "id": "achievement-maktab",
-    "category": "achievement",
-    "title": "1st Position Programming Competition",
-    "content": "I won 1st place in the Maktab-e-Gulab Programming Competition in 2024."
-  },
-  {
-    "id": "achievement-cybersecurity",
-    "category": "achievement",
-    "title": "1st Position Cybersecurity Workshop",
-    "content": "I secured 1st place in a 3-day hands-on Cybersecurity Workshop organized by Ignite - National Technology Fund in September 2024."
-  },
-  {
-    "id": "achievement-acmw",
-    "category": "achievement",
-    "title": "3rd Position Speed Programming",
-    "content": "I secured 3rd place in the Speed Programming competition at the ACM-W Celebration Event held at Air University in 2024."
-  },
-  {
-    "id": "achievement-problems-solved",
-    "category": "achievement",
-    "title": "400+ Problems Solved",
-    "content": "I have solved over 400+ problems on LeetCode and GeeksforGeeks platforms, demonstrating strong problem-solving and data structures & algorithms skills."
+    "title": "Technical Achievements",
+    "content": "My technical achievements include: 1) Over 2000 contributions on GitHub in 2025, demonstrating consistent open-source involvement, 2) HyprFlux reaching 800+ stars on GitHub, making it widely used in the Linux community, 3) Received a full-time job offer at VieroMind based on my performance and skills in 2025, 4) Solved over 400+ problems on LeetCode and GeeksforGeeks platforms, demonstrating strong problem-solving and DSA skills."
   },
   {
     "id": "tools-os",
