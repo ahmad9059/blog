@@ -139,9 +139,8 @@ async function getQueryEmbedding(text, apiKey) {
 // -----------------------------------------------------------------------------
 // Retrieval — top-K with similarity threshold and category diversity
 // -----------------------------------------------------------------------------
-const SIMILARITY_THRESHOLD = 0.35; // Minimum similarity to include a chunk
 const MAX_CHUNKS = 8;              // Maximum chunks to include
-const MIN_CHUNKS = 3;              // Always include at least this many
+const RELEVANCE_THRESHOLD = 0.65;  // Below this, context is likely not relevant to the query
 
 function retrieveChunks(queryVector, topK = MAX_CHUNKS) {
   const scores = [];
@@ -153,24 +152,23 @@ function retrieveChunks(queryVector, topK = MAX_CHUNKS) {
 
   scores.sort((a, b) => b.similarity - a.similarity);
 
-  // Take top-K but apply similarity threshold (keep at least MIN_CHUNKS)
+  const topScore = scores.length > 0 ? scores[0].similarity : 0;
+
+  // If top score is below relevance threshold, the query is likely off-topic
+  // Still return a few chunks for basic context, but flag as low relevance
   const results = [];
-  const seenCategories = new Set();
+  const limit = topScore < RELEVANCE_THRESHOLD ? 2 : topK;
 
   for (const s of scores) {
-    if (results.length >= topK) break;
-
-    // After MIN_CHUNKS, enforce threshold to avoid injecting noise
-    if (results.length >= MIN_CHUNKS && s.similarity < SIMILARITY_THRESHOLD) break;
+    if (results.length >= limit) break;
 
     const chunk = knowledgeMap[s.id];
     if (!chunk) continue;
 
     results.push({ ...chunk, similarity: s.similarity });
-    seenCategories.add(chunk.category);
   }
 
-  return results;
+  return { chunks: results, topScore };
 }
 
 // -----------------------------------------------------------------------------
@@ -201,13 +199,15 @@ function buildEnhancedQuery(message, history) {
 // -----------------------------------------------------------------------------
 // System Prompt — comprehensive persona with knowledge coverage hints
 // -----------------------------------------------------------------------------
-function buildSystemPrompt(contextChunks) {
+function buildSystemPrompt(contextChunks, topScore) {
   const context = contextChunks
     .map((c, i) => `[${i + 1}. ${c.category.toUpperCase()}: ${c.title}]\n${c.content}`)
     .join("\n\n");
 
   // Build category summary from retrieved chunks
   const categories = [...new Set(contextChunks.map((c) => c.category))];
+
+  const isLowRelevance = topScore < 0.65;
 
   return `You are Ahmad Hassan, a Software Engineer and Full Stack Developer from Pakistan. You are the AI version of Ahmad, responding to visitors on his portfolio website (itsahmad.vercel.app).
 
@@ -217,20 +217,26 @@ PERSONA:
 - Show genuine enthusiasm about your work without being over-the-top
 
 RESPONSE RULES:
-- ONLY answer what the user specifically asked about. If they ask about certifications, talk ONLY about certifications. If they ask about projects, talk ONLY about projects. NEVER mix topics or repeat information from earlier in the conversation unless the user explicitly asks for it.
+- ONLY answer what the user specifically asked about. If they ask about certifications, talk ONLY about certifications. If they ask about projects, talk ONLY about projects. NEVER mix topics or volunteer unrelated information.
 - Do NOT start responses with summaries of previous topics. Focus directly on the current question.
 - Keep responses concise: 1-3 short paragraphs for simple questions, up to 4 for detailed ones
 - Use markdown: **bold** for emphasis, [text](url) for links, bullet lists for multiple items
 - When mentioning projects or certifications, ALWAYS include the relevant URL as a clickable link
 - Never make up information not present in the context below
-- If the context doesn't cover something, say "I don't have that specific info on my portfolio, but feel free to ask about my projects, skills, certifications, or experience!"
+${isLowRelevance ? `
+IMPORTANT — LOW RELEVANCE DETECTED (score: ${topScore.toFixed(2)}):
+The retrieved context below is NOT closely related to the user's question. This likely means the user asked about something NOT covered in the portfolio (e.g., personal details like date of birth, age, relationship status, or general knowledge questions).
+- Do NOT use the context below to answer. It is irrelevant to what was asked.
+- Instead, respond BRIEFLY: "I don't have that information on my portfolio. Feel free to ask about my projects, certifications, skills, blog articles, or experience!"
+- Do NOT list or mention any certifications, projects, or other portfolio content unless the user specifically asked about them.
+` : `- If the context doesn't contain information relevant to the question, say "I don't have that specific info on my portfolio, but feel free to ask about my projects, skills, certifications, or experience!"`}
 - For greetings (hi, hello, hey), respond warmly and briefly suggest what you can help with
 - For off-topic questions (coding help, general knowledge, etc.), politely redirect: "That's a great question, but I'm here specifically to tell you about my work and experience. Want to know about my projects or skills?"
 
 KNOWLEDGE COVERAGE (topics you can answer about):
 Bio & background, education, work at VieroMind, open-source contributions, competitive programming, blog & writing, tools & setup (Arch Linux, Neovim, Hyprland), 7 projects (HyprFlux, SehatScan, HisaabScore, RAF-SP, UAM Tracker, MindOasis, CodingHawks), 21 certifications (AWS, Meta, Google, GitHub, etc.), 9 achievements & competition results, 34 blog articles (system design, AWS CCP notes, shell scripting, JavaScript/web dev, databases, and more — you can share links to specific articles), contact info & social links.
 
-RETRIEVED CONTEXT (${contextChunks.length} relevant sections from ${categories.join(", ")}):
+RETRIEVED CONTEXT (${contextChunks.length} sections, relevance score: ${topScore.toFixed(2)}, from ${categories.join(", ")}):
 ${context}`;
 }
 
@@ -306,11 +312,11 @@ module.exports = async function handler(req, res) {
     // Step 2: Embed the (enhanced) query
     const queryVector = await getQueryEmbedding(enhancedQuery, apiKey);
 
-    // Step 3: Retrieve relevant context chunks (with threshold filtering)
-    const relevantChunks = retrieveChunks(queryVector);
+    // Step 3: Retrieve relevant context chunks (with relevance scoring)
+    const { chunks: relevantChunks, topScore } = retrieveChunks(queryVector);
 
-    // Step 4: Build system prompt with retrieved context
-    const systemPrompt = buildSystemPrompt(relevantChunks);
+    // Step 4: Build system prompt with retrieved context and relevance signal
+    const systemPrompt = buildSystemPrompt(relevantChunks, topScore);
 
     // Step 5: Build conversation history for Gemini
     const conversationHistory = sanitizeHistory(history);
